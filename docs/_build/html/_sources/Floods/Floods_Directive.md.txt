@@ -1,0 +1,111 @@
+# Flood Directive
+
+## Thematic Overview
+
+
+(TO BE COMPLETED) 
+
+ 
+
+https://ec.europa.eu/environment/water/flood_risk/ 
+
+ 
+
+Floods Directive 
+
+Article 3. Competent Authorities & units of Management 
+
+- Content: Competent Authorities can be different from WFD’s, but otherwise the same. Units of Management can be different from RBMD, but otherwise the same. 
+
+- Structure: Same reporting structure as WFD’s. 
+
+- First report: 2010-05-26 
+
+- Then: when required. Update if changed at MS level. 
+
+- End of reporting period: 3 months after required. 
+
+Article 4 & 5: Preliminary Flood Risk Assessment 
+
+- Content: 
+For each RBMD or Unit of Management, identify the river basins and associated coastal areas at risk of flooding. 
+
+    - Maps, including river basins, sub-basins, coastal areas. Also topography and land use. 
+
+    - Past events, including flood extent and assessment of impacts 
+
+    - Areas for which potential significant flood risks exist or might be considered likely to occur. 
+
+- First report: 2011-12-22 
+
+- Review: 2018-12-22 
+
+- Then: every 6 years 
+
+- End of reporting period: 3 months after required. 
+
+Article 6: Flood hazard maps and flood risk maps 
+
+Content: 
+
+- Flood Hazard Maps 
+Events: 
+
+    1. floods with a low probability, or extreme event scenarios; 
+
+    2. floods with a medium probability (likely return period ≥ 100 years); 
+
+    3. floods with a high probability, where appropriate. 
+
+    Data: 
+
+    1. the flood extent; 
+
+    2. water depths or water level, as appropriate; 
+
+    3. where appropriate, the flow velocity or the relevant water flow. 
+
+Flood Risk Maps 
+
+    the indicative number of inhabitants potentially affected; 
+
+    type of economic activity of the area potentially affected; 
+
+    IPPC installations, as referred to in Annex I to Council Directive 96/61/EC of 24 September 1996 concerning integrated pollution     prevention and control) which might cause accidental pollution in case of flooding and WFD Protected Areas for: 
+
+        Drinking Water, 
+
+        recreational use including Bathing Waters 
+
+        areas designated for the protection of habitats or species, including Natura 2000 sites. 
+
+- First report: 2013-12-22 
+
+- Review: 2019-12-22 
+
+- Then: every 6 years 
+
+- End of reporting period: 3 months after required. 
+
+Article 7 & 8: Flood Risk Management Plans 
+
+Content: 
+- See Annex A. 
+
+- First report: 2015-12-22 
+
+- Review: 2021-12-22 
+
+- Then: every 6 years 
+
+- End of reporting period: 3 months after required. 
+
+Article 16: Report from the Commission to the EU Parliament 
+
+- First report: 2018-12-22 
+
+- Then: every 6 years 
+
+ 
+
+ 

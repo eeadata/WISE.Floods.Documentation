@@ -1,0 +1,19 @@
+.. Water Dataflows documentation master file, created by
+   sphinx-quickstart on Mon May 11 16:09:45 2026.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Water Dataflows documentation
+=============================
+
+Add your content using ``Markdown`` syntax.
+
+ .. toctree:: 
+      :maxdepth: 4
+   
+
+      FloodsViewer/WFDFloodsViewer
+      
+
+
+

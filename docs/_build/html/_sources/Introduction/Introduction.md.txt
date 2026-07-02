@@ -1,0 +1,35 @@
+# Introduction 
+
+The purpose of this notebook is to instruct the data operator on the operational steps in how to operate a dataflow. Other documentation such as development, database diagrams needs to be placed in other pages so it doesn't clutter the understanding of the work performed.  
+
+We are currently in a design phase where we (together) will try to bring structure into all this. 
+
+## WISE Helpdesk Support
+
+**Helpdesk Portal (OTRS private system):** [OTRS](https://helpdesk.eionet.europa.eu/otrs/index.pl) 
+
+- Internal Helpdesk FAQS 
+
+**FAQs page for internal user (Taskman project):** [Wise-helpdesk](https://taskman.eionet.europa.eu/projects/wise-helpdesk) 
+
+
+## Guidelines & rules 
+
+
+- Identify the tickets clearly in the subject once received I.e. [CountryCode - ReportingObligationTag- Subject of issue] 
+- Expected Time Of Service is about 1-3 days (first analysis and manual reply) 
+- For tickets opened by us in order to get feedback from MS - Set ticket to 'Pending reminder' and send 2 reminders before closing 
+
+ 
+
+## Procedures 
+
+- How to add a new reporter to a EIONET role (example): 
+
+Sometimes countries may ask to add someone to the list of reporters. In this case, we'll just have to follow these guidelines: 
+https://helpdesk.eionet.europa.eu/otrs/index.pl?Action=AgentFAQZoom;ItemID=39;Nav 
+
+- Roles for WISE-SoE 
+The WISE SoE helpdesk doesn't have permissions to add new national reporters to the respective lists. Please follow the instructions provided in the WISE SoE 2020 data call announcement (https://www.eionet.europa.eu/etcs/etc-icm/etc-news/etc-icm-data-call-wise-soe-data-call-2020): 
+
+"Please contact your EIONET NFP if you require reporting permissions on a given dataflow, so that your user name is added to the authorised reporter list. Note that the WISE-4 reporters must be authorised as WISE-6 reporters to be able to report the water quality data, if it has not already been done." 

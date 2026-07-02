@@ -1,0 +1,382 @@
+# Bathing Water Reportnet3
+
+## General information 
+
+
+```{table} Urls of the project 
+:name: Urls of the project 
+:width: 100%
+  
+| Repository | Path |
+|---|---|
+| CWS Folder | `\\Serval\s\Common workspace\Water\DataFlows\BWD_ReportNet3` |
+| SVN Repositories | [BWD_ReportNet3](https://svn.eionet.europa.eu/repositories/Reportnet/Dataflows/BathingWaterReporting/BWD_ReportNet3) |
+| Taskman | [297945](https://taskman.eionet.europa.eu/issues/297945) - (Spatial) |
+| Reportnet3 (production environment [MASTER]) | [dataflow/1063](https://reportnet.europa.eu/dataflow/1063) - (Spatial) |
+| Reportnet3 (ETC Testing phase environment) | [dataflow/1949](https://reportnet.europa.eu/dataflow/1949) |
+| Reportnet3 final dataflow for reporting | |
+```
+
+
+```{table} Data model  
+:name: Data model  
+:width: 100%
+
+| Repository | Path |
+|---|---|
+| CWS | `\\Serval\s\Common workspace\Water\DataFlows\BWD_ReportNet3\Documents\Spatial data model.xlsx` <br/> `\\Serval\s\Common workspace\Water\DataFlows\BWD_ReportNet3\Enterprise Architect\BWD_Data_Model.qea` |
+| SVN | [BWD_ReportNet3_Spatialdatamodel](https://svn.eionet.europa.eu/repositories/Reportnet/Dataflows/BathingWaterReporting/BWD_ReportNet3/Documents/Spatial%20data%20model.xlsx) <br/> [BWD_ReportNet3_EnterpriseArchitech](https://svn.eionet.europa.eu/repositories/Reportnet/Dataflows/BathingWaterReporting/BWD_ReportNet3/Enterprise%20Architect/BWD_Data_Model.qea) |
+| Taskman | [262328](https://taskman.eionet.europa.eu/issues/262328) |
+```
+
+```{table} Contact list 
+:name: Contact list  
+:width: 100%
+
+| |
+|---|
+| **EEA** |
+| • [Fernanda Néry](mailto:Fernanda.Nery@eea.europa.eu) (Custodian) <br/> • [Natacha Carvalho](mailto:Natacha.Carvalho@eea.europa.eu) (Steward) |
+| **EC** |
+| • ?? |
+```
+## Helpdesk
+
+It is a dedicated platform where countries can report questions and request access to RN3, and where our team provides support. 
+
+### Good practices
+
+- When a helpdesk come, we will rename the helpdesk adding to the subject the "[countrycode] - subject". This is done in "Miscellaneous – Free fields".
+![Miscellaneous–Free fields](img/FreeField.PNG)
+- If questions about different QC are submitted through the same helpdesk ticket, we split the ticket into as many as unrelated questions there are. In this way we don't have to wait to answer when we have analized all the problems they have.
+- Once we have answered the questions, we close the ticket. If they have more related questions the ticket will be opened again when they answer. We cannot leave the ticket open if it has been solved.
+- We have to try to answer in less than 2 days. If it is impossible, we have to answer telling them that we are looking into it.
+
+A list of frequent questions that we can use as a template: 
+
+| FAQ | Answer |
+|---|---|
+| | |
+
+## FME
+
+### Import - Spatial data 
+
+**FME name**
+
+Import_BWD_Spatial_data.fmw 
+
+**Descriptive Summary** 
+
+This FME imports spatial data reported by the Member States to RN3. The FME currently supports Geopackages, SHP and GML formats.  
+
+ 
+**Areas of impact in the dataflow**
+
+The FME is called from the “External integrations” of the “Spatial data” dataset. 
+
+
+```{table} Related resources 
+:name: Related resources  
+:width: 100%
+
+| Type | Path |
+|---|---|
+| CWS | `\\Serval\s\Common workspace\Water\DataFlows\BWD_ReportNet3\FME\RN3_BWD_Import_gpkg_Spatial_data.fmw` |
+| SVN | [RN3_BWD_Import_gpkg_Spatial_data.FME](https://svn.eionet.europa.eu/repositories/Reportnet/Dataflows/BathingWaterReporting/BWD_ReportNet3/FME/RN3_BWD_Import_gpkg_Spatial_data.fmw) |
+| FME Server | [Bathing_Water_Spatial_RN3](https://fme.discomap.eea.europa.eu/fmeserver/workspaces/run/Bathing_Water_Spatial_RN3/RN3_BWD_Import_gpkg_Spatial_data.fmw) |
+| Taskman | [issues/262330](https://taskman.eionet.europa.eu/issues/262330) |
+```
+
+```{table} Access Management 
+:name: Access Management  
+:width: 100%
+
+| Place | User | Permissions |
+|---|---|---|
+| FMEServer Bathing_Water_Spatial_RN3 <br/> FMEServer Bathing_Water_Sandbox (testing purposes) | FME_Authors | Full access |
+| FMEServer Bathing_Water_Spatial_RN3 <br/> FMEServer Bathing_Water_Sandbox (testing purposes) | FME_Administrators | Full access |
+| Reportnet3 | | Full access |
+```
+
+**Input data**
+
+- Geopackage. 
+
+**Output data**
+
+The dataset of “Spatial data” will be filled in with the data reported in the uploaded files.  
+
+
+```{table} Parameters
+:name: Import-Parameters
+:width: 100%
+
+| Name | Description | Possible values |
+|---|---|---|
+| dataflowId | We need to insert the id of the dataflow that we can find on the url. For instance [9413](https://sandbox.reportnet.europa.eu/dataflow/9413) | 9413 in the case of the example |
+| DatasetId | We need to insert the id of the dataset that we can find on the url. For instance [Sandbox](https://sandbox.reportnet.europa.eu/dataflow/9413/datasetSchema/22930?tab=6593e7c260d48300011d9492&view=design) | 22930 in the case of the example |
+| baseUrl | The url of the api of reportnet3. It is different if we work in production or sandbox. | Production: [api](https://api.reportnet.europa.eu) <br/> Sandbox: [sandbox-api](https://sandbox-api.reportnet.europa.eu/) |
+| providerId | | `design` |
+| folder | It must be composed by datasetID + / + providerid | In the case of the previous example: `22930/design` |
+| apiKey | It must be composed by `ApiKey` + apikey number. The apikey number can be obtained from reportnet3 in the dataflow. ![API key location](img/Api.PNG) | `ApiKey cdc6e04d-565c-4c88-b21b-939008d8b8cb` |
+| inputfile | The url where the input file (geopackage, shapefile or GML) is. If it is a shapefile, the input file must be a zip file. If it is a GML, the inputfile must be a GML or a zip file. If it is a geopackage, it must be the geopackage (uncompressed). | `\\Serval\s\Common workspace\Water\DataFlows\BWD_ReportNet3\FME\ExportFiles\testIru.gpkg` |
+```
+
+
+### Prefill - Spatial reference data 
+
+**FME name**
+
+RN3_BWD_WISE_Spatial_Import_CSV_Spatial_Reference_data.fmw 
+
+ 
+
+**Descriptive Summary** 
+
+This FME imports the reference data from WISE_Spatial.reference.WISE (waterbodies), WISE_SPATIAL.reference.WFDProtectedArea, Country and MonitoringAndClassification. If the countrycode is passed as parameter it will prefill protected area data into the country's data collection. It also imports the country data, GroundWaterBody and MonitoringAndClassification data. 
+
+ 
+
+**Areas of impact in the dataflow**
+
+We use it locally for filling the reference data, but also upload it to FME Server to serve as prefilling process for countries. 
+
+
+
+   
+```{table} Related sources
+:name: Prefill Related sources
+:width: 100%
+
+| Type | Path |
+|---|---|
+| CWS | `\\Serval\s\Common workspace\Water\DataFlows\BWD_ReportNet3\FME\RN3_BWD_WISE_Spatial_Import_CSV_Spatial_Reference_data.fmw` |
+| SVN | [RN3_BWD_WISE_Spatial_Import_CSV_Spatial_Reference_data](https://svn.eionet.europa.eu/repositories/Reportnet/Dataflows/BathingWaterReporting/BWD_ReportNet3/FME/RN3_BWD_WISE_Spatial_Import_CSV_Spatial_Reference_data.fmw) |
+| FME Server | [RN3_BWD_WISE_Spatial_Import_CSV_Spatial_Reference_data](https://fme.discomap.eea.europa.eu/fmeserver/workspaces/run/Bathing_Water_Spatial_RN3/RN3_BWD_WISE_Spatial_Import_CSV_Spatial_Reference_data.fmw) |
+| Taskman | [262587](https://taskman.eionet.europa.eu/issues/262587) |
+```
+
+**Input data**
+
+Information from WISE_Spatial.reference.WISE (RelatedZones dataset) and WISE_SPATIAL.reference.WFDProtectedArea (ProtectedArea dataset).  
+We also read country, GroundWaterBody  and MonitoringAndClassification data 
+
+ 
+
+The prefilling is made from bwd.SPATIAL_ProtectedArea where countryCode = '$(countryCode)' and statusCode in ('valid','stable'). 
+
+ 
+
+**Output data**
+
+The dataset "RelatedZones" of “Spatial reference data” will be filled in with the waterbodies (SWB) data. 
+The dataset "ProtectedArea" of “Spatial reference data” will be filled in with the protectedAreas reported in previous years. In this table, we have all the protectedAreas, the valid and invalid ones. This is to check that if a country sends a new protectedArea, the code has not been used before. 
+The dataset "GroundWaterBody" of “Spatial reference data” will be filled in with the waterbodies (GWB) data. 
+
+The dataset  
+
+ 
+
+If the countryCode parameter is provided, the 'Spatial Data' dataset will be populated with information reported in previous years for the specified country. 
+
+
+```{table} Parameters
+:name: Prefill Parameters
+:width: 100%
+
+| Name | Description | Possible values |
+|---|---|---|
+| dataflowId | We need to insert the id of the dataflow that we can find on the url. For instance [9413](https://sandbox.reportnet.europa.eu/dataflow/9413) | `9413` in the case of the example |
+| DatasetId | We need to insert the id of the dataset that we can find on the url. For instance [22930](https://sandbox.reportnet.europa.eu/dataflow/9413/datasetSchema/22930?tab=6593e7c260d48300011d9492&view=design) | `22930` in the case of the example |
+| baseUrl | The url of the api of reportnet3. It is different if we work in production or sandbox. | Production: [api](https://api.reportnet.europa.eu) <br/> Sandbox: [sandbox-api.reportnet.europa.eu](https://sandbox-api.reportnet.europa.eu) |
+| countryCode | If a country code is passed as a parameter, the fme will act as a prefill of protected areas for the specific country. | `ES` |
+| providerId | | `design` |
+| folder | It must be composed by datasetID + / + providerid | In the case of the previous example: `22930/design` |
+| apiKey | It must be composed by `ApiKey` + apikey number. The apikey number can be obtained from reportnet3. In the dataflow: | `ApiKey 7ab02317-c49e-4004-bcb5-109ed3a8914b` |
+```
+
+### Export-Spatial data
+
+**FME name**
+
+Export_BWD.fmw 
+
+ 
+
+**Descriptive Summary**
+
+This FME exports the data stored in "Spatial data" dataset to different formats. The FME currently exports to Geopackage and SHP. 
+
+ 
+
+**Areas of impact in the dataflow**
+
+The FME is called from the “External integrations” of the “Spatial data” dataset. 
+
+```{table} Related source
+:name: Export_Relatedsource
+:width: 100%
+
+| Type | Path |
+|---|---|
+| CWS | `\\Serval\s\Common workspace\Water\DataFlows\BWD_ReportNet3\FME\RN3_BWD_Export_gpkg_Spatial_data.fmw` |
+| SVN | [RN3_BWD_Export_gpkg_Spatial_data](https://svn.eionet.europa.eu/repositories/Reportnet/Dataflows/BathingWaterReporting/BWD_ReportNet3/FME/RN3_BWD_Export_gpkg_Spatial_data.fmw) |
+| FME Server | [RN3_BWD_Export_gpkg_Spatial_data.fmw](https://fme.discomap.eea.europa.eu/fmeserver/workspaces/run/Bathing_Water_Spatial_RN3/RN3_BWD_Export_gpkg_Spatial_data.fmw) |
+| Taskman | [262336](https://taskman.eionet.europa.eu/issues/262336) |
+```
+
+```{table} Access Management
+:name: export Access Management
+:width: 100%
+| Place | User | Permissions |
+|---|---|---|
+| FMEServer – BATHING_WATER <br/> FMEServer – Bathing_Water_Sandbox (testing purposes) | FME_Authors | Full access |
+| FMEServer – BATHING_WATER <br/> FMEServer – Bathing_Water_Sandbox (testing purposes) | FME_Administrators | Full access |
+| FMEServer – BATHING_WATER <br/> FMEServer – Bathing_Water_Sandbox (testing purposes) | Reportnet3 | Full access |
+```
+
+**Input data**
+
+Depending of the format we want to export, the FME will receive a different value in the parameter 'format'. If we want to have a shapefile, it will receive 'shp' and if we want a geopackage, it will receive 'gpkg'. 
+
+ 
+
+**Output data**
+
+We will have a shapefile or a geopackage, depending on what we choose.  
+
+```{table} Parameters
+:name: Export-Parameters
+:width: 100%
+
+| Name | Description | Possible values |
+|---|---|---|
+| dataflowId | We need to insert the id of the dataflow that we can find on the url. For instance [9413](https://sandbox.reportnet.europa.eu/dataflow/9413) | 9413 in the case of the example |
+| DatasetId | We need to insert the id of the dataset that we can find on the url. For instance [Sandbox](https://sandbox.reportnet.europa.eu/dataflow/9413/datasetSchema/22930?tab=6593e7c260d48300011d9492&view=design) | 22930 in the case of the example |
+| baseUrl | The url of the api of reportnet3. It is different if we work in production or sandbox. | Production: [api](https://api.reportnet.europa.eu) <br/> Sandbox: [sandbox-api](https://sandbox-api.reportnet.europa.eu/) |
+| providerId | | `design` |
+| folder | It must be composed by datasetID + / + providerid | In the case of the previous example: `22930/design` |
+| apiKey | It must be composed by `ApiKey` + apikey number. The apikey number can be obtained from reportnet3 in the dataflow. ![API key location](img/Api.PNG) | `ApiKey cdc6e04d-565c-4c88-b21b-939008d8b8cb` |
+| Exportfile | The name that the exported file will have. | For instance: test_2024  |
+| Format | The file type we want to export. . | For instance: test_2024  | 'shp' or 'gpkg' |
+```
+
+### Export-Harvesting process
+
+ 
+It is not done yet.
+The export of data from RN3 to SQL Server is done through a generic harvesting process which is documented in the following link: 
+
+From RN3 to SQL Server  [Vista web](https://eea1.sharepoint.com/teams/cws/_layouts/15/Doc.aspx?sourcedoc={fd0a2b2b-369d-47f4-af64-e3cb637a972f}&action=edit&wd=target%28From%20RN3%20to%20SQL%20Server.one%7Ce12603f6-7721-4d46-8859-6a3e39cffb50%2FIntroduction%7Cdda065eb-8020-4ebe-8bbc-bb6019f3fca3%2F%29&wdorigin=NavigationUrl)
+
+Additionally, the harvesting will be done in [WISE_Spatial_Import] under [WIGEON] SQL Server. 
+
+ 
+**Automation at FME**
+
+ 
+The harvesting process will be automated in FME Server through an "Automation" called RN3_BWD_Harvesting. 
+
+ 
+
+This FME Automation runs the generic harvesting process through a schedule every day and if an error has occurred sends a notification to wfd.helpdesk@eionet.europa.eu. 
+
+
+![FME Automation](img/FME_Export_Harvest.PNG) 
+
+
+## QC Spatial
+
+We have an Excel file where we have defined all the spatial QCs: 
+
+
+```{table} Spatial QCs
+:name: Spatial QCs
+:width: 100%
+
+| Spatial QCs | Path |
+|---|---|
+| CWS | `\\Serval\s\Common workspace\Water\DataFlows\BWD_ReportNet3\Documents\SpatialQCs.xlsx` |
+| SVN | [Spatial QC](https://svn.eionet.europa.eu/repositories/Reportnet/Dataflows/BathingWaterReporting/BWD_ReportNet3/Documents/SpatialQCs.xlsx) |
+| Taskman | [262331](https://taskman.eionet.europa.eu/issues/262331) |
+```
+
+The Excel file with the QCs exported from RN3 (The ones already implemented):
+
+
+
+
+```{table} QCs exported from RN3
+:name: QCs exported from RN3
+:width: 100%
+| QC export from RN3 | Path |
+|---|---|
+| CWS | `\\Serval\s\Common workspace\Water\DataFlows\BWD_ReportNet3\Documents\SpatialQCs.xlsx` |
+| SVN | [SpatialQCs](https://svn.eionet.europa.eu/repositories/Reportnet/Dataflows/BathingWaterReporting/BWD_ReportNet3/Documents/SpatialQCs.xlsx) |
+
+```
+
+For the nomenclature of the QC codes, we have use the one described here:
+
+*link missing here*
+
+
+**LINK QCs**
+
+In many instances, a field is considered correct only if its value belongs to a predefined list of values. This list of values is stored in a codelist; however, not all values added to the codelist are necessarily accepted for the field in question. For example, the thematicIdIdentifierScheme may take on values such as 'euProtectedAreaCode' and 'eionetProtectedAreaCode,' but the 'IdentifierScheme' codelist offers a broader range of options as other fields also read from the same codelist. For instance, the relatedZoneIdentifier may have values like 'eionetGroundWaterBodyCode,' 'euGroundWaterBodyCode,' 'eionetSurfaceWaterBodyCode,' and 'eionetSurfaceWaterBodyCode'. All these values are stored in the same codelist. 
+
+Therefore, if a field is restricted to specific values from a codelist, it will have a specific QC. Additionally, the field will be designated as a link in the design section, but automatic QC will remain disabled. This approach allows reporters to manually input values in RN3, providing a dropdown menu with codelist values for a more intuitive user experience. If an incorrect codelist value is entered, a BLOCKER will be triggered. 
+
+## Codelist Spatial 
+
+
+```{table} 
+:name: codelist
+:width: 100%
+
+| Codelist | Path |
+|---|---|
+| CWS | `\\Serval\s\Common workspace\Water\DataFlows\BWD_ReportNet3\Documents\SpatialCodelist.xlsx` |
+| SVN | [SpatialCodelist.xlsx](https://svn.eionet.europa.eu/repositories/Reportnet/Dataflows/BathingWaterReporting/BWD_ReportNet3/Documents/SpatialCodelist.xlsx) |
+| Taskman | [Issue 262333](https://taskman.eionet.europa.eu/issues/262333) |
+```
+
+## Spatial testing files 
+
+
+
+| Testing files | Path |
+|---|---|
+| CWS | `\\Serval\s\Common workspace\Water\DataFlows\BWD_ReportNet3\QC\Testing files` |
+| Taskman | [262335](https://taskman.eionet.europa.eu/issues/262335) |
+
+**BWD_ProtectedAreaPoint_4326.gpkg:** It has records with incorrect and correct data. Not all the QCs are listed in this file. For instance, there are some that check that the field cannot be more than 255 characters. This is not possible to write in the geopackage because the field is limited to 254 characters. This tests will be done directly in RN3. 
+
+ 
+
+**ProtectedAreaPoint.shp:** This is only to test the import tool, NOT the QCs (explained here:"\\Serval\s\Common workspace\Water\DataFlows\BWD_ReportNet3\QC\Testing files\readme.txt"). 
+
+ 
+
+**ProtectedAreaPoint.gml:** This is only to test the import tool, NOT the QCs (explained here:"\\Serval\s\Common workspace\Water\DataFlows\BWD_ReportNet3\QC\Testing files\readme.txt"). 
+
+## Database
+
+**Introduction**  
+
+All tables are referred to the exporting process from RN3 to SQL Server. 
+
+  
+
+**SQL SERVER**  
+
+Server name: WIGEON. 
+
+Database: ????. 
+
+ 
+
+**Tables**
+
+???? 

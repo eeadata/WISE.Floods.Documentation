@@ -1,0 +1,370 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Attribute types (datatypes) &mdash; Water Dataflows 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+      <link rel="stylesheet" type="text/css" href="../_static/customTable.css?v=3716b17e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=f2a433a1"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Water Dataflows
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../Intro/Introduction.html">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Intro/Introduction.html#wise-helpdesk-support">WISE Helpdesk Support</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Intro/Introduction.html#adding-eionet-users-to-cdr-roles">Adding EIONET users to CDR roles</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Intro/Introduction.html#data-flows">Data flows</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Intro/Introduction.html#cdr-help">CDR Help</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Intro/Introduction.html#eionet-roles-for-wise">EIONET Roles for WISE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Intro/Introduction.html#contacts">contacts</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Intro/Introduction.html#meetings">Meetings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Intro/Introduction.html#second-data-team-meeting-in-cph">2016-12 Second Data team meeting in CPH</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Intro/Introduction.html#wise-registers-and-spatial-data">2016-05-19 WISE registers and spatial data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html">Floods Directive Reportnet3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#floods-initial-overview">FLOODS INITIAL OVERVIEW</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#helpdesk">Helpdesk</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#good-practices">Good practices</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#floods-databases">Floods Databases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#cloning-a-dataflow-and-creating-data-collections">Cloning a dataflow and creating data collections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#harvesting">Harvesting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#harvesting-v3">Harvesting V3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#publication-in-discodata">Publication in Discodata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#units-of-management-and-competent-authorities">Units of Management and Competent Authorities</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#fme">FME</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#import-spatial-data">Import - Spatial data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#import-descriptive-data">Import - Descriptive data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#prefill-spatial-reference-data">Prefill-Spatial reference data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-spatial-data">Export - Spatial data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-descriptive-data">Export – Descriptive data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-harvesting-process">Export – Harvesting process</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#qc">QC</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#qc-spatial">QC Spatial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#qc-descriptive">QC Descriptive</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#codelist">Codelist</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#codelist-descriptive">Codelist Descriptive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#codelist-spatial">Codelist Spatial</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#testing-files">Testing files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#creation-descriptive-testing-files">Creation Descriptive Testing files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#creating-geopackage">Creating geopackage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#descriptive-testing-files">Descriptive testing files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#spatial-testing-files">Spatial testing files</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#database">Database</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#areas-of-potential-flood-risk-preliminary-flood-risk-assessment">Areas of Potential Flood Risk &amp; Preliminary Flood Risk Assessment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id1">FME</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-documents-dataset">Export – Documents dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#import-descriptive-data-pfra">Import – Descriptive data [PFRA]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#import-documents-dataset">Import – Documents dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#import-descriptive-data-apsfr">Import – Descriptive data [APSFR]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#import-spatial-data-hazardzone">Import - Spatial data [HazardZone]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#import-spatial-data-riskzone">Import - Spatial data [RiskZone]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id2">Prefill - Spatial reference data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-spatial-data-riskzone">Export - Spatial data [RiskZone]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-spatial-data-hazardzone">Export - Spatial data [HazardZone]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-descriptive-data-apsfr">Export – Descriptive data [APSFR]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-descriptive-data-pfra">Export – Descriptive data [PFRA]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-harvesting-process-to-eea-s-sql-server">Export – Harvesting process to EEA’s SQL Server</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id3">QC</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id4">QC Descriptive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id5">QC Spatial</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id6">Codelist</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id7">Codelist Descriptive</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id8">Testing files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id9">Spatial testing files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id10">Descriptive Testing files</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id11">Database</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#riskzone-reference-table">RiskZone Reference table</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#relatedzones-reference-table">RelatedZones reference table</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id12">Codelist Spatial</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#flood-hazard-and-risk-maps">Flood Hazard and Risk Maps</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id13">FME</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id14">Export – Documents dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id15">Import – Documents dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id16">Import – Descriptive data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id17">Export – Descriptive data</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id18">QC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id19">Codelist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id20">Testing files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id21">Database</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#protectedarea-reference-data">ProtectedArea Reference data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#flood-risks-management-plans">Flood Risks Management Plans</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id22">FME</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id23">Export – Documents dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id24">Import – Documents dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id25">Import – Descriptive data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id26">Export – Descriptive data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id27">Export – Harvesting process</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id28">QC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id29">Codelist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id30">Testing files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id31">Database</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#wfd-measure-codes-reference-data">WFD Measure Codes Reference data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#nery-s-scrapbook">Nery’s scrapbook</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Floods/WFDFloodsViewer.html">WFD FLoodsViewer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/WFDFloodsViewer.html#floodsmapsreference-table">FloodsMapsReference table</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Water Dataflows</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Attribute types (datatypes)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/_sharedFiles/Glossary_Datatypes.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="attribute-types-datatypes">
+<h1>Attribute types (datatypes)<a class="headerlink" href="#attribute-types-datatypes" title="Link to this heading"></a></h1>
+<dl class="simple glossary">
+<dt id="term-AquiferMediaTypeValue">AquiferMediaTypeValue<a class="headerlink" href="#term-AquiferMediaTypeValue" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">AquiferMediaTypeValue</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-AssessmentConfidence">AssessmentConfidence<a class="headerlink" href="#term-AssessmentConfidence" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">AssessmentConfidence</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-AssessmentMethod">AssessmentMethod<a class="headerlink" href="#term-AssessmentMethod" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">AssessmentMethod</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-Attachment">Attachment<a class="headerlink" href="#term-Attachment" title="Link to this term"></a></dt><dd><p>File (typically a PDF) uploaded directly in Reportnet3.</p>
+</dd>
+<dt id="term-BiologicalQualityElement">BiologicalQualityElement<a class="headerlink" href="#term-BiologicalQualityElement" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">BiologicalQualityElement</span></code> controlled list of values, which is a subset of the <a class="reference internal" href="#term-QualityElement"><span class="xref std std-term">QualityElement</span></a> controlled list of values.</p>
+</dd>
+<dt id="term-ChemicalMatrixType">ChemicalMatrixType<a class="headerlink" href="#term-ChemicalMatrixType" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">ChemicalMatrixType</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-ChemicalPurpose">ChemicalPurpose<a class="headerlink" href="#term-ChemicalPurpose" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">ChemicalPurpose</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-ChemicalStatus">ChemicalStatus<a class="headerlink" href="#term-ChemicalStatus" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">ChemicalStatus</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-ClassificationSystem">ClassificationSystem  <a class="headerlink" href="#term-ClassificationSystem" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">ClassificationSystem</span></code> controlled list of values. See https://dd.eionet.europa.eu/vocabulary/wise/ClassificationSystem</p>
+</dd>
+<dt id="term-Country">Country<a class="headerlink" href="#term-Country" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">Country</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-date">date<a class="headerlink" href="#term-date" title="Link to this term"></a></dt><dd><p>Date in the format yyyy-mm-dd.</p>
+</dd>
+<dt id="term-documentCode">documentCode<a class="headerlink" href="#term-documentCode" title="Link to this term"></a></dt><dd><p>Character string following the <a class="reference internal" href="#term-wiseIdentifier"><span class="xref std std-term">wiseIdentifier</span></a> syntax that uniquely identifies a document provided in a data delivery.</p>
+</dd>
+<dt id="term-EcologicalStatus">EcologicalStatus<a class="headerlink" href="#term-EcologicalStatus" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">EcologicalStatus</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-Email">Email<a class="headerlink" href="#term-Email" title="Link to this term"></a></dt><dd><p>Character string. Validate using REGEX pattern.</p>
+</dd>
+<dt id="term-EnvironmentalQualityStandard">EnvironmentalQualityStandard<a class="headerlink" href="#term-EnvironmentalQualityStandard" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">EnvironmentalQualityStandard</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-ExemptionPeriod">ExemptionPeriod<a class="headerlink" href="#term-ExemptionPeriod" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">ExemptionPeriod</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-ExemptionRationale">ExemptionRationale<a class="headerlink" href="#term-ExemptionRationale" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">ExemptionRationale</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-ExemptionType">ExemptionType<a class="headerlink" href="#term-ExemptionType" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">ExemptionType</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-FeatureUniqueEUCodeType">FeatureUniqueEUCodeType<a class="headerlink" href="#term-FeatureUniqueEUCodeType" title="Link to this term"></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">FeatureUniqueEUCodeType</span></code> Unique EU code for the Unit of Management or WFD River Basin District following the WISE identifier syntax. Add the two-letter ISO Country code to the Member State unique id - up to 42 characters in total.</p>
+</dd>
+<dt id="term-FloodsSchema">FloodsSchema<a class="headerlink" href="#term-FloodsSchema" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">FloodsSchema</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-GroundwaterSurfaceWaterLink">GroundwaterSurfaceWaterLink<a class="headerlink" href="#term-GroundwaterSurfaceWaterLink" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">GroundwaterSurfaceWaterLink</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-gYear">gYear<a class="headerlink" href="#term-gYear" title="Link to this term"></a></dt><dd><p>Gregorian year.</p>
+</dd>
+<dt id="term-ImpactType">ImpactType<a class="headerlink" href="#term-ImpactType" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">ImpactType</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-IntercalibrationType">IntercalibrationType<a class="headerlink" href="#term-IntercalibrationType" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">IntercalibrationType</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-Language">Language<a class="headerlink" href="#term-Language" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">Language</span></code> controlled list of values.  WISE dataflows use a subset of ISO 639-2, the alpha-3 code in Codes for the representation of names of languages– Part 2. See https://www.loc.gov/standards/iso639-2/php/code_list.php</p>
+</dd>
+<dt id="term-Licence">Licence<a class="headerlink" href="#term-Licence" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">Licence</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-LithologyValue">LithologyValue<a class="headerlink" href="#term-LithologyValue" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">LithologyValue</span></code> controlled list of values. <em>To be defined</em>.</p>
+</dd>
+<dt id="term-MitigationMeasure">MitigationMeasure<a class="headerlink" href="#term-MitigationMeasure" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">MitigationMeasure</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-MixingZoneMeasure">MixingZoneMeasure<a class="headerlink" href="#term-MixingZoneMeasure" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">MixingZoneMeasure</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-MonitoringCycle">MonitoringCycle<a class="headerlink" href="#term-MonitoringCycle" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">MonitoringCycle</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-MonitoringFrequency">MonitoringFrequency<a class="headerlink" href="#term-MonitoringFrequency" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">MonitoringFrequency</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-NaturalAWBHMWB">NaturalAWBHMWB<a class="headerlink" href="#term-NaturalAWBHMWB" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">NaturalAWBHMWB</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-nonNegativeValue">nonNegativeValue<a class="headerlink" href="#term-nonNegativeValue" title="Link to this term"></a></dt><dd><p>Non-negative numeric value.</p>
+</dd>
+<dt id="term-ObservationStatus">ObservationStatus<a class="headerlink" href="#term-ObservationStatus" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">ObservationStatus</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-Parameter">Parameter<a class="headerlink" href="#term-Parameter" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">Parameter</span></code> controlled list of values. Depending of the scope in which it is being used, the subset of allowed values may be restricted by the quality control.</p>
+</dd>
+<dt id="term-Percentage">Percentage<a class="headerlink" href="#term-Percentage" title="Link to this term"></a></dt><dd><p>Integer value in the interval [0,100].</p>
+</dd>
+<dt id="term-PercentageInterval">PercentageInterval<a class="headerlink" href="#term-PercentageInterval" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">PercentageInterval</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-PressureAssessmentMethod">PressureAssessmentMethod<a class="headerlink" href="#term-PressureAssessmentMethod" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">PressureAssessmentMethod</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-PressureType">PressureType<a class="headerlink" href="#term-PressureType" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">PressureType</span></code> controlled list of values.  This is a hierarchical list.</p>
+</dd>
+<dt id="term-QualityElement">QualityElement<a class="headerlink" href="#term-QualityElement" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">QualityElement</span></code> controlled list of values, which is a subset of the <a class="reference internal" href="#term-Parameter"><span class="xref std std-term">Parameter</span></a> controlled list of values.</p>
+</dd>
+<dt id="term-QuantitativeStatus">QuantitativeStatus<a class="headerlink" href="#term-QuantitativeStatus" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">QuantitativeStatus</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-range">range<a class="headerlink" href="#term-range" title="Link to this term"></a></dt><dd><p>Range of values. The data type follows the Postgre range type implementation (see https://www.postgresql.org/docs/current/rangetypes.html) of the ISO 80000-2:2019(E) standard
+(see https://cdn.standards.iteh.ai/samples/64973/329519100abd447ea0d49747258d1094/ISO-80000-2-2019.pdf).</p>
+</dd>
+<dt id="term-ReasonForFailure">ReasonForFailure <a class="headerlink" href="#term-ReasonForFailure" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">ReasonForFailure</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-referenceCode">referenceCode<a class="headerlink" href="#term-referenceCode" title="Link to this term"></a></dt><dd><p>Character string following the <a class="reference internal" href="#term-wiseIdentifier"><span class="xref std std-term">wiseIdentifier</span></a> syntax that uniquely identifies a document reference (e.g. a chapter, bookmark, page, etc.) within a document provided in a data delivery.</p>
+</dd>
+<dt id="term-ReservoirType">ReservoirType<a class="headerlink" href="#term-ReservoirType" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">ReservoirType</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-ResourceType">ResourceType <a class="headerlink" href="#term-ResourceType" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">ResourceType</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-Role">Role<a class="headerlink" href="#term-Role" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">Role</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-string">string<a class="headerlink" href="#term-string" title="Link to this term"></a></dt><dd><p>Character string. A maximum of 4000 characters is allowed, unless otherwise specified by indicating the number of characters. UTF8 encoding is mandatory.</p>
+</dd>
+<dt id="term-UnitOfMeasure">UnitOfMeasure<a class="headerlink" href="#term-UnitOfMeasure" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">UnitOfMeasure</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-URL">URL<a class="headerlink" href="#term-URL" title="Link to this term"></a></dt><dd><p>Character string with a maximum of 2100 characters. Validate using REGEX pattern.</p>
+</dd>
+<dt id="term-VolumeRevenueCost">VolumeRevenueCost<a class="headerlink" href="#term-VolumeRevenueCost" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">VolumeRevenueCost</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-WaterBodyCategory">WaterBodyCategory<a class="headerlink" href="#term-WaterBodyCategory" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">WaterBodyCategory</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-WFDWaterService">WFDWaterService<a class="headerlink" href="#term-WFDWaterService" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">WFDWaterService</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-WiseDateTime">WiseDateTime<a class="headerlink" href="#term-WiseDateTime" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">WiseDateTime</span></code> must be a valid date in the ISO 8601 extended format value (e.g. YYYY-MM-DD).</p>
+</dd>
+<dt id="term-wiseIdentifier">wiseIdentifier<a class="headerlink" href="#term-wiseIdentifier" title="Link to this term"></a></dt><dd><p>String with a maximum of 42 characters.
+WISE identifiers must start with the two-letter country code, followed by one character that can be a digit or an uppercase letter, followed by a sequence of characters (0 to 38 characters long) that can be digits or uppercase letters, with no consecutive double hyphens or double underscores, but allowing for single hyphens or underscores between characters.  The code can optionally end with one character that can be a digit or an uppercase letter.  Examples: FR123, FR1_XYZ1234_1, FR1-XYZ1234-1, FR1XYZ12341 but not FR1__XYZ1234__1 or FRa123.</p>
+</dd>
+<dt id="term-YesNo">YesNo<a class="headerlink" href="#term-YesNo" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">YesNo</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-YesNoNotApplicable">YesNoNotApplicable<a class="headerlink" href="#term-YesNoNotApplicable" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">YesNoNotApplicable</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-YesNoRBMP">YesNoRBMP<a class="headerlink" href="#term-YesNoRBMP" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">YesNoRBMP</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-YesNoUnknownInapplicable">YesNoUnknownInapplicable<a class="headerlink" href="#term-YesNoUnknownInapplicable" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">YesNoNotApplicable</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-YesNoUnknownNotApplicableNotAssessed">YesNoUnknownNotApplicableNotAssessed<a class="headerlink" href="#term-YesNoUnknownNotApplicableNotAssessed" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">YesNoUnknownNotApplicableNotAssessed</span></code> controlled list of values.</p>
+</dd>
+<dt id="term-YesNoUnknownNotAssessed">YesNoUnknownNotAssessed<a class="headerlink" href="#term-YesNoUnknownNotAssessed" title="Link to this term"></a></dt><dd><p>Value from the <code class="docutils literal notranslate"><span class="pre">YesNoUnknownNotAssessed</span></code> controlled list of values.</p>
+</dd>
+</dl>
+<p>See https://semiceu.github.io/style-guide/1.0.0/gc-conceptual-model-conventions.html</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 11/05/2026, Docsource from https://eea1.sharepoint.com/teams/cws.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

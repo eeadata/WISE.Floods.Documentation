@@ -1,0 +1,748 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bathing Water Reportnet3 &mdash; Water Dataflows 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+      <link rel="stylesheet" type="text/css" href="../_static/customTable.css?v=3716b17e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=f2a433a1"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Floods Directive Reportnet3" href="../Floods/Floods_DirectiveRN3.html" />
+    <link rel="prev" title="Introduction" href="../Intro/Introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Water Dataflows
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Intro/Introduction.html">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Intro/Introduction.html#wise-helpdesk-support">WISE Helpdesk Support</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Intro/Introduction.html#adding-eionet-users-to-cdr-roles">Adding EIONET users to CDR roles</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Intro/Introduction.html#data-flows">Data flows</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Intro/Introduction.html#cdr-help">CDR Help</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Intro/Introduction.html#eionet-roles-for-wise">EIONET Roles for WISE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Intro/Introduction.html#contacts">contacts</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Intro/Introduction.html#meetings">Meetings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Intro/Introduction.html#second-data-team-meeting-in-cph">2016-12 Second Data team meeting in CPH</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Intro/Introduction.html#wise-registers-and-spatial-data">2016-05-19 WISE registers and spatial data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Bathing Water Reportnet3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#general-information">General information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#helpdesk">Helpdesk</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#good-practices">Good practices</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#fme">FME</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#import-spatial-data">Import - Spatial data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#prefill-spatial-reference-data">Prefill - Spatial reference data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#export-spatial-data">Export-Spatial data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#export-harvesting-process">Export-Harvesting process</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#qc-spatial">QC Spatial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#codelist-spatial">Codelist Spatial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#spatial-testing-files">Spatial testing files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#database">Database</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html">Floods Directive Reportnet3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#floods-initial-overview">FLOODS INITIAL OVERVIEW</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#helpdesk">Helpdesk</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#good-practices">Good practices</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#floods-databases">Floods Databases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#cloning-a-dataflow-and-creating-data-collections">Cloning a dataflow and creating data collections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#harvesting">Harvesting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#harvesting-v3">Harvesting V3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#publication-in-discodata">Publication in Discodata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#units-of-management-and-competent-authorities">Units of Management and Competent Authorities</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#fme">FME</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#import-spatial-data">Import - Spatial data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#import-descriptive-data">Import - Descriptive data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#prefill-spatial-reference-data">Prefill-Spatial reference data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-spatial-data">Export - Spatial data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-descriptive-data">Export – Descriptive data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-harvesting-process">Export – Harvesting process</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#qc">QC</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#qc-spatial">QC Spatial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#qc-descriptive">QC Descriptive</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#codelist">Codelist</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#codelist-descriptive">Codelist Descriptive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#codelist-spatial">Codelist Spatial</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#testing-files">Testing files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#creation-descriptive-testing-files">Creation Descriptive Testing files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#creating-geopackage">Creating geopackage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#descriptive-testing-files">Descriptive testing files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#spatial-testing-files">Spatial testing files</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#database">Database</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#areas-of-potential-flood-risk-preliminary-flood-risk-assessment">Areas of Potential Flood Risk &amp; Preliminary Flood Risk Assessment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id1">FME</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-documents-dataset">Export – Documents dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#import-descriptive-data-pfra">Import – Descriptive data [PFRA]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#import-documents-dataset">Import – Documents dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#import-descriptive-data-apsfr">Import – Descriptive data [APSFR]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#import-spatial-data-hazardzone">Import - Spatial data [HazardZone]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#import-spatial-data-riskzone">Import - Spatial data [RiskZone]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id2">Prefill - Spatial reference data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-spatial-data-riskzone">Export - Spatial data [RiskZone]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-spatial-data-hazardzone">Export - Spatial data [HazardZone]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-descriptive-data-apsfr">Export – Descriptive data [APSFR]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-descriptive-data-pfra">Export – Descriptive data [PFRA]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-harvesting-process-to-eea-s-sql-server">Export – Harvesting process to EEA’s SQL Server</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id3">QC</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id4">QC Descriptive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id5">QC Spatial</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id6">Codelist</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id7">Codelist Descriptive</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id8">Testing files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id9">Spatial testing files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id10">Descriptive Testing files</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id11">Database</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#riskzone-reference-table">RiskZone Reference table</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#relatedzones-reference-table">RelatedZones reference table</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id12">Codelist Spatial</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#flood-hazard-and-risk-maps">Flood Hazard and Risk Maps</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id13">FME</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id14">Export – Documents dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id15">Import – Documents dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id16">Import – Descriptive data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id17">Export – Descriptive data</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id18">QC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id19">Codelist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id20">Testing files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id21">Database</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#protectedarea-reference-data">ProtectedArea Reference data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#flood-risks-management-plans">Flood Risks Management Plans</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id22">FME</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id23">Export – Documents dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id24">Import – Documents dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id25">Import – Descriptive data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id26">Export – Descriptive data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id27">Export – Harvesting process</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id28">QC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id29">Codelist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id30">Testing files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id31">Database</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#wfd-measure-codes-reference-data">WFD Measure Codes Reference data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#nery-s-scrapbook">Nery’s scrapbook</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Water Dataflows</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Bathing Water Reportnet3</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/BathingWater/BathingWaterReportnet3.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="bathing-water-reportnet3">
+<h1>Bathing Water Reportnet3<a class="headerlink" href="#bathing-water-reportnet3" title="Link to this heading"></a></h1>
+<section id="general-information">
+<h2>General information<a class="headerlink" href="#general-information" title="Link to this heading"></a></h2>
+<table class="docutils align-default" id="urls-of-the-project" style="width: 100%">
+<caption><span class="caption-text">Urls of the project</span><a class="headerlink" href="#urls-of-the-project" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Repository</p></th>
+<th class="head"><p>Path</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>CWS Folder</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\\Serval\s\Common</span> <span class="pre">workspace\Water\DataFlows\BWD_ReportNet3</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>SVN Repositories</p></td>
+<td><p><a class="reference external" href="https://svn.eionet.europa.eu/repositories/Reportnet/Dataflows/BathingWaterReporting/BWD_ReportNet3">BWD_ReportNet3</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Taskman</p></td>
+<td><p><a class="reference external" href="https://taskman.eionet.europa.eu/issues/297945">297945</a> - (Spatial)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Reportnet3 (production environment [MASTER])</p></td>
+<td><p><a class="reference external" href="https://reportnet.europa.eu/dataflow/1063">dataflow/1063</a> - (Spatial)</p></td>
+</tr>
+<tr class="row-even"><td><p>Reportnet3 (ETC Testing phase environment)</p></td>
+<td><p><a class="reference external" href="https://reportnet.europa.eu/dataflow/1949">dataflow/1949</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Reportnet3 final dataflow for reporting</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default" id="data-model" style="width: 100%">
+<caption><span class="caption-text">Data model</span><a class="headerlink" href="#data-model" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Repository</p></th>
+<th class="head"><p>Path</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>CWS</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\\Serval\s\Common</span> <span class="pre">workspace\Water\DataFlows\BWD_ReportNet3\Documents\Spatial</span> <span class="pre">data</span> <span class="pre">model.xlsx</span></code> <br/> <code class="docutils literal notranslate"><span class="pre">\\Serval\s\Common</span> <span class="pre">workspace\Water\DataFlows\BWD_ReportNet3\Enterprise</span> <span class="pre">Architect\BWD_Data_Model.qea</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>SVN</p></td>
+<td><p><a class="reference external" href="https://svn.eionet.europa.eu/repositories/Reportnet/Dataflows/BathingWaterReporting/BWD_ReportNet3/Documents/Spatial%20data%20model.xlsx">BWD_ReportNet3_Spatialdatamodel</a> <br/> <a class="reference external" href="https://svn.eionet.europa.eu/repositories/Reportnet/Dataflows/BathingWaterReporting/BWD_ReportNet3/Enterprise%20Architect/BWD_Data_Model.qea">BWD_ReportNet3_EnterpriseArchitech</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Taskman</p></td>
+<td><p><a class="reference external" href="https://taskman.eionet.europa.eu/issues/262328">262328</a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default" id="contact-list" style="width: 100%">
+<caption><span class="caption-text">Contact list</span><a class="headerlink" href="#contact-list" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>EEA</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>• <a class="reference external" href="mailto:Fernanda&#46;Nery&#37;&#52;&#48;eea&#46;europa&#46;eu">Fernanda Néry</a> (Custodian) <br/> • <a class="reference external" href="mailto:Natacha&#46;Carvalho&#37;&#52;&#48;eea&#46;europa&#46;eu">Natacha Carvalho</a> (Steward)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>EC</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>• ??</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="helpdesk">
+<h2>Helpdesk<a class="headerlink" href="#helpdesk" title="Link to this heading"></a></h2>
+<p>It is a dedicated platform where countries can report questions and request access to RN3, and where our team provides support.</p>
+<section id="good-practices">
+<h3>Good practices<a class="headerlink" href="#good-practices" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>When a helpdesk come, we will rename the helpdesk adding to the subject the “[countrycode] - subject”. This is done in “Miscellaneous – Free fields”.
+<img alt="Miscellaneous–Free fields" src="../_images/FreeField.PNG" /></p></li>
+<li><p>If questions about different QC are submitted through the same helpdesk ticket, we split the ticket into as many as unrelated questions there are. In this way we don’t have to wait to answer when we have analized all the problems they have.</p></li>
+<li><p>Once we have answered the questions, we close the ticket. If they have more related questions the ticket will be opened again when they answer. We cannot leave the ticket open if it has been solved.</p></li>
+<li><p>We have to try to answer in less than 2 days. If it is impossible, we have to answer telling them that we are looking into it.</p></li>
+</ul>
+<p>A list of frequent questions that we can use as a template:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>FAQ</p></th>
+<th class="head"><p>Answer</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="fme">
+<h2>FME<a class="headerlink" href="#fme" title="Link to this heading"></a></h2>
+<section id="import-spatial-data">
+<h3>Import - Spatial data<a class="headerlink" href="#import-spatial-data" title="Link to this heading"></a></h3>
+<p><strong>FME name</strong></p>
+<p>Import_BWD_Spatial_data.fmw</p>
+<p><strong>Descriptive Summary</strong></p>
+<p>This FME imports spatial data reported by the Member States to RN3. The FME currently supports Geopackages, SHP and GML formats.</p>
+<p><strong>Areas of impact in the dataflow</strong></p>
+<p>The FME is called from the “External integrations” of the “Spatial data” dataset.</p>
+<table class="docutils align-default" id="related-resources" style="width: 100%">
+<caption><span class="caption-text">Related resources</span><a class="headerlink" href="#related-resources" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Type</p></th>
+<th class="head"><p>Path</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>CWS</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\\Serval\s\Common</span> <span class="pre">workspace\Water\DataFlows\BWD_ReportNet3\FME\RN3_BWD_Import_gpkg_Spatial_data.fmw</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>SVN</p></td>
+<td><p><a class="reference external" href="https://svn.eionet.europa.eu/repositories/Reportnet/Dataflows/BathingWaterReporting/BWD_ReportNet3/FME/RN3_BWD_Import_gpkg_Spatial_data.fmw">RN3_BWD_Import_gpkg_Spatial_data.FME</a></p></td>
+</tr>
+<tr class="row-even"><td><p>FME Server</p></td>
+<td><p><a class="reference external" href="https://fme.discomap.eea.europa.eu/fmeserver/workspaces/run/Bathing_Water_Spatial_RN3/RN3_BWD_Import_gpkg_Spatial_data.fmw">Bathing_Water_Spatial_RN3</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Taskman</p></td>
+<td><p><a class="reference external" href="https://taskman.eionet.europa.eu/issues/262330">issues/262330</a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default" id="access-management" style="width: 100%">
+<caption><span class="caption-text">Access Management</span><a class="headerlink" href="#access-management" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Place</p></th>
+<th class="head"><p>User</p></th>
+<th class="head"><p>Permissions</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>FMEServer Bathing_Water_Spatial_RN3 <br/> FMEServer Bathing_Water_Sandbox (testing purposes)</p></td>
+<td><p>FME_Authors</p></td>
+<td><p>Full access</p></td>
+</tr>
+<tr class="row-odd"><td><p>FMEServer Bathing_Water_Spatial_RN3 <br/> FMEServer Bathing_Water_Sandbox (testing purposes)</p></td>
+<td><p>FME_Administrators</p></td>
+<td><p>Full access</p></td>
+</tr>
+<tr class="row-even"><td><p>Reportnet3</p></td>
+<td><p></p></td>
+<td><p>Full access</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Input data</strong></p>
+<ul class="simple">
+<li><p>Geopackage.</p></li>
+</ul>
+<p><strong>Output data</strong></p>
+<p>The dataset of “Spatial data” will be filled in with the data reported in the uploaded files.</p>
+<table class="docutils align-default" id="import-parameters" style="width: 100%">
+<caption><span class="caption-text">Parameters</span><a class="headerlink" href="#import-parameters" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Possible values</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>dataflowId</p></td>
+<td><p>We need to insert the id of the dataflow that we can find on the url. For instance <a class="reference external" href="https://sandbox.reportnet.europa.eu/dataflow/9413">9413</a></p></td>
+<td><p>9413 in the case of the example</p></td>
+</tr>
+<tr class="row-odd"><td><p>DatasetId</p></td>
+<td><p>We need to insert the id of the dataset that we can find on the url. For instance <a class="reference external" href="https://sandbox.reportnet.europa.eu/dataflow/9413/datasetSchema/22930?tab=6593e7c260d48300011d9492&amp;view=design">Sandbox</a></p></td>
+<td><p>22930 in the case of the example</p></td>
+</tr>
+<tr class="row-even"><td><p>baseUrl</p></td>
+<td><p>The url of the api of reportnet3. It is different if we work in production or sandbox.</p></td>
+<td><p>Production: <a class="reference external" href="https://api.reportnet.europa.eu">api</a> <br/> Sandbox: <a class="reference external" href="https://sandbox-api.reportnet.europa.eu/">sandbox-api</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>providerId</p></td>
+<td><p></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">design</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>folder</p></td>
+<td><p>It must be composed by datasetID + / + providerid</p></td>
+<td><p>In the case of the previous example: <code class="docutils literal notranslate"><span class="pre">22930/design</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>apiKey</p></td>
+<td><p>It must be composed by <code class="docutils literal notranslate"><span class="pre">ApiKey</span></code> + apikey number. The apikey number can be obtained from reportnet3 in the dataflow. <img alt="API key location" src="../_images/Api.png" /></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ApiKey</span> <span class="pre">cdc6e04d-565c-4c88-b21b-939008d8b8cb</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>inputfile</p></td>
+<td><p>The url where the input file (geopackage, shapefile or GML) is. If it is a shapefile, the input file must be a zip file. If it is a GML, the inputfile must be a GML or a zip file. If it is a geopackage, it must be the geopackage (uncompressed).</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\\Serval\s\Common</span> <span class="pre">workspace\Water\DataFlows\BWD_ReportNet3\FME\ExportFiles\testIru.gpkg</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="prefill-spatial-reference-data">
+<h3>Prefill - Spatial reference data<a class="headerlink" href="#prefill-spatial-reference-data" title="Link to this heading"></a></h3>
+<p><strong>FME name</strong></p>
+<p>RN3_BWD_WISE_Spatial_Import_CSV_Spatial_Reference_data.fmw</p>
+<p><strong>Descriptive Summary</strong></p>
+<p>This FME imports the reference data from WISE_Spatial.reference.WISE (waterbodies), WISE_SPATIAL.reference.WFDProtectedArea, Country and MonitoringAndClassification. If the countrycode is passed as parameter it will prefill protected area data into the country’s data collection. It also imports the country data, GroundWaterBody and MonitoringAndClassification data.</p>
+<p><strong>Areas of impact in the dataflow</strong></p>
+<p>We use it locally for filling the reference data, but also upload it to FME Server to serve as prefilling process for countries.</p>
+<table class="docutils align-default" id="prefill-related-sources" style="width: 100%">
+<caption><span class="caption-text">Related sources</span><a class="headerlink" href="#prefill-related-sources" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Type</p></th>
+<th class="head"><p>Path</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>CWS</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\\Serval\s\Common</span> <span class="pre">workspace\Water\DataFlows\BWD_ReportNet3\FME\RN3_BWD_WISE_Spatial_Import_CSV_Spatial_Reference_data.fmw</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>SVN</p></td>
+<td><p><a class="reference external" href="https://svn.eionet.europa.eu/repositories/Reportnet/Dataflows/BathingWaterReporting/BWD_ReportNet3/FME/RN3_BWD_WISE_Spatial_Import_CSV_Spatial_Reference_data.fmw">RN3_BWD_WISE_Spatial_Import_CSV_Spatial_Reference_data</a></p></td>
+</tr>
+<tr class="row-even"><td><p>FME Server</p></td>
+<td><p><a class="reference external" href="https://fme.discomap.eea.europa.eu/fmeserver/workspaces/run/Bathing_Water_Spatial_RN3/RN3_BWD_WISE_Spatial_Import_CSV_Spatial_Reference_data.fmw">RN3_BWD_WISE_Spatial_Import_CSV_Spatial_Reference_data</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Taskman</p></td>
+<td><p><a class="reference external" href="https://taskman.eionet.europa.eu/issues/262587">262587</a></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Input data</strong></p>
+<p>Information from WISE_Spatial.reference.WISE (RelatedZones dataset) and WISE_SPATIAL.reference.WFDProtectedArea (ProtectedArea dataset).<br />
+We also read country, GroundWaterBody  and MonitoringAndClassification data</p>
+<p>The prefilling is made from bwd.SPATIAL_ProtectedArea where countryCode = ‘$(countryCode)’ and statusCode in (‘valid’,’stable’).</p>
+<p><strong>Output data</strong></p>
+<p>The dataset “RelatedZones” of “Spatial reference data” will be filled in with the waterbodies (SWB) data.
+The dataset “ProtectedArea” of “Spatial reference data” will be filled in with the protectedAreas reported in previous years. In this table, we have all the protectedAreas, the valid and invalid ones. This is to check that if a country sends a new protectedArea, the code has not been used before.
+The dataset “GroundWaterBody” of “Spatial reference data” will be filled in with the waterbodies (GWB) data.</p>
+<p>The dataset</p>
+<p>If the countryCode parameter is provided, the ‘Spatial Data’ dataset will be populated with information reported in previous years for the specified country.</p>
+<table class="docutils align-default" id="prefill-parameters" style="width: 100%">
+<caption><span class="caption-text">Parameters</span><a class="headerlink" href="#prefill-parameters" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Possible values</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>dataflowId</p></td>
+<td><p>We need to insert the id of the dataflow that we can find on the url. For instance <a class="reference external" href="https://sandbox.reportnet.europa.eu/dataflow/9413">9413</a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">9413</span></code> in the case of the example</p></td>
+</tr>
+<tr class="row-odd"><td><p>DatasetId</p></td>
+<td><p>We need to insert the id of the dataset that we can find on the url. For instance <a class="reference external" href="https://sandbox.reportnet.europa.eu/dataflow/9413/datasetSchema/22930?tab=6593e7c260d48300011d9492&amp;view=design">22930</a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">22930</span></code> in the case of the example</p></td>
+</tr>
+<tr class="row-even"><td><p>baseUrl</p></td>
+<td><p>The url of the api of reportnet3. It is different if we work in production or sandbox.</p></td>
+<td><p>Production: <a class="reference external" href="https://api.reportnet.europa.eu">api</a> <br/> Sandbox: <a class="reference external" href="https://sandbox-api.reportnet.europa.eu">sandbox-api.reportnet.europa.eu</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>countryCode</p></td>
+<td><p>If a country code is passed as a parameter, the fme will act as a prefill of protected areas for the specific country.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ES</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>providerId</p></td>
+<td><p></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">design</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>folder</p></td>
+<td><p>It must be composed by datasetID + / + providerid</p></td>
+<td><p>In the case of the previous example: <code class="docutils literal notranslate"><span class="pre">22930/design</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>apiKey</p></td>
+<td><p>It must be composed by <code class="docutils literal notranslate"><span class="pre">ApiKey</span></code> + apikey number. The apikey number can be obtained from reportnet3. In the dataflow:</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ApiKey</span> <span class="pre">7ab02317-c49e-4004-bcb5-109ed3a8914b</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="export-spatial-data">
+<h3>Export-Spatial data<a class="headerlink" href="#export-spatial-data" title="Link to this heading"></a></h3>
+<p><strong>FME name</strong></p>
+<p>Export_BWD.fmw</p>
+<p><strong>Descriptive Summary</strong></p>
+<p>This FME exports the data stored in “Spatial data” dataset to different formats. The FME currently exports to Geopackage and SHP.</p>
+<p><strong>Areas of impact in the dataflow</strong></p>
+<p>The FME is called from the “External integrations” of the “Spatial data” dataset.</p>
+<table class="docutils align-default" id="export-relatedsource" style="width: 100%">
+<caption><span class="caption-text">Related source</span><a class="headerlink" href="#export-relatedsource" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Type</p></th>
+<th class="head"><p>Path</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>CWS</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\\Serval\s\Common</span> <span class="pre">workspace\Water\DataFlows\BWD_ReportNet3\FME\RN3_BWD_Export_gpkg_Spatial_data.fmw</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>SVN</p></td>
+<td><p><a class="reference external" href="https://svn.eionet.europa.eu/repositories/Reportnet/Dataflows/BathingWaterReporting/BWD_ReportNet3/FME/RN3_BWD_Export_gpkg_Spatial_data.fmw">RN3_BWD_Export_gpkg_Spatial_data</a></p></td>
+</tr>
+<tr class="row-even"><td><p>FME Server</p></td>
+<td><p><a class="reference external" href="https://fme.discomap.eea.europa.eu/fmeserver/workspaces/run/Bathing_Water_Spatial_RN3/RN3_BWD_Export_gpkg_Spatial_data.fmw">RN3_BWD_Export_gpkg_Spatial_data.fmw</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Taskman</p></td>
+<td><p><a class="reference external" href="https://taskman.eionet.europa.eu/issues/262336">262336</a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default" id="export-access-management" style="width: 100%">
+<caption><span class="caption-text">Access Management</span><a class="headerlink" href="#export-access-management" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Place</p></th>
+<th class="head"><p>User</p></th>
+<th class="head"><p>Permissions</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>FMEServer – BATHING_WATER <br/> FMEServer – Bathing_Water_Sandbox (testing purposes)</p></td>
+<td><p>FME_Authors</p></td>
+<td><p>Full access</p></td>
+</tr>
+<tr class="row-odd"><td><p>FMEServer – BATHING_WATER <br/> FMEServer – Bathing_Water_Sandbox (testing purposes)</p></td>
+<td><p>FME_Administrators</p></td>
+<td><p>Full access</p></td>
+</tr>
+<tr class="row-even"><td><p>FMEServer – BATHING_WATER <br/> FMEServer – Bathing_Water_Sandbox (testing purposes)</p></td>
+<td><p>Reportnet3</p></td>
+<td><p>Full access</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Input data</strong></p>
+<p>Depending of the format we want to export, the FME will receive a different value in the parameter ‘format’. If we want to have a shapefile, it will receive ‘shp’ and if we want a geopackage, it will receive ‘gpkg’.</p>
+<p><strong>Output data</strong></p>
+<p>We will have a shapefile or a geopackage, depending on what we choose.</p>
+<table class="docutils align-default" id="export-parameters" style="width: 100%">
+<caption><span class="caption-text">Parameters</span><a class="headerlink" href="#export-parameters" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Possible values</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>dataflowId</p></td>
+<td><p>We need to insert the id of the dataflow that we can find on the url. For instance <a class="reference external" href="https://sandbox.reportnet.europa.eu/dataflow/9413">9413</a></p></td>
+<td><p>9413 in the case of the example</p></td>
+</tr>
+<tr class="row-odd"><td><p>DatasetId</p></td>
+<td><p>We need to insert the id of the dataset that we can find on the url. For instance <a class="reference external" href="https://sandbox.reportnet.europa.eu/dataflow/9413/datasetSchema/22930?tab=6593e7c260d48300011d9492&amp;view=design">Sandbox</a></p></td>
+<td><p>22930 in the case of the example</p></td>
+</tr>
+<tr class="row-even"><td><p>baseUrl</p></td>
+<td><p>The url of the api of reportnet3. It is different if we work in production or sandbox.</p></td>
+<td><p>Production: <a class="reference external" href="https://api.reportnet.europa.eu">api</a> <br/> Sandbox: <a class="reference external" href="https://sandbox-api.reportnet.europa.eu/">sandbox-api</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>providerId</p></td>
+<td><p></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">design</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>folder</p></td>
+<td><p>It must be composed by datasetID + / + providerid</p></td>
+<td><p>In the case of the previous example: <code class="docutils literal notranslate"><span class="pre">22930/design</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>apiKey</p></td>
+<td><p>It must be composed by <code class="docutils literal notranslate"><span class="pre">ApiKey</span></code> + apikey number. The apikey number can be obtained from reportnet3 in the dataflow. <img alt="API key location" src="../_images/Api.png" /></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ApiKey</span> <span class="pre">cdc6e04d-565c-4c88-b21b-939008d8b8cb</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Exportfile</p></td>
+<td><p>The name that the exported file will have.</p></td>
+<td><p>For instance: test_2024</p></td>
+</tr>
+<tr class="row-odd"><td><p>Format</p></td>
+<td><p>The file type we want to export. .</p></td>
+<td><p>For instance: test_2024</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="export-harvesting-process">
+<h3>Export-Harvesting process<a class="headerlink" href="#export-harvesting-process" title="Link to this heading"></a></h3>
+<p>It is not done yet.
+The export of data from RN3 to SQL Server is done through a generic harvesting process which is documented in the following link:</p>
+<p>From RN3 to SQL Server  <a class="reference external" href="https://eea1.sharepoint.com/teams/cws/_layouts/15/Doc.aspx?sourcedoc=%7Bfd0a2b2b-369d-47f4-af64-e3cb637a972f%7D&amp;action=edit&amp;wd=target%28From%20RN3%20to%20SQL%20Server.one%7Ce12603f6-7721-4d46-8859-6a3e39cffb50%2FIntroduction%7Cdda065eb-8020-4ebe-8bbc-bb6019f3fca3%2F%29&amp;wdorigin=NavigationUrl">Vista web</a></p>
+<p>Additionally, the harvesting will be done in [WISE_Spatial_Import] under [WIGEON] SQL Server.</p>
+<p><strong>Automation at FME</strong></p>
+<p>The harvesting process will be automated in FME Server through an “Automation” called RN3_BWD_Harvesting.</p>
+<p>This FME Automation runs the generic harvesting process through a schedule every day and if an error has occurred sends a notification to wfd.helpdesk&#64;eionet.europa.eu.</p>
+<p><img alt="FME Automation" src="../_images/FME_Export_Harvest.PNG" /></p>
+</section>
+</section>
+<section id="qc-spatial">
+<h2>QC Spatial<a class="headerlink" href="#qc-spatial" title="Link to this heading"></a></h2>
+<p>We have an Excel file where we have defined all the spatial QCs:</p>
+<table class="docutils align-default" id="spatial-qcs" style="width: 100%">
+<caption><span class="caption-text">Spatial QCs</span><a class="headerlink" href="#spatial-qcs" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Spatial QCs</p></th>
+<th class="head"><p>Path</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>CWS</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\\Serval\s\Common</span> <span class="pre">workspace\Water\DataFlows\BWD_ReportNet3\Documents\SpatialQCs.xlsx</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>SVN</p></td>
+<td><p><a class="reference external" href="https://svn.eionet.europa.eu/repositories/Reportnet/Dataflows/BathingWaterReporting/BWD_ReportNet3/Documents/SpatialQCs.xlsx">Spatial QC</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Taskman</p></td>
+<td><p><a class="reference external" href="https://taskman.eionet.europa.eu/issues/262331">262331</a></p></td>
+</tr>
+</tbody>
+</table>
+<p>The Excel file with the QCs exported from RN3 (The ones already implemented):</p>
+<table class="docutils align-default" id="qcs-exported-from-rn3" style="width: 100%">
+<caption><span class="caption-text">QCs exported from RN3</span><a class="headerlink" href="#qcs-exported-from-rn3" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>QC export from RN3</p></th>
+<th class="head"><p>Path</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>CWS</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\\Serval\s\Common</span> <span class="pre">workspace\Water\DataFlows\BWD_ReportNet3\Documents\SpatialQCs.xlsx</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>SVN</p></td>
+<td><p><a class="reference external" href="https://svn.eionet.europa.eu/repositories/Reportnet/Dataflows/BathingWaterReporting/BWD_ReportNet3/Documents/SpatialQCs.xlsx">SpatialQCs</a></p></td>
+</tr>
+</tbody>
+</table>
+<p>For the nomenclature of the QC codes, we have use the one described here:</p>
+<p><em>link missing here</em></p>
+<p><strong>LINK QCs</strong></p>
+<p>In many instances, a field is considered correct only if its value belongs to a predefined list of values. This list of values is stored in a codelist; however, not all values added to the codelist are necessarily accepted for the field in question. For example, the thematicIdIdentifierScheme may take on values such as ‘euProtectedAreaCode’ and ‘eionetProtectedAreaCode,’ but the ‘IdentifierScheme’ codelist offers a broader range of options as other fields also read from the same codelist. For instance, the relatedZoneIdentifier may have values like ‘eionetGroundWaterBodyCode,’ ‘euGroundWaterBodyCode,’ ‘eionetSurfaceWaterBodyCode,’ and ‘eionetSurfaceWaterBodyCode’. All these values are stored in the same codelist.</p>
+<p>Therefore, if a field is restricted to specific values from a codelist, it will have a specific QC. Additionally, the field will be designated as a link in the design section, but automatic QC will remain disabled. This approach allows reporters to manually input values in RN3, providing a dropdown menu with codelist values for a more intuitive user experience. If an incorrect codelist value is entered, a BLOCKER will be triggered.</p>
+</section>
+<section id="codelist-spatial">
+<h2>Codelist Spatial<a class="headerlink" href="#codelist-spatial" title="Link to this heading"></a></h2>
+<table class="docutils align-default" id="codelist" style="width: 100%">
+<thead>
+<tr class="row-odd"><th class="head"><p>Codelist</p></th>
+<th class="head"><p>Path</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>CWS</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\\Serval\s\Common</span> <span class="pre">workspace\Water\DataFlows\BWD_ReportNet3\Documents\SpatialCodelist.xlsx</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>SVN</p></td>
+<td><p><a class="reference external" href="https://svn.eionet.europa.eu/repositories/Reportnet/Dataflows/BathingWaterReporting/BWD_ReportNet3/Documents/SpatialCodelist.xlsx">SpatialCodelist.xlsx</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Taskman</p></td>
+<td><p><a class="reference external" href="https://taskman.eionet.europa.eu/issues/262333">Issue 262333</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="spatial-testing-files">
+<h2>Spatial testing files<a class="headerlink" href="#spatial-testing-files" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Testing files</p></th>
+<th class="head"><p>Path</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>CWS</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\\Serval\s\Common</span> <span class="pre">workspace\Water\DataFlows\BWD_ReportNet3\QC\Testing</span> <span class="pre">files</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Taskman</p></td>
+<td><p><a class="reference external" href="https://taskman.eionet.europa.eu/issues/262335">262335</a></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>BWD_ProtectedAreaPoint_4326.gpkg:</strong> It has records with incorrect and correct data. Not all the QCs are listed in this file. For instance, there are some that check that the field cannot be more than 255 characters. This is not possible to write in the geopackage because the field is limited to 254 characters. This tests will be done directly in RN3.</p>
+<p><strong>ProtectedAreaPoint.shp:</strong> This is only to test the import tool, NOT the QCs (explained here:”\Serval\s\Common workspace\Water\DataFlows\BWD_ReportNet3\QC\Testing files\readme.txt”).</p>
+<p><strong>ProtectedAreaPoint.gml:</strong> This is only to test the import tool, NOT the QCs (explained here:”\Serval\s\Common workspace\Water\DataFlows\BWD_ReportNet3\QC\Testing files\readme.txt”).</p>
+</section>
+<section id="database">
+<h2>Database<a class="headerlink" href="#database" title="Link to this heading"></a></h2>
+<p><strong>Introduction</strong></p>
+<p>All tables are referred to the exporting process from RN3 to SQL Server.</p>
+<p><strong>SQL SERVER</strong></p>
+<p>Server name: WIGEON.</p>
+<p>Database: ????.</p>
+<p><strong>Tables</strong></p>
+<p>????</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../Intro/Introduction.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Floods/Floods_DirectiveRN3.html" class="btn btn-neutral float-right" title="Floods Directive Reportnet3" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 11/05/2026, Docsource from https://eea1.sharepoint.com/teams/cws.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

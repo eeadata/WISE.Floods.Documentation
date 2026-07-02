@@ -1,0 +1,227 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flood Directive &mdash; Water Dataflows 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+      <link rel="stylesheet" type="text/css" href="../_static/customTable.css?v=3716b17e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=f2a433a1"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Bathing Water Reportnet3" href="../BathingWater/BathingWaterReportnet3.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Water Dataflows
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Intro/Introduction.html">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Intro/Introduction.html#wise-helpdesk-support">WISE Helpdesk Support</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Intro/Introduction.html#adding-eionet-users-to-cdr-roles">Adding EIONET users to CDR roles</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Intro/Introduction.html#data-flows">Data flows</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Intro/Introduction.html#cdr-help">CDR Help</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Intro/Introduction.html#eionet-roles-for-wise">EIONET Roles for WISE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Intro/Introduction.html#contacts">contacts</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Intro/Introduction.html#meetings">Meetings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Intro/Introduction.html#second-data-team-meeting-in-cph">2016-12 Second Data team meeting in CPH</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Intro/Introduction.html#wise-registers-and-spatial-data">2016-05-19 WISE registers and spatial data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../BathingWater/BathingWaterReportnet3.html">Bathing Water Reportnet3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../BathingWater/BathingWaterReportnet3.html#general-information">General information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../BathingWater/BathingWaterReportnet3.html#helpdesk">Helpdesk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../BathingWater/BathingWaterReportnet3.html#good-practices">Good practices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../BathingWater/BathingWaterReportnet3.html#fme">FME</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../BathingWater/BathingWaterReportnet3.html#import-spatial-data">Import - Spatial data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../BathingWater/BathingWaterReportnet3.html#prefill-spatial-reference-data">Prefill - Spatial reference data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../BathingWater/BathingWaterReportnet3.html#export-spatial-data">Export-Spatial data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../BathingWater/BathingWaterReportnet3.html#export-harvesting-process">Export-Harvesting process</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../BathingWater/BathingWaterReportnet3.html#qc-spatial">QC Spatial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../BathingWater/BathingWaterReportnet3.html#codelist-spatial">Codelist Spatial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../BathingWater/BathingWaterReportnet3.html#spatial-testing-files">Spatial testing files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../BathingWater/BathingWaterReportnet3.html#database">Database</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Flood Directive</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#thematic-overview">Thematic Overview</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Water Dataflows</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Flood Directive</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/Floods/Floods_Directive.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="flood-directive">
+<h1>Flood Directive<a class="headerlink" href="#flood-directive" title="Link to this heading"></a></h1>
+<section id="thematic-overview">
+<h2>Thematic Overview<a class="headerlink" href="#thematic-overview" title="Link to this heading"></a></h2>
+<p>(TO BE COMPLETED)</p>
+<p>https://ec.europa.eu/environment/water/flood_risk/</p>
+<p>Floods Directive</p>
+<p>Article 3. Competent Authorities &amp; units of Management</p>
+<ul class="simple">
+<li><p>Content: Competent Authorities can be different from WFD’s, but otherwise the same. Units of Management can be different from RBMD, but otherwise the same.</p></li>
+<li><p>Structure: Same reporting structure as WFD’s.</p></li>
+<li><p>First report: 2010-05-26</p></li>
+<li><p>Then: when required. Update if changed at MS level.</p></li>
+<li><p>End of reporting period: 3 months after required.</p></li>
+</ul>
+<p>Article 4 &amp; 5: Preliminary Flood Risk Assessment</p>
+<ul class="simple">
+<li><p>Content:
+For each RBMD or Unit of Management, identify the river basins and associated coastal areas at risk of flooding.</p>
+<ul>
+<li><p>Maps, including river basins, sub-basins, coastal areas. Also topography and land use.</p></li>
+<li><p>Past events, including flood extent and assessment of impacts</p></li>
+<li><p>Areas for which potential significant flood risks exist or might be considered likely to occur.</p></li>
+</ul>
+</li>
+<li><p>First report: 2011-12-22</p></li>
+<li><p>Review: 2018-12-22</p></li>
+<li><p>Then: every 6 years</p></li>
+<li><p>End of reporting period: 3 months after required.</p></li>
+</ul>
+<p>Article 6: Flood hazard maps and flood risk maps</p>
+<p>Content:</p>
+<ul>
+<li><p>Flood Hazard Maps
+Events:</p>
+<ol class="arabic simple">
+<li><p>floods with a low probability, or extreme event scenarios;</p></li>
+<li><p>floods with a medium probability (likely return period ≥ 100 years);</p></li>
+<li><p>floods with a high probability, where appropriate.</p></li>
+</ol>
+<p>Data:</p>
+<ol class="arabic simple">
+<li><p>the flood extent;</p></li>
+<li><p>water depths or water level, as appropriate;</p></li>
+<li><p>where appropriate, the flow velocity or the relevant water flow.</p></li>
+</ol>
+</li>
+</ul>
+<p>Flood Risk Maps</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>the indicative number of inhabitants potentially affected; 
+
+type of economic activity of the area potentially affected; 
+
+IPPC installations, as referred to in Annex I to Council Directive 96/61/EC of 24 September 1996 concerning integrated pollution     prevention and control) which might cause accidental pollution in case of flooding and WFD Protected Areas for: 
+
+    Drinking Water, 
+
+    recreational use including Bathing Waters 
+
+    areas designated for the protection of habitats or species, including Natura 2000 sites. 
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>First report: 2013-12-22</p></li>
+<li><p>Review: 2019-12-22</p></li>
+<li><p>Then: every 6 years</p></li>
+<li><p>End of reporting period: 3 months after required.</p></li>
+</ul>
+<p>Article 7 &amp; 8: Flood Risk Management Plans</p>
+<p>Content:</p>
+<ul class="simple">
+<li><p>See Annex A.</p></li>
+<li><p>First report: 2015-12-22</p></li>
+<li><p>Review: 2021-12-22</p></li>
+<li><p>Then: every 6 years</p></li>
+<li><p>End of reporting period: 3 months after required.</p></li>
+</ul>
+<p>Article 16: Report from the Commission to the EU Parliament</p>
+<ul class="simple">
+<li><p>First report: 2018-12-22</p></li>
+<li><p>Then: every 6 years</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../BathingWater/BathingWaterReportnet3.html" class="btn btn-neutral float-left" title="Bathing Water Reportnet3" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 11/05/2026, Docsource from https://eea1.sharepoint.com/teams/cws.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

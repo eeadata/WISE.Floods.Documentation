@@ -1,0 +1,368 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction &mdash; Water Dataflows 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+      <link rel="stylesheet" type="text/css" href="../_static/customTable.css?v=3716b17e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=f2a433a1"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Floods Directive Reportnet3" href="../Floods/Floods_DirectiveRN3.html" />
+    <link rel="prev" title="Water Dataflows documentation" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Water Dataflows
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#wise-helpdesk-support">WISE Helpdesk Support</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#adding-eionet-users-to-cdr-roles">Adding EIONET users to CDR roles</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#data-flows">Data flows</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cdr-help">CDR Help</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#eionet-roles-for-wise">EIONET Roles for WISE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#contacts">contacts</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#meetings">Meetings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#second-data-team-meeting-in-cph">2016-12 Second Data team meeting in CPH</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wise-registers-and-spatial-data">2016-05-19 WISE registers and spatial data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html">Floods Directive Reportnet3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#floods-initial-overview">FLOODS INITIAL OVERVIEW</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#helpdesk">Helpdesk</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#good-practices">Good practices</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#floods-databases">Floods Databases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#cloning-a-dataflow-and-creating-data-collections">Cloning a dataflow and creating data collections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#harvesting">Harvesting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#harvesting-v3">Harvesting V3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#publication-in-discodata">Publication in Discodata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#units-of-management-and-competent-authorities">Units of Management and Competent Authorities</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#fme">FME</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#import-spatial-data">Import - Spatial data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#import-descriptive-data">Import - Descriptive data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#prefill-spatial-reference-data">Prefill-Spatial reference data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-spatial-data">Export - Spatial data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-descriptive-data">Export – Descriptive data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-harvesting-process">Export – Harvesting process</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#qc">QC</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#qc-spatial">QC Spatial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#qc-descriptive">QC Descriptive</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#codelist">Codelist</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#codelist-descriptive">Codelist Descriptive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#codelist-spatial">Codelist Spatial</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#testing-files">Testing files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#creation-descriptive-testing-files">Creation Descriptive Testing files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#creating-geopackage">Creating geopackage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#descriptive-testing-files">Descriptive testing files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#spatial-testing-files">Spatial testing files</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#database">Database</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#areas-of-potential-flood-risk-preliminary-flood-risk-assessment">Areas of Potential Flood Risk &amp; Preliminary Flood Risk Assessment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id1">FME</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-documents-dataset">Export – Documents dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#import-descriptive-data-pfra">Import – Descriptive data [PFRA]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#import-documents-dataset">Import – Documents dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#import-descriptive-data-apsfr">Import – Descriptive data [APSFR]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#import-spatial-data-hazardzone">Import - Spatial data [HazardZone]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#import-spatial-data-riskzone">Import - Spatial data [RiskZone]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id2">Prefill - Spatial reference data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-spatial-data-riskzone">Export - Spatial data [RiskZone]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-spatial-data-hazardzone">Export - Spatial data [HazardZone]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-descriptive-data-apsfr">Export – Descriptive data [APSFR]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-descriptive-data-pfra">Export – Descriptive data [PFRA]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#export-harvesting-process-to-eea-s-sql-server">Export – Harvesting process to EEA’s SQL Server</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id3">QC</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id4">QC Descriptive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id5">QC Spatial</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id6">Codelist</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id7">Codelist Descriptive</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id8">Testing files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id9">Spatial testing files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id10">Descriptive Testing files</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id11">Database</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#riskzone-reference-table">RiskZone Reference table</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#relatedzones-reference-table">RelatedZones reference table</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id12">Codelist Spatial</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#flood-hazard-and-risk-maps">Flood Hazard and Risk Maps</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id13">FME</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id14">Export – Documents dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id15">Import – Documents dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id16">Import – Descriptive data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id17">Export – Descriptive data</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id18">QC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id19">Codelist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id20">Testing files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id21">Database</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#protectedarea-reference-data">ProtectedArea Reference data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#flood-risks-management-plans">Flood Risks Management Plans</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id22">FME</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id23">Export – Documents dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id24">Import – Documents dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id25">Import – Descriptive data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id26">Export – Descriptive data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id27">Export – Harvesting process</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id28">QC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id29">Codelist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id30">Testing files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#id31">Database</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#wfd-measure-codes-reference-data">WFD Measure Codes Reference data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Floods/Floods_DirectiveRN3.html#nery-s-scrapbook">Nery’s scrapbook</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Water Dataflows</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Introduction</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/Intro/Introduction.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h1>
+<p>The purpose of this notebook is to instruct the data operator on the operational steps in how to operate a dataflow. Other documentation such as development, database diagrams needs to be placed in other pages so it doesn’t clutter the understanding of the work performed.</p>
+<p>We are currently in a design phase where we (together) will try to bring structure into all this.</p>
+<section id="wise-helpdesk-support">
+<h2>WISE Helpdesk Support<a class="headerlink" href="#wise-helpdesk-support" title="Link to this heading"></a></h2>
+<p><strong>Helpdesk Portal (OTRS private system):</strong> <a class="reference external" href="https://helpdesk.eionet.europa.eu/otrs/index.pl">OTRS</a></p>
+<ul class="simple">
+<li><p>Internal Helpdesk FAQS</p></li>
+</ul>
+<p><strong>FAQs page for internal user (Taskman project):</strong> <a class="reference external" href="https://taskman.eionet.europa.eu/projects/wise-helpdesk">Wise-helpdesk</a></p>
+<p><strong>Guidelines &amp; rules</strong></p>
+<ul class="simple">
+<li><p>Identify the tickets clearly in the subject once received I.e. [CountryCode - ReportingObligationTag- Subject of issue]</p></li>
+<li><p>Expected Time Of Service is about 1-3 days (first analysis and manual reply)</p></li>
+<li><p>For tickets opened by us in order to get feedback from MS - Set ticket to ‘Pending reminder’ and send 2 reminders before closing</p></li>
+</ul>
+<p><strong>Procedures</strong></p>
+<ul class="simple">
+<li><p>How to add a new reporter to a EIONET role (example):</p></li>
+</ul>
+<p>Sometimes countries may ask to add someone to the list of reporters. In this case, we’ll just have to follow these guidelines:
+https://helpdesk.eionet.europa.eu/otrs/index.pl?Action=AgentFAQZoom;ItemID=39;Nav</p>
+<ul class="simple">
+<li><p>Roles for WISE-SoE
+The WISE SoE helpdesk doesn’t have permissions to add new national reporters to the respective lists. Please follow the instructions provided in the WISE SoE 2020 data call announcement (https://www.eionet.europa.eu/etcs/etc-icm/etc-news/etc-icm-data-call-wise-soe-data-call-2020):</p></li>
+</ul>
+<p>“Please contact your EIONET NFP if you require reporting permissions on a given dataflow, so that your user name is added to the authorised reporter list. Note that the WISE-4 reporters must be authorised as WISE-6 reporters to be able to report the water quality data, if it has not already been done.”</p>
+<section id="adding-eionet-users-to-cdr-roles">
+<h3>Adding EIONET users to CDR roles<a class="headerlink" href="#adding-eionet-users-to-cdr-roles" title="Link to this heading"></a></h3>
+<p>The procedure to add an already existing EIONET user to a CDR role is pretty straight forward.</p>
+<ul class="simple">
+<li><p>First, we’ll need to access http://www.eionet.europa.eu/ldap-roles</p></li>
+<li><p>There, we’ll search for the Role we’re interested in, for example:</p></li>
+<li><p>After following the link, on the top part of the page we’ll see something like</p></li>
+<li><p>We’ll then be able to ‘Add members’ (for this, the user needs to exist beforehand) and then search for it and add it:</p></li>
+</ul>
+</section>
+</section>
+<section id="data-flows">
+<h2>Data flows<a class="headerlink" href="#data-flows" title="Link to this heading"></a></h2>
+<section id="cdr-help">
+<h3>CDR Help<a class="headerlink" href="#cdr-help" title="Link to this heading"></a></h3>
+<p><strong>Preamble</strong></p>
+<p>Before 2015, the “Reporting guidelines” listed in ROD for the Water related data flows were pointing to a number of different locations in Forum, the ETC-ETC/ICM page, etc.. Following discussion with IDM2 (Søren Roug), the information was moved and is now kept in folders under http://cdr.eionet.europa.eu/help. Note that there is still old information in the ETC/ICM site, etc.: that information is to be moved as needed.</p>
+<p><strong>Who has permissions where?</strong></p>
+<p>How to login?
+Management interface: Login at http://cdr.eionet.europa.eu/help/[YOUR FOLDER NAME]/manage using your EIONET account</p>
+<p><strong>How to set permissions?</strong>
+The owner of the LDAP group simply adds the EIONET user to the corresponding <em>-</em>-support group.</p>
+<p>See http://www.eionet.europa.eu/ldap-roles</p>
+<p><strong>How to add the entry page to a folder?</strong></p>
+<p><strong>Special cases</strong></p>
+<p>Each data flow under WISE_SoE has its own page.</p>
+<p>The http://cdr.eionet.europa.eu/help/WISE_SoE/wise5 folder is mantained by Tracasa and nerifern, who will keep it in sync with the WFD Spatial information.</p>
+<p>The http://cdr.eionet.europa.eu/help/WISE_SoE/FME_processes folder is mantained by Tracasa.</p>
+<p>The http://cdr.eionet.europa.eu/help/WISE_SoE/old directory contains old files (&lt; 2014) that are now obsolete.</p>
+</section>
+<section id="eionet-roles-for-wise">
+<h3>EIONET Roles for WISE<a class="headerlink" href="#eionet-roles-for-wise" title="Link to this heading"></a></h3>
+<p>How to see my own roles: https://projects.eionet.europa.eu/profile_overview?user=</p>
+</section>
+<section id="contacts">
+<h3>contacts<a class="headerlink" href="#contacts" title="Link to this heading"></a></h3>
+</section>
+</section>
+<section id="meetings">
+<h2>Meetings<a class="headerlink" href="#meetings" title="Link to this heading"></a></h2>
+<section id="second-data-team-meeting-in-cph">
+<h3>2016-12 Second Data team meeting in CPH<a class="headerlink" href="#second-data-team-meeting-in-cph" title="Link to this heading"></a></h3>
+<p>Meeting documents:</p>
+<p>Documents and presentations to be uploaded to the Forum meeting folder at:</p>
+<p>http://forum.eionet.europa.eu/etc-icm-consortium/library/subvention-2016/tasks-and-milestones-2016/1.5.5.-wise-development-technical-developments-integrated-management-data-flows/milestone-0-task-plan/2cd-data-team-meeting-december-2016</p>
+</section>
+<section id="wise-registers-and-spatial-data">
+<h3>2016-05-19 WISE registers and spatial data<a class="headerlink" href="#wise-registers-and-spatial-data" title="Link to this heading"></a></h3>
+<p>Agenda</p>
+<p>Part 1</p>
+<p><strong>Clarification of responsibilities:</strong></p>
+<p></p>
+<ul class="simple">
+<li><p>Data flow: WFD Spatial</p></li>
+<li><p>Data processor: Bilbomatica/Guadaltel</p></li>
+<li><p>Helpdesk support: Bilbomatica/Guadaltel</p></li>
+<li><p>Geographic scope: EU-28 + NO (+ IS, if/when Iceland reports under WFD)</p></li>
+</ul>
+<p></p>
+<ul class="simple">
+<li><p>Data flow: WISE-5</p></li>
+<li><p>Data processor: ETC-ICM</p></li>
+<li><p>Helpdesk support: ETC-ICM</p></li>
+<li><p>Geographic scope: EEA member countries (except EU-28 + NO + IS). EEA cooperating countries. Any country, if strictly under WISE-5</p></li>
+</ul>
+<p></p>
+<p><strong>Responsibility for shared components:</strong></p>
+<ul class="simple">
+<li><p>Data model specification: EEA + ENV (meaning any changes are proposed and/or validated by EEA + ENV)</p></li>
+<li><p>Data model implementation (schemas, templates,…): Bilbomatica/Guadaltel</p></li>
+<li><p>QC specification: EEA + ENV (meaning any changes are proposed and/or validated by EEA + ENV)</p></li>
+<li><p>QC implementation: Bilbomatica/Guadaltel</p></li>
+<li><p>Automated harvesting from CDR to Working database: Bilbomatica/Guadaltel</p></li>
+</ul>
+<p></p>
+<p><strong>Questions</strong></p>
+<p>(Alberto? Enrique? Olaf? meet before if need be, present ideas at the meeting):</p>
+<ul class="simple">
+<li><p>Working spatial database specification (for the data reported in 2016 and after):</p></li>
+</ul>
+<p>- what is implemented on the WFD side?</p>
+<p>- how to duplicate/clone for WISE-5?</p>
+<ul class="simple">
+<li><p>WISE reference spatial database:</p></li>
+</ul>
+<p>- what is implemented on the WFD side?</p>
+<p>- how to integrate the information coming from WISE-5?</p>
+<p>- what is the relationship between the Working database and the reference database, and how does the latter become updated?</p>
+<ul class="simple">
+<li><p>WISE registry:</p></li>
+</ul>
+<p>- what is implemented on the WFD side for QC purposes?</p>
+<p>- is it different from the WISE reference spatial database?</p>
+<p>- how to extract the data so that it can be uploaded to the DD vocabularies?</p>
+<p>Part 2</p>
+<p>On-going tasks</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="Water Dataflows documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Floods/Floods_DirectiveRN3.html" class="btn btn-neutral float-right" title="Floods Directive Reportnet3" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 11/05/2026, Docsource from https://eea1.sharepoint.com/teams/cws.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
