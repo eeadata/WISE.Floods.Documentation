@@ -1,4 +1,4 @@
-# This is a GitHub Actions workflow file 
+# This is a GitHub Actions workflow file  
 # designed to automatically build and deploy Sphinx documentation to GitHub Pages.
 
 # The name of the workflow as it appears in the GitHub Actions UI
