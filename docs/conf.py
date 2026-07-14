@@ -2,8 +2,8 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
 project = "WISE Floods Documentation"
-author = "Ramón Mosquera"
-copyright = "2026, Ramón Mosquera"
+author = "WISE Team"
+copyright = "2026, Tracasa"
 
 extensions = [
     "myst_parser",

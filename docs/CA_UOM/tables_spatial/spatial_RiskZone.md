@@ -1,6 +1,6 @@
 # RiskZone
 
-## Descripción
+## Description
 
 RiskZone: Area of Potential Significant Flood Risk
 Reporting of spatial elements is no longer mandatory. The QC XC005 requirement is no longer a BLOCKER, and it is now possible to report a Unit of Management containing only the mandatory descriptive table: AreaOfPotentialSignificantFloodRisk\_Methodology.
@@ -13,8 +13,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R048
   - Only one geometry type can be reported for each record [R047]
 * - S015
@@ -35,8 +35,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Conditional. The polygon geometry representing the spatial extent of the spatial object. The element is required. The geometry of a Management Area, Restriction or Regulation Zone can be reported using a polygon, line or point geometry. Only one type of geometry can be used for a given object. At least one type of geometry must be reported.
 * - Field type
@@ -51,8 +51,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - S002
   - Unsupported SRID [S002]
 * - S005
@@ -77,8 +77,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Conditional. The line geometry representing the spatial extent of the spatial object. The element is required. The geometry of a Management Area, Restriction or Regulation Zone can be reported using a polygon, line or point geometry. Only one type of geometry can be used for a given object. At least one type of geometry must be reported.
 * - Field type
@@ -93,8 +93,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - S002
   - Unsupported SRID [S002]
 * - S005
@@ -119,8 +119,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Conditional. The point geometry representing the spatial extent of the spatial object. The element is required. The geometry of a Management Area, Restriction or Regulation Zone can be reported using a polygon, line or point geometry. Only one type of geometry can be used for a given object. At least one type of geometry must be reported.
 * - Field type
@@ -135,8 +135,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - S002
   - Unsupported SRID [S002]
 * - S005
@@ -161,8 +161,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 254 characters. A local identifier, assigned by the data provider. The local identifier is unique within the namespace. It is recommended to use the same value used in the thematicIdIdentifier. The element is required.The geometry of a Management Area, Restriction or Regulation Zone can be reported using a polygon, a polyline or a point geometry. Only one type of geometry can be used for a given object. Only one type of geometry can be reported in a given data set.
 * - Field type
@@ -177,8 +177,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V002
   - The inspireIdLocalId value must be less than 255 characters.[V002]
 * - V015
@@ -191,8 +191,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 254 characters. Namespace, assigned by the data provider, uniquely identifying the data source of the spatial object.Use country code, if no INSPIRE namespace is defined at national level.
 * - Field type
@@ -207,8 +207,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V003
   - The inspireIdNamespace value must be less than 255 characters.[V003]
 * - V019
@@ -221,8 +221,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 25 characters. The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique.
 * - Field type
@@ -237,8 +237,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R022
   - The inspireIdVersionId value must be reported, if the wiseEvolutionType value is 'change'.[R022]
 * - V004
@@ -251,8 +251,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 42 characters. Unique identifier used to identify the spatial object within the specified identification scheme. European identifier, must follow WISE syntax rules.
 * - Field type
@@ -267,8 +267,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R023
   - The thematic identifier must be a valid identifier in the register, if the wiseEvolutionType value is 'deletion', 'noChange' or 'change'.[R023]
 * - RF001
@@ -291,8 +291,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Identifier defining the scheme used to assign the identifier.
 * - Field type
@@ -307,8 +307,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V016
   - The value must not be missing or empty [V016]
 * - V032
@@ -321,8 +321,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Date and time at which this version of the spatial object was inserted or changed in the spatial data set.
 * - Field type
@@ -337,8 +337,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R002
   - The beginLifespanVersion value must be reported, if the inspireVersionId value is reported.[R002]
 * - R013
@@ -355,8 +355,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Date and time at which this version of the spatial object was superseded or retired in the spatial data set.
 * - Field type
@@ -371,8 +371,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R003
   - The beginLifespanVersion date must not be after the endLifespanVersion.[R003]
 * - R025
@@ -387,8 +387,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 254 characters. In a genealogy, the object(s) that has(have) been deactivated/replaced by another one.
 * - Field type
@@ -403,8 +403,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R011
   - The object must have zero predecessors, if the wiseEvolutionType value is 'creation'.[R011]
 * - R014
@@ -439,8 +439,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Identifier defining the scheme used to assign the identifier value(s) in the predecessorsIdentifier element.
 * - Field type
@@ -455,8 +455,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R016
   - The predecessorsIdentifierScheme value must be reported, if the predecessorsIdentifier value is reported.[R016]
 * - V044
@@ -469,8 +469,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 254 characters. In a genealogy, the newly active object(s) that replaces(replace) the current one.
 * - Field type
@@ -485,8 +485,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R018
   - The successorsIdentifier value must be reported, if the successorsIdentifierScheme value is reported.[R018]
 * - R019
@@ -505,8 +505,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Identifier defining the scheme used to assign the identifier value(s) in the successorsIdentifier element.
 * - Field type
@@ -521,8 +521,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R020
   - The successorsIdentifierScheme value must be reported, if the successorsIdentifier value is reported.[R020]
 * - V045
@@ -535,8 +535,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Type of event that produced or modified the version of the object being reported (creation, change, deletion, aggregation, splitting). This attribute is required to explicitly report changes and update the current status of the object in the Water Information System for Europe.
 * - Field type
@@ -551,8 +551,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R012
   - wiseEvolutionType = 'deletion' is the only valid option if the element has a successor.[R012]
 * - R031
@@ -569,8 +569,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 254 characters. Name, in English. English exonym or an understandable English version of the name of the geographical feature or spatial object.
 * - Field type
@@ -585,8 +585,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V007
   - The nameTextInternational value must be a non-empty string with less than 255 characters. Upper case letters (A to Z) and digits (0 to 9) are allowed (spaces and hiphens can be used as separators).[V007]
 * - V023
@@ -599,8 +599,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 254 characters. Name, in the national language. National language endonym, or national language version of the name of the geographical feature or spatial object.
 * - Field type
@@ -615,8 +615,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V001
   - The used encoding is not correct. Strange characters in nameText field.[V001]
 * - V008
@@ -631,8 +631,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Language code of the language used in the nameText attribute value.
 * - Field type
@@ -647,8 +647,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V018
   - The value must not be missing or empty [V018]
 * - V028
@@ -661,8 +661,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 42 characters. Reference to a related management, regulation or restriction zone.
 * - Field type
@@ -677,8 +677,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - RF009
   - The object has an 'eu' related zone that does not exist in the register. [RF009]
 * - RF017
@@ -697,8 +697,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Identifier defining the scheme used to assign the identifier value in the relatedZoneIdentifier element.
 * - Field type
@@ -713,8 +713,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V030
   - The relatedZoneIdentifierScheme must be ‘euFloodsUnitOfManagementCode' or 'euRBDCode'. [V030]
 * - V071
@@ -727,8 +727,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - [Beginning of] the future finite time frame where the hazard applies. The same hazard assessment can be valid for a specific period, or even for several specific periods: the hazard assessment of forest fires may actually be valid only in summer, or maybe in summer or in winter (but not all year long). This attribute can also be used for multi-temporal hazard analysis.
 * - Field type
@@ -743,8 +743,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R034
   - If wiseEvolutionType = 'deletion' and the object has successors, the validityPeriodEnd of the object must be equal to the validityPeriodBegin of the successors. [R034]
 * - R035
@@ -771,8 +771,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - [End of] the future finite time frame where the hazard applies. The same hazard assessment can be valid for a specific period, or even for several specific periods: the hazard assessment of forest fires may actually be valid only in summer, or maybe in summer or in winter (but not all year long). This attribute can also be used for multi-temporal hazard analysis.
 * - Field type
@@ -787,8 +787,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R004
   - The validityPeriodBegin date must not be after the validityPeriodEnd.[R004]
 * - R030
@@ -803,8 +803,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - \-
 * - Field type
@@ -819,8 +819,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V073
   - The value must not be missing or empty [V073]
 * - V075
@@ -833,8 +833,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - \-
 * - Field type
@@ -849,8 +849,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V072
   - The value must not be missing or empty [V072]
 * - V078
@@ -863,8 +863,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - The area of the reference geometry (in square kilometre) or length of the reference geometry (in kilometre).
 * - Field type
@@ -879,8 +879,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R005
   - If sizeUOM is reported then sizeValue must also be reported. If sizeValue is reported then sizeUOM must also be reported.[R005]
 * - R049
@@ -897,8 +897,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Unit of measure of the value provided in the 'sizeValue' attribute. Allowable units of measure is 'km2'.
 * - Field type
@@ -913,8 +913,8 @@ Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V037
   - The sizeUOM must have 'km2' value.[V037]
 ```

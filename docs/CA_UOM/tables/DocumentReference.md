@@ -1,6 +1,6 @@
 # DocumentReference
 
-## Descripción
+## Description
 
 Document references
 
@@ -12,8 +12,8 @@ Uniqueness: documentCode + referenceCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - TU9001
   - The field referenceCode must be unique within table
 * - XC9008
@@ -26,8 +26,8 @@ Uniqueness: documentCode + referenceCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 50 characters. Required. Unique identifier of the reference to a document. The value must contain only latin characters, digits, underscores, hyphens and dots. No consecutive underscores, hyphens and dots are allowed.
 * - Field type
@@ -42,8 +42,8 @@ Uniqueness: documentCode + referenceCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V9004
   - The value must not be missing or empty
 * - V9005
@@ -58,8 +58,8 @@ Uniqueness: documentCode + referenceCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Required. Link to the document the reference belongs to.
 * - Field type
@@ -74,8 +74,8 @@ Uniqueness: documentCode + referenceCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V9003
   - The value must not be missing or empty
 * - XC9001
@@ -88,8 +88,8 @@ Uniqueness: documentCode + referenceCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 250 characters. Required. Bookmark within the document.
 * - Field type
@@ -104,8 +104,8 @@ Uniqueness: documentCode + referenceCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V9001
   - The value must not be missing or empty
 * - V9002
@@ -118,8 +118,8 @@ Uniqueness: documentCode + referenceCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 250 characters. Required. Subject of the reference.
 * - Field type
@@ -134,8 +134,8 @@ Uniqueness: documentCode + referenceCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V9007
   - The value must not be missing or empty
 * - V9008

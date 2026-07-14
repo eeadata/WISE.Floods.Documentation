@@ -1,6 +1,6 @@
 # MapReference
 
-## Descripción
+## Description
 
 References to map viewers, services or pdf documents containing maps.
 
@@ -8,7 +8,7 @@ Uniqueness: mapReferenceCode
 
 ## Table Quality Checks
 
-*(sin QCs de tabla)*
+*(no table QCs)*
 
 ### mapReferenceCode
 
@@ -16,8 +16,8 @@ Uniqueness: mapReferenceCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 50 characters. Required. Unique code for the map reference.
 * - Field type
@@ -32,8 +32,8 @@ Uniqueness: mapReferenceCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - TU0807
   - The field mapReferenceCode must be unique within table
 * - V0953
@@ -50,8 +50,8 @@ Uniqueness: mapReferenceCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 254 characters. Required. Title of the map or map service.
 * - Field type
@@ -66,8 +66,8 @@ Uniqueness: mapReferenceCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0959
   - The value must not be missing or empty
 * - V0995
@@ -80,8 +80,8 @@ Uniqueness: mapReferenceCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 4000 characters. Optional. Give a short description of the map content, e.g., flood scenarios, exposed elements...
 * - Field type
@@ -96,8 +96,8 @@ Uniqueness: mapReferenceCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0996
   - The length must be less than or equal to 4000
 ```
@@ -108,8 +108,8 @@ Uniqueness: mapReferenceCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 250 characters. Required. Contact information for the email.
 * - Field type
@@ -124,8 +124,8 @@ Uniqueness: mapReferenceCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0921
   - The length must be less than or equal to 250
 * - V0954
@@ -140,8 +140,8 @@ Uniqueness: mapReferenceCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 254 characters. Required. Organisation name of the point of contact.
 * - Field type
@@ -156,8 +156,8 @@ Uniqueness: mapReferenceCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0956
   - The value must not be missing or empty
 * - V0997
@@ -170,8 +170,8 @@ Uniqueness: mapReferenceCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Optional. Date when the map was published. Can be in the format 'yyyy' , 'yyyy-mm' or 'yyyy-mm-dd'.
 * - Field type
@@ -186,8 +186,8 @@ Uniqueness: mapReferenceCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V1804
   - The created value must be a valid date in the ISO 8601 extended format value (e.g. YYYY, YYYY-MM, YYYY-MM-DD or YYYY-MM-DDTHH:mm:ss).
 ```
@@ -198,8 +198,8 @@ Uniqueness: mapReferenceCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Required. Choose from the 'LanguageCode' codelist values. Language of the map.
 * - Field type
@@ -214,8 +214,8 @@ Uniqueness: mapReferenceCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0952
   - The value must not be missing or empty
 * - V0960
@@ -228,8 +228,8 @@ Uniqueness: mapReferenceCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 2100 characters. ULR to connect the service with the Flood Hazard Risk Map.
 * - Field type
@@ -244,8 +244,8 @@ Uniqueness: mapReferenceCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0950
   - The value must not be missing or empty
 * - V0951
@@ -260,8 +260,8 @@ Uniqueness: mapReferenceCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Required. Choose the type of resource from the 'ResourceType' codelist values.
 * - Field type
@@ -276,8 +276,8 @@ Uniqueness: mapReferenceCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0957
   - The value must not be missing or empty
 * - V0958
@@ -290,8 +290,8 @@ Uniqueness: mapReferenceCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Required. The map category that the URL is displaying. Choose between the overall categories or specify other value from the 'MapCategory' codelist values. More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., "value1; value2; value3".
 * - Field type
@@ -306,8 +306,8 @@ Uniqueness: mapReferenceCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0946
   - The value must not be missing or empty
 * - V0947

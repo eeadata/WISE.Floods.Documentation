@@ -1,6 +1,6 @@
 # dcMetadata
 
-## Descripción
+## Description
 
 Metadata
 
@@ -12,8 +12,8 @@ One record per River Basin District or Floods Unit of Management.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R9001
   - reportingDocument must be reported if reportingStructuredData is 'no'.
 * - TU9003
@@ -26,8 +26,8 @@ One record per River Basin District or Floods Unit of Management.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 42 characters. Required. Unique EU code for the Unit of Management or River Basin District. Add the two-letter ISO Country code to the Member State unique id - up to 42 characters in total. This field will declare the RBDs or UoMs for which data is reported.
 * - Field type
@@ -42,8 +42,8 @@ One record per River Basin District or Floods Unit of Management.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - RF9001
   - euFloodsUnitOfManagementCode must exist as a thematicIdIdentifier in the Spatial Reference, RelatedZones table
 * - RF9002
@@ -74,8 +74,8 @@ One record per River Basin District or Floods Unit of Management.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Optional. Date of creation of the dataset.
 * - Field type
@@ -90,8 +90,8 @@ One record per River Basin District or Floods Unit of Management.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V9016
   - The value must be a valid date in the ISO 8601 extended format value (e.g. YYYY, YYYY-MM, YYYY-MM-DD or YYYY-MM-DDTHH:mm:ss)
 ```
@@ -102,8 +102,8 @@ One record per River Basin District or Floods Unit of Management.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 250 characters. Required. Email address of the point of contact in the organisation responsible for the dataset.
 * - Field type
@@ -118,8 +118,8 @@ One record per River Basin District or Floods Unit of Management.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V9017
   - The value must not be missing or empty
 * - V9018
@@ -134,8 +134,8 @@ One record per River Basin District or Floods Unit of Management.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 4000 characters. Required. Name of the organisation doing the reporting.
 * - Field type
@@ -150,8 +150,8 @@ One record per River Basin District or Floods Unit of Management.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V9019
   - The value must not be missing or empty
 * - V9020
@@ -164,8 +164,8 @@ One record per River Basin District or Floods Unit of Management.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 4000 characters. Optional. Description of the dataset.
 * - Field type
@@ -180,8 +180,8 @@ One record per River Basin District or Floods Unit of Management.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V9021
   - The length must be less than or equal to 4000
 ```
@@ -192,8 +192,8 @@ One record per River Basin District or Floods Unit of Management.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Required. Choose the code of the dataset's language from the 'LanguageCode' codelist values.
 * - Field type
@@ -208,8 +208,8 @@ One record per River Basin District or Floods Unit of Management.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V9024
   - The value must not be missing or empty
 * - V9025
@@ -222,8 +222,8 @@ One record per River Basin District or Floods Unit of Management.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 250 characters. Required. A legal document giving official permission to do something with the resource. Provide the URL to the licence text of a CC BY compatible licence. Use a persistent identifier to an English or multilingual version of the licence agreement.
 * - Field type
@@ -238,8 +238,8 @@ One record per River Basin District or Floods Unit of Management.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V9026
   - The value must not be missing or empty
 * - V9027
@@ -254,8 +254,8 @@ One record per River Basin District or Floods Unit of Management.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 4000 characters. Optional. Information about rights held in and over the resource. If necessary, provide the attribution text required by the licence, or other relevant information.
 * - Field type
@@ -270,8 +270,8 @@ One record per River Basin District or Floods Unit of Management.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V9031
   - The length must be less than or equal to 4000
 ```
@@ -282,8 +282,8 @@ One record per River Basin District or Floods Unit of Management.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 4000 characters. Optional. A person or organization owning or managing rights over the resource. This element can be provided if the rights holder reserved rights (e.g. should to be contacted for specific uses), or if the rights holder is not the organisation responsible for the dataset.
 * - Field type
@@ -298,8 +298,8 @@ One record per River Basin District or Floods Unit of Management.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V9032
   - The length must be less than or equal to 4000
 ```
@@ -310,8 +310,8 @@ One record per River Basin District or Floods Unit of Management.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 4000 characters. Optional. Name given to the dataset.
 * - Field type
@@ -326,8 +326,8 @@ One record per River Basin District or Floods Unit of Management.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V9033
   - The length must be less than or equal to 4000
 ```
@@ -338,8 +338,8 @@ One record per River Basin District or Floods Unit of Management.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Required. Choose from the 'YesNo' codelist values, depending on if structure data is being reported.
 * - Field type
@@ -354,8 +354,8 @@ One record per River Basin District or Floods Unit of Management.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - RF9005
   - Structured data can only be reported for UoMs with released and accepted APSFR/PFRA information
 * - V9028
@@ -372,8 +372,8 @@ One record per River Basin District or Floods Unit of Management.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Optional. More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., "value1; value2; value3".
 * - Field type
@@ -388,8 +388,8 @@ One record per River Basin District or Floods Unit of Management.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - XC9004
   - The value is not a valid member of the Document table
 ```

@@ -1,6 +1,6 @@
 # PreliminaryFloodRiskAssessment_ImpactConsequence
 
-## Descripción
+## Description
 
 Preliminary Flood Risk Assessment - Impacts and Consequences
 
@@ -12,8 +12,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode + typeImpactConsequence + im
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - TU0424
   - Checks if euFloodsHazardAreaCode, floodEventCode, typeImpactConsequence and impactConsequenceCode are uniques within table
 * - XC0423
@@ -28,8 +28,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode + typeImpactConsequence + im
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 42 characters. Required. Unique code for the flood event.
 * - Field type
@@ -44,8 +44,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode + typeImpactConsequence + im
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0548
   - The value must not be missing or empty
 * - V0549
@@ -58,8 +58,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode + typeImpactConsequence + im
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 42 characters. Required. Unique code for the flood location - up to 42 characters in total. Can also be used as an identifier for multiple surface water bodies designated under the WFD which the flood location is represented by. A polygon must be reported as a representation of the flood location to establish link between spatial feature and information in xml schema.
 * - Field type
@@ -74,8 +74,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode + typeImpactConsequence + im
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0490
   - The value must not be missing or empty
 * - V0550
@@ -88,8 +88,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode + typeImpactConsequence + im
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Required. Choose a type of consequence impacting, from the 'TypeImpactConsequence' codelist values.
 * - Field type
@@ -104,8 +104,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode + typeImpactConsequence + im
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0475
   - The value does not exist in codelist ImpactConsequence.
 * - V0498
@@ -118,8 +118,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode + typeImpactConsequence + im
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Required. Choose from the 'ImpactConsequence' codelist values. Define relevant type of Consequences impacting on the chosen 'typeImpactConsequence' value. More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., "value1; value2; value3".
 * - Field type
@@ -134,8 +134,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode + typeImpactConsequence + im
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0491
   - The value must not be missing or empty
 * - V0497
@@ -150,8 +150,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode + typeImpactConsequence + im
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Optional. The total damage and loss cost in Euros for the flood event. Can also be reported as a range. The exemption types - 9999 = 'Unknown', -8888 = 'Yet to be measured' and -7777 = 'Not Applicable' can be used.
 * - Field type
@@ -166,8 +166,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode + typeImpactConsequence + im
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0494
   - The value must be zero, greater than zero or one of the exception values: -9999, -8888 or -7777
 ```
@@ -178,8 +178,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode + typeImpactConsequence + im
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Optional. Choose from the 'TotalDamageClass' codelist values. The total damage defined by the classes.
 * - Field type
@@ -194,8 +194,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode + typeImpactConsequence + im
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0544
   - The value does not exist in codelist TotalDamageClass.
 ```
@@ -206,8 +206,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode + typeImpactConsequence + im
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Optional. The total damage in percentage of the total GDP for the flood event. Can also be reported as a range. The exemption types -9999 = 'Unknown', -8888 = 'Yet to be measured' and -7777 = 'Not Applicable' can be used.
 * - Field type
@@ -222,8 +222,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode + typeImpactConsequence + im
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0495
   - The value must be zero, greater than zero or one of the exception values: -9999, -8888 or -7777
 ```
@@ -234,8 +234,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode + typeImpactConsequence + im
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Optional. Only for past floods. If possible, indicate number of individual fatalities as direct consequence of flood.
 * - Field type
@@ -250,8 +250,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode + typeImpactConsequence + im
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0492
   - The value is not a valid whole number
 * - V0551
@@ -264,8 +264,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode + typeImpactConsequence + im
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 1000 characters. Optional. Only to be used if the type is set to 'Other' in the enumeration list.
 * - Field type
@@ -280,8 +280,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode + typeImpactConsequence + im
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0533
   - The length must be less than or equal to 1000
 ```
@@ -292,8 +292,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode + typeImpactConsequence + im
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 1000 characters. Optional. Other numerical measure indicative of degree of (potentially) adverse consequences.
 * - Field type
@@ -308,8 +308,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode + typeImpactConsequence + im
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0534
   - The length must be less than or equal to 1000
 ```

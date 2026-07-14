@@ -1,6 +1,6 @@
 # PreliminaryFloodRiskAssessment_TypeOfFlood
 
-## Descripción
+## Description
 
 Preliminary Flood Risk Assessment - Type of flood
 
@@ -12,8 +12,8 @@ Uniqueness: euFloodsUnitOfManagementCode + sourceOfFlooding (enforced by QC)
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - TU0420
   - The combination euFloodsUnitOfManagementCode and sourceOfFlooding must be unique.
 * - XC0433
@@ -28,8 +28,8 @@ Uniqueness: euFloodsUnitOfManagementCode + sourceOfFlooding (enforced by QC)
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 42 characters. Required. Unique EU code for the Unit of Management or WFD River Basin District following the WISE identifier syntax. Add the two-letter ISO Country code to the Member State unique id - up to 42 characters in total.
 * - Field type
@@ -44,8 +44,8 @@ Uniqueness: euFloodsUnitOfManagementCode + sourceOfFlooding (enforced by QC)
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0439
   - The length must be less than or equal to 42
 * - V0440
@@ -62,8 +62,8 @@ Uniqueness: euFloodsUnitOfManagementCode + sourceOfFlooding (enforced by QC)
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Required. Choose from the 'SourceofFlooding' codelist values. Provide information on the specific sources of flooding to which Article 4 has been applied. More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., "value1; value2; value3".
 * - Field type
@@ -78,8 +78,8 @@ Uniqueness: euFloodsUnitOfManagementCode + sourceOfFlooding (enforced by QC)
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0441
   - The value does not exist in codelist SourceOfFlooding
 * - V0477
@@ -96,8 +96,8 @@ Uniqueness: euFloodsUnitOfManagementCode + sourceOfFlooding (enforced by QC)
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 1000 characters. Conditional. If 'Other: Flooding of land by water due to other sources, can include other tsunamis' is selected from enumeration list, provide a description of the other source(s).
 * - Field type
@@ -112,8 +112,8 @@ Uniqueness: euFloodsUnitOfManagementCode + sourceOfFlooding (enforced by QC)
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R0418
   - otherSourceDescription must be reported if sourceOfFlooding is 'other'
 * - V0442

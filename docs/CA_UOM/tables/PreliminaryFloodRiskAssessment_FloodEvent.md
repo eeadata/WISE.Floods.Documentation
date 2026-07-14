@@ -1,6 +1,6 @@
 # PreliminaryFloodRiskAssessment_FloodEvent
 
-## Descripción
+## Description
 
 PreliminaryFloodRiskAssessment- Flood Event
 
@@ -12,8 +12,8 @@ Uniqueness: floodEventCode (it is a unique code at national level)
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - TU0422
   - Checks if floodEventCode is unique within table
 * - XC0432
@@ -28,8 +28,8 @@ Uniqueness: floodEventCode (it is a unique code at national level)
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 42 characters. Required. Unique EU code for the Unit of Management or WFD River Basin District following the WISE identifier syntax. Add the two-letter ISO Country code to the Member State unique id - up to 42 characters in total.
 * - Field type
@@ -44,8 +44,8 @@ Uniqueness: floodEventCode (it is a unique code at national level)
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0414
   - The length must be less than or equal to 42
 * - V0415
@@ -62,8 +62,8 @@ Uniqueness: floodEventCode (it is a unique code at national level)
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 85 characters. Required. Unique code for the flood event.The expected syntax for this field is:euFloodsUnitOfManagementCode + '.' + floodEventCode By using this convention, the same floodEventCode can be reported across different euFloodsUnitOfManagement areas.
 * - Field type
@@ -78,8 +78,8 @@ Uniqueness: floodEventCode (it is a unique code at national level)
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R0422
   - If floodEventCode is a combination of UOM/RBD + floodEventCode, the UOM/RBD must match the value in euFloodsUnitOfManagementCode
 * - V0416
@@ -96,8 +96,8 @@ Uniqueness: floodEventCode (it is a unique code at national level)
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 200 characters. Optional. Name of the flood event.
 * - Field type
@@ -112,8 +112,8 @@ Uniqueness: floodEventCode (it is a unique code at national level)
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0418
   - The length must be less than or equal to 200
 ```
@@ -124,8 +124,8 @@ Uniqueness: floodEventCode (it is a unique code at national level)
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Required. Choose from the 'EventTypePastFuture' codelist values. Is the event a past event or a future event?
 * - Field type
@@ -140,8 +140,8 @@ Uniqueness: floodEventCode (it is a unique code at national level)
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0419
   - The value does not exist in codelist EventTypePastFuture
 * - V0471
@@ -154,8 +154,8 @@ Uniqueness: floodEventCode (it is a unique code at national level)
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Conditional. If the answer to 'CategoryFlood' is 'past flood', then give the date of commencement of the flood. Can be in the format 'yyyy' , 'yyyy-mm' or 'yyyy-mm-dd'
 * - Field type
@@ -170,8 +170,8 @@ Uniqueness: floodEventCode (it is a unique code at national level)
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R0421
   - dateOfCommencement must be reported if and only if eventTypePastFuture is set to 'past'
 * - V0546
@@ -188,8 +188,8 @@ Uniqueness: floodEventCode (it is a unique code at national level)
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Conditional. If the answer to 'CategoryFlood' is 'past flood', then give the number of days (duration) of the flood. The exemption types -9999 = 'Unknown', -8888 = 'Yet to be measured' and -7777 = 'Not Applicable' can be used.
 * - Field type
@@ -204,8 +204,8 @@ Uniqueness: floodEventCode (it is a unique code at national level)
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R0412
   - durationOfFlood must only be reported if eventTypePastFuture is equal to 'past'
 * - V0420
@@ -220,8 +220,8 @@ Uniqueness: floodEventCode (it is a unique code at national level)
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 50 characters. Optional. The average number of years between floods of a certain size. Can also be reported as a range. The exemption types -9999 = 'Unknown', -8888 = 'Yet to be measured' and -7777 = 'Not Applicable' can be used.
 * - Field type
@@ -236,8 +236,8 @@ Uniqueness: floodEventCode (it is a unique code at national level)
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0422
   - The length must be less than or equal to 50
 * - V0423
@@ -252,8 +252,8 @@ Uniqueness: floodEventCode (it is a unique code at national level)
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Required. Choose from the 'YesNo' codelist values. Please indicate 'Yes' if the flood location cross the national border or the unit of management.
 * - Field type
@@ -268,8 +268,8 @@ Uniqueness: floodEventCode (it is a unique code at national level)
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0421
   - The value does not exist in codelist YesNo
 * - V0468
@@ -282,8 +282,8 @@ Uniqueness: floodEventCode (it is a unique code at national level)
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Optional. Provide Optionalocument(s) or link(s) to any other relevant information relating to the details of the specific flood event. This could include links to specific reports or articles and/or specific details of the particular event.
 * - Field type
@@ -298,8 +298,8 @@ Uniqueness: floodEventCode (it is a unique code at national level)
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - XC0414
   - The document reference does not exist
 ```

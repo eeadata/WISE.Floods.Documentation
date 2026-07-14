@@ -1,5 +1,5 @@
 """
-generate_rst_descriptive.py
+generate_md_descriptive.py
 ----------------
 Iterates through all the tables in the EA model (.qea) and generates one
 .md file per table (MyST Markdown), including:
@@ -19,18 +19,18 @@ any machine — including a GitHub Actions runner with no access to the .qea.
 
 Usage:
 
-python generate_rst_descriptive.py
+python generate_md_descriptive.py
 """
 
 import os
 import sqlite3
 
 # --------------------------------------------------------------------------
-# CONFIGURACIÓN — ajusta esta ruta
+# CONFIGURATION — adjust this path
 # --------------------------------------------------------------------------
-QEA_PATH_DESCRIPTIVE = r"data/Floods2018_RN3_UML_Descriptive.qea"
+QEA_PATH_DESCRIPTIVE = r"c:/Users/mosquera/Documents/302298/ea-docs/data/Floods2018_RN3_UML_Descriptive.qea"
 
-OUTPUT_DIR = "docs/tables"
+OUTPUT_DIR = "docs/CA_UOM/tables"
 
 
 def slug(name: str) -> str:
@@ -133,18 +133,18 @@ def render_list_table(title, header, rows, widths):
 
 def render_table_header(cursor, table_id, table_name, table_note):
     lines = [f"# {table_name}", ""]
-    lines += ["## Descripción", ""]
-    lines.append(md_escape(table_note).strip() if table_note else "*(sin descripción)*")
+    lines += ["## Description", ""]
+    lines.append(md_escape(table_note).strip() if table_note else "*(no description)*")
     lines.append("")
     lines += ["## Table Quality Checks", ""]
 
     constraints = get_table_constraints(cursor, table_id)
     if constraints:
         lines += render_list_table(
-            None, ["Código", "Descripción"], constraints, widths=[15, 85]
+            None, ["Code", "Description"], constraints, widths=[15, 85]
         )
     else:
-        lines.append("*(sin QCs de tabla)*")
+        lines.append("*(no table QCs)*")
         lines.append("")
     return lines
 
@@ -158,15 +158,15 @@ def render_field_block(cursor, field_id, field_name, field_notes, field_type, lo
         ("minOccurs", lower),
         ("maxOccurs", upper),
     ]
-    lines += render_list_table(None, ["Propiedad", "Valor"], props_rows, widths=[30, 70])
+    lines += render_list_table(None, ["Property", "Value"], props_rows, widths=[30, 70])
 
     field_constraints = get_field_constraints(cursor, field_id)
     if field_constraints:
         lines += render_list_table(
-            "Quality Checks", ["Código", "Descripción"], field_constraints, widths=[15, 85]
+            "Quality Checks", ["Code", "Description"], field_constraints, widths=[15, 85]
         )
     else:
-        lines.append("**Quality Checks:** *(sin QCs de campo)*")
+        lines.append("**Quality Checks:** *(no field QCs)*")
         lines.append("")
 
     return lines
@@ -206,7 +206,7 @@ def main():
 
     conn.close()
 
-    print("\nEntries are picked up automatically by the {toctree} :glob: in docs/index.md\n")
+    print("\nEntries are picked up automatically by the {toctree} :glob: in docs/CA_UOM/index.md\n")
     for entry in toc_entries:
         print(f"   {entry}")
 

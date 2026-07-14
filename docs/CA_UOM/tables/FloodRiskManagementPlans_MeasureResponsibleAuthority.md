@@ -1,6 +1,6 @@
 # FloodRiskManagementPlans_MeasureResponsibleAuthority
 
-## Descripción
+## Description
 
 Flood Risk Management Plans - Measures - Responsible Authorities
 Information on the Authority responsible for implementing the measures for flood risk management.
@@ -12,8 +12,8 @@ Uniqueness: measureCode + levelOfResponsability + nameResponsabilityAuthority
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R0600
   - Either levelOfResponsibility or nameResponsibleAuthority must be reported, but not both
 * - T0601
@@ -28,8 +28,8 @@ Uniqueness: measureCode + levelOfResponsability + nameResponsabilityAuthority
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 42 characters. Required. Unique code for the measures.
 * - Field type
@@ -44,8 +44,8 @@ Uniqueness: measureCode + levelOfResponsability + nameResponsabilityAuthority
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0657
   - The value must not be missing or empty
 * - XC0607
@@ -58,8 +58,8 @@ Uniqueness: measureCode + levelOfResponsability + nameResponsabilityAuthority
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 250 characters. Optional. Authority responsible - level of responsibility (e.g., 'national authority', 'RBD/UoM authority', 'regional authorities', 'municipality/ies', other...) or name of authority.
 * - Field type
@@ -74,8 +74,8 @@ Uniqueness: measureCode + levelOfResponsability + nameResponsabilityAuthority
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0717
   - The value does not exist in codelist LevelOfResponsibility
 ```
@@ -86,8 +86,8 @@ Uniqueness: measureCode + levelOfResponsability + nameResponsabilityAuthority
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 250 characters. Optional. Provide the international name of responsible authority.
 * - Field type
@@ -102,8 +102,8 @@ Uniqueness: measureCode + levelOfResponsability + nameResponsabilityAuthority
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0620
   - The length must be less than or equal to 250
 ```

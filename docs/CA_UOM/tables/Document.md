@@ -1,6 +1,6 @@
 # Document
 
-## Descripción
+## Description
 
 Documents to be referenced to.
 
@@ -12,8 +12,8 @@ Uniqueness: documentCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - T9001
   - Mandatory table has no records
 * - TU9002
@@ -26,8 +26,8 @@ Uniqueness: documentCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 50 characters. Required. Unique identifier of the document. The value must contain only latin characters, digits, underscores, hyphens and dots. No consecutive underscores, hyphens and dots are allowed.
 * - Field type
@@ -42,8 +42,8 @@ Uniqueness: documentCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V9009
   - The value must not be missing or empty
 * - V9010
@@ -58,8 +58,8 @@ Uniqueness: documentCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 250 characters. Required. Name of the document.
 * - Field type
@@ -74,8 +74,8 @@ Uniqueness: documentCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V9012
   - The value must not be missing or empty
 * - V9013
@@ -88,8 +88,8 @@ Uniqueness: documentCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 2100 characters. Conditional. URL of the document if available on the internet. Either URL or document file as an attachment. The size of the file can be up to 100 MB and the valid file extensions are: 'xlsx' (Excel), 'docx' (Word) and 'pdf'. Either URL or documentFile must be reported, but not both.
 * - Field type
@@ -104,8 +104,8 @@ Uniqueness: documentCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R9002
   - Either hyperlink or documentFile must be reported, but not both
 * - V9014
@@ -120,8 +120,8 @@ Uniqueness: documentCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Conditional. Document file as an attachment. The size of the file can be up to 100 MB and the valid file extensions are: 'xlsx' (Excel), 'docx' (Word) and 'pdf'. Either URL or documentFile must be reported, but not both.
 * - Field type
@@ -132,4 +132,4 @@ Uniqueness: documentCode
   - 1
 ```
 
-**Quality Checks:** *(sin QCs de campo)*
+**Quality Checks:** *(no field QCs)*

@@ -1,6 +1,6 @@
 # UOM_CompetentAuthority
 
-## Descripción
+## Description
 
 Prime Competent Authority of UOM
 
@@ -12,8 +12,8 @@ Uniqueness:  euFloodsUnitOfManagementCode + euCACode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - RF0001
   - If WFDCompetentAuthoritiesAndUOMs.wfdCompetentAuthorities is 'yes', all wfdCompetentAuthorities in reference data needs to be reported.
 * - RF0002
@@ -36,8 +36,8 @@ Uniqueness:  euFloodsUnitOfManagementCode + euCACode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 42 characters. Required. Unique EU code for the Unit of Management or WFD River Basin District following the WISE identifier syntax. Add the two-letter ISO Country code to the Member State unique id - up to 42 characters in total.
 * - Field type
@@ -52,8 +52,8 @@ Uniqueness:  euFloodsUnitOfManagementCode + euCACode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0007
   - The length must be less than or equal to 42
 * - V0010
@@ -70,8 +70,8 @@ Uniqueness:  euFloodsUnitOfManagementCode + euCACode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 42 characters. Required. Unique EU code for the Competent Authority. Add the Two-letter ISO Country code followed by the Member State unique ID.
 * - Field type
@@ -86,8 +86,8 @@ Uniqueness:  euFloodsUnitOfManagementCode + euCACode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0001
   - The length must be less than or equal to 42
 * - V0005
@@ -106,8 +106,8 @@ Uniqueness:  euFloodsUnitOfManagementCode + euCACode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Required. Choose from the 'RoleCode' codelist values. Core Roles undertaken by the Competent Authority in the implementation of the Floods Directive. A competent authority is defined as being the authority with the responsibility for either the implementation of the different stages of the Floods Directive or for reporting to the European Commission. A Competent Authority can have a minimum of one and maximum of three roles under the Floods Directive, so more than one can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., "value1; value2; value3".
 * - Field type
@@ -122,8 +122,8 @@ Uniqueness:  euFloodsUnitOfManagementCode + euCACode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R0002
   - Same roleCode for the same combination of euFloodsUnitOfManagementCode and euCACode
 * - V0022

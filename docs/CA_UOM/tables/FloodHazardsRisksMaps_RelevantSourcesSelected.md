@@ -1,6 +1,6 @@
 # FloodHazardsRisksMaps_RelevantSourcesSelected
 
-## Descripción
+## Description
 
 Flood Hazards and Risks Maps - Relevant Sources of Flooding Selected
 Description: RelevantSourcesSelected
@@ -21,8 +21,8 @@ The combination euFloodsUnitOfManagementCode + relevantSource must be unique.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R0829
   - The combination euFloodsUnitOfManagementCode, relevantSource and relevantSourceOtherDescription must be unique if relevantSource is equal to 'other'
 * - TU0809
@@ -41,8 +41,8 @@ The combination euFloodsUnitOfManagementCode + relevantSource must be unique.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 42 characters. Required. Unique EU code for the Unit of Management or WFD River Basin District. Add the two-letter ISO Country code to the Member State unique id - up to 42 characters in total. If unit of management is the same as the WFD RBD please use the EURBDCode as the unit of management.
 * - Field type
@@ -57,8 +57,8 @@ The combination euFloodsUnitOfManagementCode + relevantSource must be unique.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0869
   - The length must be less than or equal to 42
 * - V0870
@@ -75,8 +75,8 @@ The combination euFloodsUnitOfManagementCode + relevantSource must be unique.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 1000 characters. Optional.
 * - Field type
@@ -91,8 +91,8 @@ The combination euFloodsUnitOfManagementCode + relevantSource must be unique.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R0800
   - relevantSourcesOtherDescription must be reported if and only if the value of relevantSource is equal to 'other' on table FHRM\_RelevantSourcesSelected
 * - R0823
@@ -107,8 +107,8 @@ The combination euFloodsUnitOfManagementCode + relevantSource must be unique.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Required. Choose from the 'SourceOfFlooding' codelist values. Indicate which sources of flooding are considered to be relevant to this UoM or RBD.
 * - Field type
@@ -123,8 +123,8 @@ The combination euFloodsUnitOfManagementCode + relevantSource must be unique.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0871
   - The value does not exist in codelist SourceOfFlooding
 * - V0945
@@ -139,8 +139,8 @@ The combination euFloodsUnitOfManagementCode + relevantSource must be unique.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Optional. Choose from the 'YesNo' codelist values. Indicate whether a modelling approach has been used to inform the development of the flood hazard and flood risk maps.
 * - Field type
@@ -155,8 +155,8 @@ The combination euFloodsUnitOfManagementCode + relevantSource must be unique.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0872
   - If reported, the value must exist in codelist YesNo
 * - V1811
@@ -169,8 +169,8 @@ The combination euFloodsUnitOfManagementCode + relevantSource must be unique.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 1000 characters. Conditional. If ‘No’ is selected from enumeration list to indicate a modelling approach has not been used, provide a description as to what approach has been used.
 * - Field type
@@ -185,8 +185,8 @@ The combination euFloodsUnitOfManagementCode + relevantSource must be unique.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R0818
   - modellingNotUsedDescription must be reported if and only if modellingUsed is 'no'
 * - V0873
@@ -199,8 +199,8 @@ The combination euFloodsUnitOfManagementCode + relevantSource must be unique.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Conditional. Provide documents or links to relevant documents covering the following areas related to the modelling approach used: <ul> <li>the types of models used,</li> <li>the resolution of the models used,</li> <li>the key datasets used in the modelling process.</li> </ul> More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., "value1; value2; value3".
 * - Field type
@@ -215,8 +215,8 @@ The combination euFloodsUnitOfManagementCode + relevantSource must be unique.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R0819
   - modellingUsedReference must be reported if and only if modellingUsed is 'yes'
 * - V0973
@@ -231,8 +231,8 @@ The combination euFloodsUnitOfManagementCode + relevantSource must be unique.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Conditional. Choose from the 'ElementType' codelist values. Depending on which relevant source type of flooding is selected, indicate the different elements included in the hazard maps. More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., "value1; value2; value3".
 * - Field type
@@ -247,8 +247,8 @@ The combination euFloodsUnitOfManagementCode + relevantSource must be unique.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0874
   - The value does not exist in codelist ElementType
 * - V0974
@@ -261,8 +261,8 @@ The combination euFloodsUnitOfManagementCode + relevantSource must be unique.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 1000 characters. Conditional. If ‘Other’ is selected in 'elementsLowProbability', provide a description.
 * - Field type
@@ -277,8 +277,8 @@ The combination euFloodsUnitOfManagementCode + relevantSource must be unique.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R0820
   - lowProbabilityScenarioElementOther must be reported if and only if lowProbabilityScenarioElement is 'other'
 * - V0875
@@ -291,8 +291,8 @@ The combination euFloodsUnitOfManagementCode + relevantSource must be unique.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Conditional. Choose from the 'ElementType' codelist values. Depending on which relevant source type of flooding is selected, indicate the different elements included in the hazard maps. More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., "value1; value2; value3".
 * - Field type
@@ -307,8 +307,8 @@ The combination euFloodsUnitOfManagementCode + relevantSource must be unique.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0876
   - The value does not exist in codelist ElementType
 * - V0941
@@ -323,8 +323,8 @@ The combination euFloodsUnitOfManagementCode + relevantSource must be unique.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 1000 characters. Conditional. If 'Other' is selected in 'elementsMediumProbability', provide a description.
 * - Field type
@@ -339,8 +339,8 @@ The combination euFloodsUnitOfManagementCode + relevantSource must be unique.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R0821
   - mediumProbabilityScenarioElementOther must be reported if and only if mediumProbabilityScenarioElement is 'other'
 * - V0877
@@ -353,8 +353,8 @@ The combination euFloodsUnitOfManagementCode + relevantSource must be unique.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Conditional. Choose from the 'ElementType' codelist values. Depending on which relevant source type of flooding is selected, indicate the different elements included in the hazard maps. More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., "value1; value2; value3".
 * - Field type
@@ -369,8 +369,8 @@ The combination euFloodsUnitOfManagementCode + relevantSource must be unique.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0878
   - The value does not exist in codelist ElementType
 * - V0976
@@ -383,8 +383,8 @@ The combination euFloodsUnitOfManagementCode + relevantSource must be unique.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 1000 characters. Conditional. If ‘Other’ is selected in elementsHighProbability, provide a description.
 * - Field type
@@ -399,8 +399,8 @@ The combination euFloodsUnitOfManagementCode + relevantSource must be unique.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R0822
   - highProbabilityScenarioElementOther must be reported if and only if highProbabilityScenarioElement is 'other'
 * - V0879

@@ -1,6 +1,6 @@
 # WFDCompetentAuthoritiesAndUOMs
 
-## Descripción
+## Description
 
 WFDCompetentAuthoritiesAndUOMs 
 
@@ -12,8 +12,8 @@ One record per country.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - T0003
   - There must be a maximum of one record at WFDCompetentAuthoritiesAndUOMs.
 * - T0007
@@ -34,8 +34,8 @@ One record per country.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 2100 characters. Optional. URL for integration of your own internet-based information.
 * - Field type
@@ -50,8 +50,8 @@ One record per country.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0037
   - The value does not follow the expected syntax for a valid URL
 * - V0067
@@ -64,8 +64,8 @@ One record per country.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Required. Choose from the 'YesNo' codelist values. Are the competent authorities the same as reported under the Water Framework Directive?
 * - Field type
@@ -80,8 +80,8 @@ One record per country.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0008
   - The value does not exist in codelist YesNo
 * - V0035
@@ -94,8 +94,8 @@ One record per country.
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Required. Choose from the 'YesNo' codelist values. Select 'Yes' if the RBDs reported under the Water Framework Directive are being used (if a Member State has reported Sub-units then it's assumed these are the scale of management).
 * - Field type
@@ -110,8 +110,8 @@ One record per country.
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0009
   - The value does not exist in codelist YesNo.
 * - V0036

@@ -1,6 +1,6 @@
 # FloodHazardsRisksMaps_APSFR_ProtectedArea
 
-## Descripción
+## Description
 
 Flood Hazard and Risk Maps - Probabilities for an euFloodsRiskZoneCode- Protected Areas
 Description: APSFR\_ProtectedArea
@@ -13,8 +13,8 @@ Uniqueness: euFloodsUnitOfManagementCode, euFloodsRiskZoneCode, protectedAreaTyp
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - TU0803
   - The combination euFloodsUnitOfManagementCode, euFloodsRiskZoneCode, protectedAreaType, euProtectedAreaCode and probabilityScenario must be unique.
 * - XC0841
@@ -27,8 +27,8 @@ Uniqueness: euFloodsUnitOfManagementCode, euFloodsRiskZoneCode, protectedAreaTyp
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 42 characters. Required. Unique EU code for the Unit of Management or WFD River Basin District following the WISE identifier syntax. Add the two-letter ISO Country code to the Member State unique id - up to 42 characters in total.
 * - Field type
@@ -43,8 +43,8 @@ Uniqueness: euFloodsUnitOfManagementCode, euFloodsRiskZoneCode, protectedAreaTyp
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0842
   - The value does not match the pattern to be used
 * - V0844
@@ -59,8 +59,8 @@ Uniqueness: euFloodsUnitOfManagementCode, euFloodsRiskZoneCode, protectedAreaTyp
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 42 characters. Required. Unique EU code for the area of potential significant flood risk. Add the two-letter ISO Country code to the Member State unique id - up to 42 characters in total.
 * - Field type
@@ -75,8 +75,8 @@ Uniqueness: euFloodsUnitOfManagementCode, euFloodsRiskZoneCode, protectedAreaTyp
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R0815
   - euFloodsUnitOfManagementCode + euFloodsRiskZoneCode must exist on table FloodHazardsRisksMaps\_APSFR\_ProbabilityScenario
 * - V0846
@@ -91,8 +91,8 @@ Uniqueness: euFloodsUnitOfManagementCode, euFloodsRiskZoneCode, protectedAreaTyp
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Required. Choose from the 'ProbabilityType' codelist values.
 * - Field type
@@ -107,8 +107,8 @@ Uniqueness: euFloodsUnitOfManagementCode, euFloodsRiskZoneCode, protectedAreaTyp
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0848
   - The value does not exist in codelist ProbabilityType
 * - V0920
@@ -123,8 +123,8 @@ Uniqueness: euFloodsUnitOfManagementCode, euFloodsRiskZoneCode, protectedAreaTyp
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Required. Choose from the 'ProtectedAreaType' codelist values. Potentially affected protected areas identified in Annex IV(1)(i), (iii) and (v) to Directive 2000/60/EC.
 * - Field type
@@ -139,8 +139,8 @@ Uniqueness: euFloodsUnitOfManagementCode, euFloodsRiskZoneCode, protectedAreaTyp
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0836
   - The value does not exist in codelist ProtectedAreaType
 * - V0923
@@ -153,8 +153,8 @@ Uniqueness: euFloodsUnitOfManagementCode, euFloodsRiskZoneCode, protectedAreaTyp
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 254 characters. Required. The ProtectedAreaID (uniqueID) as this has been reported under relevant directives.
 * - Field type
@@ -169,8 +169,8 @@ Uniqueness: euFloodsUnitOfManagementCode, euFloodsRiskZoneCode, protectedAreaTyp
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - RF0800
   - euProtectedAreaCode must exist as a thematicIdIdentifier in the Reference dataset, ProtectedArea table
 * - V0922

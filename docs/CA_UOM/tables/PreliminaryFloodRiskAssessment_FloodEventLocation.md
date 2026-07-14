@@ -1,6 +1,6 @@
 # PreliminaryFloodRiskAssessment_FloodEventLocation
 
-## Descripción
+## Description
 
 Preliminary Flood Risk Assessment - Flood Event Location
 
@@ -12,8 +12,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - TU0423
   - The combination floodEventCode, euFloodsHazardAreaCode must be unique within table
 * - XC0424
@@ -26,8 +26,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 85 characters. Required. Unique code for the flood event. The expected syntax for this field is:euFloodsUnitOfManagementCode + '.' + floodEventCode By using this convention, the same floodEventCode can be reported across different euFloodsUnitOfManagement areas.
 * - Field type
@@ -42,8 +42,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0424
   - The length must be less than or equal to 85
 * - V0425
@@ -62,8 +62,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 42 characters. Required. Unique code for the flood location - up to 42 characters in total. Can also be used as an identifier for multiple surface water bodies designated under the WFD which the flood location is represented by. A polygon must be reported as a representation of the flood location to establish link between spatial feature and information in xml schema.
 * - Field type
@@ -78,8 +78,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0435
   - The length must be less than or equal to 42
 * - V0436
@@ -96,8 +96,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 42 characters. Optional. Unique EU code for the area of potential significant flood risk. Add the two-letter ISO Country code to the Member State unique id - up to 42 characters in total.
 * - Field type
@@ -112,8 +112,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - XC0418
   - The value is not a valid member of the spatial Risk Zone table.
 ```
@@ -124,8 +124,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Optional. Unique code for the Water Body used under the WFD. If the EUSurfaceWaterBodyCode is reported as a representation of the flood location no spatial data needs to be reported as this information is already reported under the WFD. If several Water Bodies are affected by one flood location they should be reported here (hence this element is unbounded). More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., "value1; value2; value3".
 * - Field type
@@ -140,8 +140,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0523
   - Duplicate values for euSurfaceWaterBodyCode exist. The list of values needs to be distinct in each record.
 * - V0556
@@ -154,8 +154,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Optional. Provide document(s) or link(s) to any other relevant information relating to location if the flood event. This may include details of multiple flood locations covering large flood event scenarios. More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., "value1; value2; value3".
 * - Field type
@@ -170,8 +170,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0524
   - Duplicate document references exist. The list of values needs to be distinct.
 * - XC0420
@@ -184,8 +184,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Required. Choose from the 'SourceOfFlooding' codelist values. Provide information on the specific flood types to which Article 4 applies. More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., "value1; value2; value3".
 * - Field type
@@ -200,8 +200,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0426
   - The value does not exist in codelist SourceOfFlooding
 * - V0427
@@ -218,8 +218,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 1000 characters. Conditional. If 'Other: Flooding of land by water due to other sources, can include other tsunamis' is selected from enumeration list, provide a description of the other source(s).
 * - Field type
@@ -234,8 +234,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R0415
   - otherSourceDescription must be reported if sourceOfFlooding is 'other'
 * - V0428
@@ -248,8 +248,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Conditional. Choose from the 'MechanismOfFlooding' codelist values. For each flood event indicate the mechanism of flooding. More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., "value1; value2; value3".
 * - Field type
@@ -264,8 +264,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R0413
   - mechanismOfFlooding must be reported if sourceOfFlooding and characteristicsOfFlooding are not reported
 * - V0429
@@ -280,8 +280,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 1000 characters. Conditional. If 'Other' is selected from enumeration list, provide a description of the other mechanism(s).
 * - Field type
@@ -296,8 +296,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R0416
   - otherMechanismDescription must be reported if mechanismOfFlooding is 'other'
 * - V0430
@@ -310,8 +310,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Optional. Choose from the 'CharacteristicsOfFlooding' codelist values. Define the relevant characteristics of flooding. More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., "value1; value2; value3".
 * - Field type
@@ -326,8 +326,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R0414
   - characteristicsOfFlooding must be reported if sourceOfFlooding and mechanismOfFlooding are not reported
 * - V0431
@@ -342,8 +342,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Max length: 1000 characters. Conditional. If 'Other' selected from enumeration list, provide a description of the other characteristics or state whether there are no special characteristics.
 * - Field type
@@ -358,8 +358,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - R0417
   - otherCharacteristicsDescription must be reported if characteristicsOfFlooding is 'other'
 * - V0432
@@ -372,8 +372,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode
 :widths: 30 70
 :header-rows: 1
 
-* - Propiedad
-  - Valor
+* - Property
+  - Value
 * - Guidance on completion
   - Optional. Provide document(s) or link(s) to any other relevant information relating to location if the flood event. This may include details of multiple flood locations covering large flood event scenarios. More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., "value1; value2; value3".
 * - Field type
@@ -388,8 +388,8 @@ Uniqueness: floodEventCode + euFloodsHazardAreaCode
 :widths: 15 85
 :header-rows: 1
 
-* - Código
-  - Descripción
+* - Code
+  - Description
 * - V0528
   - Duplicate document references exist. The list of values needs to be distinct.
 * - XC0415
