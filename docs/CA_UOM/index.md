@@ -15,7 +15,10 @@ Competent Authorities and Units of Management — Floods Directive.
 :caption: Descriptive tables
 :glob:
 
-tables/*
+tables/CompetentAuthority
+tables/UnitOfManagement
+tables/UOM_CompetentAuthority
+tables/WFDCompetentAuthoritiesAndUOMs
 ```
 
 ---
@@ -33,5 +36,5 @@ tables/*
 :caption: Spatial tables
 :glob:
 
-tables_spatial/*
+tables_spatial/spatial_UnitOfManagement
 ```

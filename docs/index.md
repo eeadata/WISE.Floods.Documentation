@@ -1,10 +1,28 @@
 # WISE Floods Documentation
 
 Documentation of the Floods Directive dataflows.
+ 
+## Main sections
+ 
+The **Floods Directive Documentation** is organized in the following sections.
+
+:::{grid} 1 1 2 2
+:gutter: 3
+
+:::{grid-item-card} CA_UOM
+:link: CA_UOM/index
+:link-type: doc
+
+Competent Authorities and Units of Management — descriptive and spatial data
+model, tables, fields and quality checks.
+:::
+ 
+:::
 
 ```{toctree}
 :maxdepth: 1
+:hidden:
 :glob:
-
+ 
 */index
 ```
