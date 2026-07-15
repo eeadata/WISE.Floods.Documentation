@@ -6,7 +6,7 @@ Documentation of the Floods Directive dataflows.
  
 The **Floods Directive Documentation** is organized in the following sections.
 
-:::{grid} 1 1 2 2
+::::{grid} 1 1 2 2
 :gutter: 3
 
 :::{grid-item-card} CA_UOM
@@ -16,8 +16,16 @@ The **Floods Directive Documentation** is organized in the following sections.
 Competent Authorities and Units of Management — descriptive and spatial data
 model, tables, fields and quality checks.
 :::
- 
+
+:::{grid-item-card} FHRM
+:link: FHRM/index
+:link-type: doc
+
+Floods Hazard and Risk Maps — descriptive data model, tables,
+fields and quality checks.
 :::
+ 
+::::
 
 ```{toctree}
 :maxdepth: 1
