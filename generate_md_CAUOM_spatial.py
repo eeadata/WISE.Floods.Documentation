@@ -1,5 +1,5 @@
 """
-generate_md_spatial.py
+generate_md_CAUOM_spatial.py
 ----------------
 Iterates through all the tables in the EA model (.qea) and generates one
 .md file per table (MyST Markdown), including:
@@ -19,7 +19,7 @@ any machine — including a GitHub Actions runner with no access to the .qea.
 
 Usage:
 
-python generate_md_spatial.py
+python generate_md_CAUOM_spatial.py
 """
 
 import os
@@ -28,7 +28,7 @@ import sqlite3
 # --------------------------------------------------------------------------
 # CONFIGURATION — adjust this path
 # --------------------------------------------------------------------------
-QEA_PATH = r"c:/Users/mosquera/Documents/302298/ea-docs/data/Floods2018_RN3_UML_Spatial.qea"
+QEA_PATH = r"data/Floods2018_RN3_UML_Spatial.qea"
 
 OUTPUT_DIR = "docs/CA_UOM/tables_spatial"
 
