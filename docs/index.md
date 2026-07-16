@@ -24,6 +24,14 @@ model, tables, fields and quality checks.
 Floods Hazard and Risk Maps — descriptive data model, tables,
 fields and quality checks.
 :::
+
+:::{grid-item-card} FRMP
+:link: FRMP/index
+:link-type: doc
+
+Floods Risk Management Plans — descriptive data model, tables,
+fields and quality checks.
+:::
  
 ::::
 
