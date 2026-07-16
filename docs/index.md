@@ -32,6 +32,14 @@ fields and quality checks.
 Floods Risk Management Plans — descriptive data model, tables,
 fields and quality checks.
 :::
+
+:::{grid-item-card} APSFR PFRA
+:link: APSFR_PFRA/index
+:link-type: doc
+
+Preliminary Flood Risk Assessment and Areas of Potential Significant Flood Risk — descriptive and spatial data model, tables,
+fields and quality checks.
+:::
  
 ::::
 
