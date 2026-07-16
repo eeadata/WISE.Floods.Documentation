@@ -39,7 +39,7 @@ jobs:
           
       # Step 5: Deploy the built HTML files to a live GitHub Pages site
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v4.1.0
         
         # Safety Check: ONLY run this deployment step if the workflow was triggered 
         # by a push to the main branch (prevents accidental deployments from PRs)
