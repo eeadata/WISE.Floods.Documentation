@@ -19,3 +19,7 @@ sphinx-err-*.log
 # Operating system files
 .DS_Store
 Thumbs.db
+
+# md files generating scripts and some utils
+generate_md_*.py
+utils/
