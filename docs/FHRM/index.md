@@ -2,12 +2,13 @@
 
 Floods Hazard and Risk Maps — Floods Directive.
 
-### Descriptive data
+## Descriptive data
 
 ```{figure} img/Floods_RN3_FHRM.png
 :width: 100%
 :align: center
-:caption: Descriptive data model
+
+Descriptive data model
 ```
 
 ```{toctree}
@@ -21,4 +22,7 @@ tables/FloodHazardsRisksMaps_APSFR
 tables/FloodHazardsRisksMaps_APSFR_ProbabilityScenario
 tables/FloodHazardsRisksMaps_APSFR_ProtectedArea
 tables/MapReference
+tables/dcMetadata
+tables/Document
+tables/DocumentReference
 ```

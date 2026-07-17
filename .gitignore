@@ -23,3 +23,5 @@ Thumbs.db
 # md files generating scripts and some utils
 generate_md_*.py
 tools/
+
+.vscode/

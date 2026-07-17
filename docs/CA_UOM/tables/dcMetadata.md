@@ -4,7 +4,7 @@
 
 Metadata
 
-One record per River Basin District or Floods Unit of Management.
+One record per country
 
 ## Table Quality Checks
 
@@ -14,58 +14,10 @@ One record per River Basin District or Floods Unit of Management.
 
 * - Code
   - Description
-* - R9001
-  - reportingDocument must be reported if reportingStructuredData is 'no'.
-* - TU9003
-  - euFloodsUnitOfManagementCode must be unique within table
-```
-
-### euFloodsUnitOfManagementCode
-
-```{list-table}
-:widths: 30 70
-:header-rows: 1
-
-* - Property
-  - Value
-* - Guidance on completion
-  - Max length: 42 characters. Required. Unique EU code for the Unit of Management or River Basin District. Add the two-letter ISO Country code to the Member State unique id - up to 42 characters in total. This field will declare the RBDs or UoMs for which data is reported.
-* - Field type
-  - FeatureUniqueEUCodeType
-* - minOccurs
-  - 1
-* - maxOccurs
-  - 1
-```
-
-```{list-table} Quality Checks
-:widths: 15 85
-:header-rows: 1
-
-* - Code
-  - Description
-* - RF9001
-  - euFloodsUnitOfManagementCode must exist as a thematicIdIdentifier in the Spatial Reference, RelatedZones table
-* - RF9002
-  - euFloodsUnitOfManagementCode must exist as a thematicIdIdentifier in the Reference dataset, FloodsUnitsOfManagement\_WFDRBD table
-* - RF9003
-  - There are related zones reported in Spatial Reference RelatedZones table which are not in dcMetadata table - {%RECORDS%}
-* - RF9004
-  - There are thematicIdIdentifier in the Reference Data, FloodsUnitsOfManagement\_WFDRBD table which are not in the dcMetadata table as euFloodsUnitOfManagementCode - {%RECORDS%}
-* - RF9005
-  - Structured data can only be reported for UoMs with released and accepted APSFR/PFRA information
-* - V9022
-  - The value must not be missing or empty
-* - V9023
-  - The length must be less than or equal to 42
-* - XC9003
-  - There must be one and only one record in AreaOfPotentialSignificantFloodRisk\_Methodology table for each 'euFloodsUnitOfManagementCode' reported in dcMetadata table
-* - XC9005
-  - There must be one and only one record in PreliminaryFloodRiskAssessment table for each 'euFloodsUnitOfManagementCode' reported in dcMetadata table
-* - XC9006
-  - There must be one and only one record in FloodHazardsRisksMaps table for each 'euFloodsUnitOfManagementCode' reported in dcMetadata table
-* - XC9007
-  - There must be one and only one record in FloodRiskManagementPlans\_Summary table for each 'euFloodsUnitOfManagementCode' reported in dcMetadata table
+* - T9002
+  - Mandatory table has no records
+* - T9003
+  - The table dcMetadata must have one and only one record
 ```
 
 ### created
@@ -93,7 +45,7 @@ One record per River Basin District or Floods Unit of Management.
 * - Code
   - Description
 * - V9016
-  - The value must be a valid date in the ISO 8601 extended format value (e.g. YYYY, YYYY-MM, YYYY-MM-DD or YYYY-MM-DDTHH:mm:ss)
+  - The created value must be a valid date in the ISO 8601 extended format value (e.g. YYYY, YYYY-MM, YYYY-MM-DD or YYYY-MM-DDTHH:mm:ss)
 ```
 
 ### creatorElectronicMailAddress
@@ -356,14 +308,10 @@ One record per River Basin District or Floods Unit of Management.
 
 * - Code
   - Description
-* - RF9005
-  - Structured data can only be reported for UoMs with released and accepted APSFR/PFRA information
 * - V9028
   - The value must not be missing or empty
 * - V9029
   - The value does not exist in codelist YesNo
-* - V9030
-  - reportingStructuredData must be 'yes' for late reporters
 ```
 
 ### reportingDocument

@@ -2,12 +2,13 @@
 
 Competent Authorities and Units of Management — Floods Directive.
 
-### Descriptive data
+## Descriptive data
 
 ```{figure} img/Floods_RN3_CA_UOM.png
 :width: 100%
 :align: center
-:caption: Descriptive data model
+
+Descriptive data model
 ```
 
 ```{toctree}
@@ -19,16 +20,20 @@ tables/CompetentAuthority
 tables/UnitOfManagement
 tables/UOM_CompetentAuthority
 tables/WFDCompetentAuthoritiesAndUOMs
+tables/dcMetadata
+tables/Document
+tables/DocumentReference
 ```
 
 ---
 
-### Spatial data
+## Spatial data
 
 ```{figure} img/Spatial_RN3_UnitOfManagement.png
 :width: 100%
 :align: center
-:caption: Spatial data model
+
+Spatial data model
 ```
 
 ```{toctree}

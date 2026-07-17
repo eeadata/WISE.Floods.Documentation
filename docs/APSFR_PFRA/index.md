@@ -2,12 +2,13 @@
 
 Preliminary Flood Risk Assessment and Areas of Potential Significant Flood Risk — Floods Directive.
 
-### ASPFR Descriptive data
+## ASPFR Descriptive data
 
 ```{figure} img/Floods_RN3_APSFR.png
 :width: 100%
 :align: center
-:caption: APSFR Descriptive data model
+
+APSFR Descriptive data model
 ```
 
 ```{toctree}
@@ -18,16 +19,20 @@ Preliminary Flood Risk Assessment and Areas of Potential Significant Flood Risk 
 tables/AreaOfPotentialSignificantFloodRisk_Methodology
 tables/AreaOfPotentialSignificantFloodRisk_Data
 tables/AreaOfPotentialSignificantFloodRisk_PotencialConsequence
+tables/dcMetadata
+tables/Document
+tables/DocumentReference
 ```
 
 ---
 
-### ASPFR Spatial data
+## ASPFR Spatial data
 
 ```{figure} img/Spatial_RN3_RiskZone.png
 :width: 100%
 :align: center
-:caption: APSFR Spatial data model
+
+APSFR Spatial data model
 ```
 
 ```{toctree}
@@ -40,12 +45,13 @@ tables_spatial/spatial_RiskZone
 
 ---
 
-### PFRA Descriptive data
+## PFRA Descriptive data
 
 ```{figure} img/Floods_RN3_PFRA.png
 :width: 100%
 :align: center
-:caption: PFRA Descriptive data model
+
+PFRA Descriptive data model
 ```
 
 ```{toctree}
@@ -58,16 +64,20 @@ tables/PreliminaryFloodRiskAssessment_FloodEvent
 tables/PreliminaryFloodRiskAssessment_TypeOfFlood
 tables/PreliminaryFloodRiskAssessment_ImpactConsequence
 tables/PreliminaryFloodRiskAssessment_FloodEventLocation
+tables/dcMetadata
+tables/Document
+tables/DocumentReference
 ```
 
 ---
 
-### PFRA Spatial data
+## PFRA Spatial data
 
 ```{figure} img/Spatial_RN3_HazardArea.png
 :width: 100%
 :align: center
-:caption: PFRA Spatial data model
+
+PFRA Spatial data model
 ```
 
 ```{toctree}
