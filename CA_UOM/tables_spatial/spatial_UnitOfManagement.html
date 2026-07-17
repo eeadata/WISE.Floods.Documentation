@@ -1,0 +1,1940 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>UnitOfManagement &#8212; WISE Floods Documentation  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/customTheme.css?v=23704726" />
+    <link rel="stylesheet" type="text/css" href="../../_static/customTable.css?v=2fdf4863" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../../_static/scripts/fontawesome.js?digest=90905a2f556bf617f1a9"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9" />
+
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'CA_UOM/tables_spatial/spatial_UnitOfManagement';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <script src="../../_static/js/mermaid-zoom.js?v=572d2af9"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="FHRM" href="../../FHRM/index.html" />
+    <link rel="prev" title="DocumentReference" href="../tables/DocumentReference.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/wise.svg" class="logo__image only-light" alt=""/>
+    <img src="../../_static/wise-freshwater.svg" class="logo__image only-dark pst-js-only" alt=""/>
+  
+  
+    <p class="title logo__title">Floods Directive</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../APSFR_PFRA/index.html">
+    APSFR PFRA
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    CA_UOM
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../FHRM/index.html">
+    FHRM
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../FRMP/index.html">
+    FRMP
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../APSFR_PFRA/index.html">
+    APSFR PFRA
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    CA_UOM
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../FHRM/index.html">
+    FHRM
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../FRMP/index.html">
+    FRMP
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item pst-sidebar-collapse"><button id="pst-collapse-sidebar-button" aria-expanded="true" aria-controls="pst-primary-sidebar">
+  <svg class="pst-icon" role="img" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="M3 15.5C2.36232 15.5 1.74874 15.2564 1.28478 14.8189C0.820828 14.3815 0.541576 13.7832 0.504167 13.1467L0.5 13L0.5 3C0.499965 2.36232 0.743605 1.74874 1.18107 1.28478C1.61854 0.820828 2.21676 0.541576 2.85333 0.504167L3 0.5L13 0.5C13.6377 0.499965 14.2513 0.743605 14.7152 1.18107C15.1792 1.61854 15.4584 2.21676 15.4958 2.85333L15.5 3L15.5 13C15.5 13.6377 15.2564 14.2513 14.8189 14.7152C14.3815 15.1792 13.7832 15.4584 13.1467 15.4958L13 15.5L3 15.5ZM3 13.8333L10.5 13.8333L10.5 2.16667L3 2.16667C2.79589 2.16669 2.59889 2.24163 2.44636 2.37726C2.29383 2.5129 2.19638 2.69979 2.1725 2.9025L2.16667 3L2.16667 13C2.16669 13.2041 2.24163 13.4011 2.37726 13.5536C2.5129 13.7062 2.69979 13.8036 2.9025 13.8275L3 13.8333ZM6.65583 10.325L6.5775 10.2558L4.91083 8.58917C4.76735 8.44567 4.68116 8.25476 4.66843 8.05223C4.65569 7.84971 4.71729 7.6495 4.84167 7.48917L4.91083 7.41083L6.5775 5.74417C6.72747 5.59471 6.9287 5.50794 7.14032 5.50148C7.35194 5.49502 7.55809 5.56935 7.7169 5.70937C7.8757 5.8494 7.97525 6.04463 7.99533 6.25539C8.01541 6.46616 7.95451 6.67667 7.825 6.84417L7.75583 6.9225L6.67917 8L7.75583 9.0775C7.89931 9.22099 7.98551 9.41191 7.99824 9.61443C8.01097 9.81695 7.94938 10.0172 7.825 10.1775L7.75583 10.2558C7.61234 10.3993 7.42142 10.4855 7.2189 10.4982C7.01638 10.511 6.81617 10.4494 6.65583 10.325Z"/>
+  </svg>
+  <span class="pst-collapse-sidebar-label">Collapse Sidebar</span>
+  <span class="pst-expand-sidebar-label">Expand Sidebar</span>
+</button></div>
+        <div class="sidebar-primary-item">
+
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Descriptive tables</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../tables/CompetentAuthority.html">CompetentAuthority</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tables/UnitOfManagement.html">UnitOfManagement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tables/UOM_CompetentAuthority.html">UOM_CompetentAuthority</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tables/WFDCompetentAuthoritiesAndUOMs.html">WFDCompetentAuthoritiesAndUOMs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tables/dcMetadata.html">dcMetadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tables/Document.html">Document</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tables/DocumentReference.html">DocumentReference</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Spatial tables</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">UnitOfManagement</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">CA_UOM</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">UnitOfManagement</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="unitofmanagement">
+<h1>UnitOfManagement<a class="headerlink" href="#unitofmanagement" title="Link to this heading">#</a></h1>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading">#</a></h2>
+<p>Units of Management</p>
+<p>Uniqueness: thematicIdIdentifier + thematicIdIdentifierScheme</p>
+</section>
+<section id="table-quality-checks">
+<h2>Table Quality Checks<a class="headerlink" href="#table-quality-checks" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>TU002</p></td>
+<td><p>The inspireIdLocalId and inspireIdNamespace combination must be unique for each object. [TU002]</p></td>
+</tr>
+<tr class="row-odd"><td><p>TU003</p></td>
+<td><p>The thematicIdIdentifier and thematicIdIdentifierScheme combination must be unique for each object.[TU003]</p></td>
+</tr>
+<tr class="row-even"><td><p>XC002</p></td>
+<td><p>The table must be empty if UoM Descriptive/WFDCompetentAuthoritiesAndUOMs/wfdRiverBasinDistricts = ‘Yes’. [XC002]</p></td>
+</tr>
+<tr class="row-odd"><td><p>XC003</p></td>
+<td><p>If WFDCompetentAuthoritiesAndUOMs.wfdRiverBasinDistricts is ‘No’, all thematicIdentifier of the table UnitOfManagement of the Spatial dataset must be included in the table UnitOfManagement as euFloodsUnitOfManagementCode. [XC003]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="geometry">
+<h3>geometry<a class="headerlink" href="#geometry" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>The geometry representing the spatial extent of the spatial object. The element is required. The geometry of a Management Area, Restriction or Regulation Zone can be reported using a polygon geometry. Only one type of geometry can be used for a given object. Only one type of geometry can be reported in a given data set.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>geometry</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id1">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>S002</p></td>
+<td><p>Unsupported SRID [S002]</p></td>
+</tr>
+<tr class="row-odd"><td><p>S005</p></td>
+<td><p>The coordinate reference system (CRS) is not valid.[S005]</p></td>
+</tr>
+<tr class="row-even"><td><p>S006</p></td>
+<td><p>The geometry must not have anomalous geometric points, such as self-intersections.[S006]</p></td>
+</tr>
+<tr class="row-odd"><td><p>S010</p></td>
+<td><p>The value does not follow the expected syntax for a valid multipolygon {%reason%} [S010]</p></td>
+</tr>
+<tr class="row-even"><td><p>S011</p></td>
+<td><p>Geometry is not valid. Reason: {%reason%} [S011]</p></td>
+</tr>
+<tr class="row-odd"><td><p>S012</p></td>
+<td><p>The transformation of the geometry has not worked because of: {%reason%} [S012]</p></td>
+</tr>
+<tr class="row-even"><td><p>S013</p></td>
+<td><p>The geometry must not be empty or degenerate (e.g. zero-lenth line or zero-area polygon). [S013]</p></td>
+</tr>
+<tr class="row-odd"><td><p>S016</p></td>
+<td><p>The geometry of the units of management must not overlap each other.[S016]</p></td>
+</tr>
+<tr class="row-even"><td><p>S018</p></td>
+<td><p>The Unit of management must be within the National territory, with a 200 meters tolerance distance. [S018]</p></td>
+</tr>
+<tr class="row-odd"><td><p>V067</p></td>
+<td><p>The value must not be missing or empty [V067]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="inspireidlocalid">
+<h3>inspireIdLocalID<a class="headerlink" href="#inspireidlocalid" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Max length: 254 characters. A local identifier, assigned by the data provider. The local identifier is unique within the namespace. It is recommended to use the same value used in the thematicIdIdentifier. The element is required.The geometry of a Management Area, Restriction or Regulation Zone can be reported using a polygon, a polyline or a point geometry. Only one type of geometry can be used for a given object. Only one type of geometry can be reported in a given data set.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id2">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id2" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V002</p></td>
+<td><p>The inspireIdLocalId value must be less than 255 characters. [V002]</p></td>
+</tr>
+<tr class="row-odd"><td><p>V015</p></td>
+<td><p>The value must not be missing or empty [V015]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="inspireidnamespace">
+<h3>inspireIdNamespace<a class="headerlink" href="#inspireidnamespace" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Max length: 254 characters. Namespace, assigned by the data provider, uniquely identifying the data source of the spatial object.Use country code, if no INSPIRE namespace is defined at national level.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id3">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id3" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V003</p></td>
+<td><p>The inspireIdNamespace value must be less than 255 characters. [V003]</p></td>
+</tr>
+<tr class="row-odd"><td><p>V019</p></td>
+<td><p>The value must not be missing or empty [V019]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="inspireidversionid">
+<h3>inspireIdVersionId<a class="headerlink" href="#inspireidversionid" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Max length: 25 characters. The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id4">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id4" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R022</p></td>
+<td><p>The inspireIdVersionId value must be reported, if the wiseEvolutionType value is ‘change’.[R022]</p></td>
+</tr>
+<tr class="row-odd"><td><p>V004</p></td>
+<td><p>The inspireIdVersionId value must be less than 26 characters. [V004]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="thematicididentifier">
+<h3>thematicIdIdentifier<a class="headerlink" href="#thematicididentifier" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Max length: 42 characters. Unique identifier used to identify the spatial object within the specified identification scheme. European identifier, must follow WISE syntax rules.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>FeatureUniqueEUCodeType</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id5">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id5" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R023</p></td>
+<td><p>The thematic identifier must be a valid identifier in the register, if the wiseEvolutionType value is ‘deletion’, ‘noChange’ or ‘change’.[R023]</p></td>
+</tr>
+<tr class="row-odd"><td><p>RF001</p></td>
+<td><p>A valid ‘eu’ thematic identifier exists in the register but was not reported in the Geopackage file (either as a spatial object or as a predecessor).[RF001] The missing thematicididentifiers are: {%RECORDS%} [RF001]</p></td>
+</tr>
+<tr class="row-even"><td><p>RF002</p></td>
+<td><p>The thematic identifiers that replace this object must exist in the register, or be the thematic identifier of another object reported in the spatial data set.[RF002]</p></td>
+</tr>
+<tr class="row-odd"><td><p>RF004</p></td>
+<td><p>The thematic identifier must not exist in the register, unless the wiseEvolutionType value is ‘deletion’, ‘noChange’ or ‘change’.[RF004]</p></td>
+</tr>
+<tr class="row-even"><td><p>RF018</p></td>
+<td><p>thematicIdIdentifier cannot be identical to the thematicIdIdentifier of another RiverBasinDistrict reported under WFD.[RF018]</p></td>
+</tr>
+<tr class="row-odd"><td><p>V005</p></td>
+<td><p>The thematicIdIdentifier value must be a string starting with the 2-letter country code. Upper case letters (A to Z) and digits (0 to 9) are allowed in the remaining part (the hifen and the underscore can be used as non-consecutive separators). [V005]</p></td>
+</tr>
+<tr class="row-even"><td><p>V024</p></td>
+<td><p>The value must not be missing or empty [V024]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="thematicididentifierscheme">
+<h3>thematicIdIdentifierScheme<a class="headerlink" href="#thematicididentifierscheme" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Identifier defining the scheme used to assign the identifier.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>IdentifierScheme</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id6">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id6" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V016</p></td>
+<td><p>The value must not be missing or empty [V016]</p></td>
+</tr>
+<tr class="row-odd"><td><p>V049</p></td>
+<td><p>The thematicIdIdentifierScheme must be ‘euFloodsUnitOfManagementCode’. [V049]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="beginlifespanversion">
+<h3>beginLifespanVersion<a class="headerlink" href="#beginlifespanversion" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>WiseDateTime</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id7">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id7" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R002</p></td>
+<td><p>The beginLifespanVersion value must be reported, if the inspireVersionId value is reported.[R002]</p></td>
+</tr>
+<tr class="row-odd"><td><p>R013</p></td>
+<td><p>The beginLifespanVersion value must be reported, if the endLifespanVersion value is reported. [R013]</p></td>
+</tr>
+<tr class="row-even"><td><p>R024</p></td>
+<td><p>The beginLifespanVersion value must be reported, unless the wiseEvolutionType is ‘creation’ or ‘noChange’.[R024]</p></td>
+</tr>
+<tr class="row-odd"><td><p>V006</p></td>
+<td><p>The beginLifespanVersion value must be a valid date in the ISO 8601 extended format value (e.g. YYYY, YYYY-MM, YYYY-MM-DD or YYYY-MM-DDTHH:mm:ss). [V006]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="endlifespanversion">
+<h3>endLifespanVersion<a class="headerlink" href="#endlifespanversion" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>WiseDateTime</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id8">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id8" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R003</p></td>
+<td><p>The beginLifespanVersion date must not be after the endLifespanVersion. [R003]</p></td>
+</tr>
+<tr class="row-odd"><td><p>V039</p></td>
+<td><p>The endLifespanVersion value must be a valid date in the ISO 8601 extended format value (e.g. YYYY, YYYY-MM, YYYY-MM-DD or YYYY-MM-DDTHH:mm:ss).[V039]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="predecessorsidentifier">
+<h3>predecessorsIdentifier<a class="headerlink" href="#predecessorsidentifier" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Max length: 254 characters. In a genealogy, the object(s) that has(have) been deactivated/replaced by another one.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id9">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id9" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R011</p></td>
+<td><p>The object must have zero predecessors, if the wiseEvolutionType value is ‘creation’.[R011]</p></td>
+</tr>
+<tr class="row-odd"><td><p>R014</p></td>
+<td><p>The predecessorsIdentifier value must be reported, if the predecessorsIdentifierScheme value is reported. [R014]</p></td>
+</tr>
+<tr class="row-even"><td><p>R015</p></td>
+<td><p>The predecessorsIdentifier and predecessorsIdentifierScheme combination must not be equal to the thematicIdentifier and thematicIdentifierScheme combination (an identifier must not replace itself). [R015]</p></td>
+</tr>
+<tr class="row-odd"><td><p>R026</p></td>
+<td><p>The object must have one and only one predecessor, if the wiseEvolutionType value is ‘changeCode’ or ‘splitting’.[R026]</p></td>
+</tr>
+<tr class="row-even"><td><p>R027</p></td>
+<td><p>The object must have two or more predecessors, if the wiseEvolutionType value is ‘aggregation’ or ‘changeBothAggregationAndSplitting’. [R027]</p></td>
+</tr>
+<tr class="row-odd"><td><p>R028</p></td>
+<td><p>The object must have zero predecessors, if the wiseEvolutionType value is ‘change’ or ‘noChange’.[R028]</p></td>
+</tr>
+<tr class="row-even"><td><p>R029</p></td>
+<td><p>If an identifier is the predecessor of 2 or more objects, then those objects must have wiseEvolution in (‘splitting’,’changeBothAggregationAndSplitting’)[R029]</p></td>
+</tr>
+<tr class="row-odd"><td><p>R032</p></td>
+<td><p>At least one predecessor of an object with wiseEvolutionType value equal to ‘splitting’ or ‘changeBothAggregationAndSplitting’ must be reported as predecessor of another spatial object. [R032]</p></td>
+</tr>
+<tr class="row-even"><td><p>R045</p></td>
+<td><p>Units Of Management must have predecessors if the wiseEvolutionType is not ‘change’ or ‘noChange’ or ‘creation’. [R043]</p></td>
+</tr>
+<tr class="row-odd"><td><p>RF005</p></td>
+<td><p>If an object is reported as ‘deletion’, it must have the same predecessors as before [RF005]</p></td>
+</tr>
+<tr class="row-even"><td><p>RF006</p></td>
+<td><p>A spatial object with wiseEvolutionType value equal to ‘changeCode’ must not have the same predecessor of another spatial object. [RF006]</p></td>
+</tr>
+<tr class="row-odd"><td><p>RF008</p></td>
+<td><p>The object has a predecessor that does not exist in the register. [RF008]</p></td>
+</tr>
+<tr class="row-even"><td><p>V040</p></td>
+<td><p>The predecessorsIdentifier value must be a string starting with the 2-letter country code. Upper case letters (A to Z) and digits (0 to 9) are allowed in the remaining part (the hifen and the underscore can be used as non-consecutive separators). [V040]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="predecessorsidentifierscheme">
+<h3>predecessorsIdentifierScheme<a class="headerlink" href="#predecessorsidentifierscheme" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Identifier defining the scheme used to assign the identifier value(s) in the predecessorsIdentifier element.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>IdentifierScheme</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id10">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id10" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R016</p></td>
+<td><p>The predecessorsIdentifierScheme value must be reported, if the predecessorsIdentifier value is reported. [R016]</p></td>
+</tr>
+<tr class="row-odd"><td><p>V050</p></td>
+<td><p>The predecessorsIdentifierScheme must be ‘euFloodsUnitOfManagementCode’. [V050]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="successorsidentifier">
+<h3>successorsIdentifier<a class="headerlink" href="#successorsidentifier" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Max length: 254 characters. In a genealogy, the newly active object(s) that replaces(replace) the current one.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id11">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id11" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R018</p></td>
+<td><p>The successorsIdentifier value must be reported, if the successorsIdentifierScheme value is reported.[R018]</p></td>
+</tr>
+<tr class="row-odd"><td><p>R019</p></td>
+<td><p>The successorsIdentifier and successorsIdentifierScheme combination must not be equal to the thematicIdentifier and thematicIdentifierScheme combination (an identifier must not replace itself). [R019]</p></td>
+</tr>
+<tr class="row-even"><td><p>R033</p></td>
+<td><p>The object has wiseEvolutionType = ‘deletion’ and is a predecessor to other objects reported in the data set. The identifiers of the successors must be reported consistently.[R033]</p></td>
+</tr>
+<tr class="row-odd"><td><p>RF003</p></td>
+<td><p>The thematic identifier that is replacing this object has been superseded, deprecated or is invalid.[RF003]</p></td>
+</tr>
+<tr class="row-even"><td><p>V041</p></td>
+<td><p>The successorsIdentifier value must be a string starting with the 2-letter country code. Upper case letters (A to Z) and digits (0 to 9) are allowed in the remaining part (the hifen and the underscore can be used as non-consecutive separators).[V041]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="successorsidentifierscheme">
+<h3>successorsIdentifierScheme<a class="headerlink" href="#successorsidentifierscheme" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Identifier defining the scheme used to assign the identifier value(s) in the successorsIdentifier element.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>IdentifierScheme</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id12">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id12" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R020</p></td>
+<td><p>The successorsIdentifierScheme value must be reported, if the successorsIdentifier value is reported. [R020]</p></td>
+</tr>
+<tr class="row-odd"><td><p>V051</p></td>
+<td><p>The successorsIdentifierScheme must be ‘euFloodsUnitOfManagementCode’. [V051]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="wiseevolutiontype">
+<h3>wiseEvolutionType<a class="headerlink" href="#wiseevolutiontype" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Type of event that produced or modified the version of the object being reported (creation, change, deletion, aggregation, splitting). This attribute is required to explicitly report changes and update the current status of the object in the Water Information System for Europe.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>WiseEvolutionTypeValue</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id13">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id13" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R031</p></td>
+<td><p>The spatial object must have wiseEvolutionType value equal to ‘deletion’ if it is also reported as predecessor to another spatial object.[R031]</p></td>
+</tr>
+<tr class="row-odd"><td><p>V017</p></td>
+<td><p>The value must not be missing or empty [V017]</p></td>
+</tr>
+<tr class="row-even"><td><p>V027</p></td>
+<td><p>The value must be one of (‘creation’,’aggregation’,’splitting’,’change’,’changeCode’,’changeBothAggregationAndSplitting’,’noChange’, ‘changeExtendedArea’, ‘changeReducedArea’).[V027]</p></td>
+</tr>
+<tr class="row-odd"><td><p>V068</p></td>
+<td><p>Units Of Management cannot be reported as deletions [V068]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="nametextinternational">
+<h3>nameTextInternational<a class="headerlink" href="#nametextinternational" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Max length: 254 characters. Name, in English. English exonym or an understandable English version of the name of the geographical feature or spatial object.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id14">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id14" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V007</p></td>
+<td><p>The nameTextInternational value must be less than 255 characters. Upper case letters (A to Z) and digits (0 to 9) are allowed (spaces and hifens can be used as separators). [V007]</p></td>
+</tr>
+<tr class="row-odd"><td><p>V023</p></td>
+<td><p>The value must not be missing or empty [V023]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="nametext">
+<h3>nameText<a class="headerlink" href="#nametext" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Max length: 254 characters. Name, in the national language. National language endonym, or national language version of the name of the geographical feature or spatial object.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id15">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id15" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V001</p></td>
+<td><p>The used encoding is not correct. Strange characters in nameText field. [V001]</p></td>
+</tr>
+<tr class="row-odd"><td><p>V008</p></td>
+<td><p>The nameText value must be a string with less than 255 characters.[V008]</p></td>
+</tr>
+<tr class="row-even"><td><p>V022</p></td>
+<td><p>The value must not be missing or empty [V022]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="namelanguage">
+<h3>nameLanguage<a class="headerlink" href="#namelanguage" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Language code of the language used in the nameText attribute value.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>WiseLanguageCode</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id16">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id16" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V018</p></td>
+<td><p>The value must not be missing or empty [V018]</p></td>
+</tr>
+<tr class="row-odd"><td><p>V028</p></td>
+<td><p>The nameLanguage value is not a valid ISO 639-2/B language code. [V028]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="designationperiodbegin">
+<h3>designationPeriodBegin<a class="headerlink" href="#designationperiodbegin" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Beginning of the time period defining when the management, restriction or regulation zone was legally designated or became effective in the real world.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>WiseDateTime</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id17">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id17" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R034</p></td>
+<td><p>If wiseEvolutionType = ‘deletion’ and the object has successors, the designationPeriodEnd of the object must be equal to the designationPeriodBegin of the successors.</p></td>
+</tr>
+<tr class="row-odd"><td><p>R046</p></td>
+<td><p>Objects with the same predecessor must have the same designationPeriodBegin value. [R046]</p></td>
+</tr>
+<tr class="row-even"><td><p>RF012</p></td>
+<td><p>If wiseEvolutionType in (‘deletion’,’change’,’noChange’), the designationPeriodBegin must be equal to the designationPeriodBegin of the object in the register.[RF012]</p></td>
+</tr>
+<tr class="row-odd"><td><p>RF013</p></td>
+<td><p>If wiseEvolutionType in (‘splitting’,’aggregation’,’changeBothAggregationAndSplitting’,’changeExtendedArea’,’changeReducedArea’), the designationPeriodBegin value must be higher than the designationPeriodBegin value of the predecessor.[RF013]</p></td>
+</tr>
+<tr class="row-even"><td><p>RF014</p></td>
+<td><p>If wiseEvolutionType = ‘changeCode’, the designationPeriodBegin value must be equal to the designationPeriodBegin value of the predecessor. [RF014]</p></td>
+</tr>
+<tr class="row-odd"><td><p>RF015</p></td>
+<td><p>if wiseEvolutionType is in (‘’change’’,’’changeCode’’,’’noChange’’,’’reactivation’’) then, the designationPeriodBegin cannot be lower than the one stored in the registry for the same element.[RF015]</p></td>
+</tr>
+<tr class="row-even"><td><p>V009</p></td>
+<td><p>The designationPeriodBegin value must be a valid date in the ISO 8601 extended format value (e.g. YYYY, YYYY-MM, YYYY-MM-DD or YYYY-MM-DDTHH:mm:ss). [V009]</p></td>
+</tr>
+<tr class="row-odd"><td><p>V021</p></td>
+<td><p>The value must not be missing or empty [V021]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="designationperiodend">
+<h3>designationPeriodEnd<a class="headerlink" href="#designationperiodend" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>[End of the] time period defining when the management, restriction or regulation zone was legally designated or became effective in the real world.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>WiseDateTime</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id18">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id18" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R004</p></td>
+<td><p>The designationPeriodBegin date must not be after the designationPeriodEnd.[R004]</p></td>
+</tr>
+<tr class="row-odd"><td><p>R030</p></td>
+<td><p>The designationPeriodEnd date must be reported, if the wiseEvolutionType value is ‘deletion’.[R030]</p></td>
+</tr>
+<tr class="row-even"><td><p>V010</p></td>
+<td><p>The designationPeriodEnd value must be a valid date in the ISO 8601 extended format value (e.g. YYYY, YYYY-MM, YYYY-MM-DD or YYYY-MM-DDTHH:mm:ss). [V010]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="zonetype">
+<h3>zoneType<a class="headerlink" href="#zonetype" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>High-level classification defining the type of Management, Restriction or Regulation Zone.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>ZoneTypeCode</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id19">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id19" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V020</p></td>
+<td><p>The value must not be missing or empty [V020]</p></td>
+</tr>
+<tr class="row-odd"><td><p>V029</p></td>
+<td><p>The zoneType value is not valid. [V029]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="legalbasisname">
+<h3>legalBasisName<a class="headerlink" href="#legalbasisname" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Max length: 254 characters. Name of the document.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id20">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id20" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V011</p></td>
+<td><p>The legalBasisName value must be a string with less than 255 characters.[V011]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="legalbasislink">
+<h3>legalBasisLink<a class="headerlink" href="#legalbasislink" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Max length: 2100 characters. Link to an online version of the document.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>url</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id21">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id21" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V012</p></td>
+<td><p>The legalBasisLink value must be a valid URL [V012]</p></td>
+</tr>
+<tr class="row-odd"><td><p>V069</p></td>
+<td><p>The legalBasisLink value must be less than 2100 characters.[V069]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="legalbasislevel">
+<h3>legalBasisLevel<a class="headerlink" href="#legalbasislevel" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>The level at which the legislative instrument is adopted. Allowable values are {‘european’,’international’,’national’,’sub-national’}.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>LegislationLevelValue</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id22">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id22" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V033</p></td>
+<td><p>The legalBasisLevel value is not valid (see http://dd.eionet.europa.eu/vocabulary/inspire/LegislationLevelValue). [V033]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="sizevalue">
+<h3>sizeValue<a class="headerlink" href="#sizevalue" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>The area of the reference geometry (in square kilometre) or length of the reference geometry (in kilometre).</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>float</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id23">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id23" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R005</p></td>
+<td><p>If sizeUOM is reported then sizeValue must also be reported. If sizeValue is reported then sizeUOM must also be reported.[R005]</p></td>
+</tr>
+<tr class="row-odd"><td><p>V013</p></td>
+<td><p>The sizeValue value must be a positive number. [V013]</p></td>
+</tr>
+<tr class="row-even"><td><p>V057</p></td>
+<td><p>The value is not a valid whole or decimal number [V057]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="sizeuom">
+<h3>sizeUom<a class="headerlink" href="#sizeuom" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Unit of measure of the value provided in the ‘sizeValue’ attribute. Allowable units of measure is ‘km2’.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>UomSize</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id24">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id24" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V048</p></td>
+<td><p>The sizeUom value must be a valid unit of measure (see http://dd.eionet.europa.eu/vocabulary/wise/UomSize). [V048]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="link">
+<h3>link<a class="headerlink" href="#link" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Max length: 2100 characters.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>url</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id25">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id25" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V014</p></td>
+<td><p>The value does not follow the expected syntax for a valid URL [V014]</p></td>
+</tr>
+<tr class="row-odd"><td><p>V043</p></td>
+<td><p>The link value must be an URL with less than 2100 characters. [V043]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../tables/DocumentReference.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">DocumentReference</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../FHRM/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">FHRM</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#description">Description</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-quality-checks">Table Quality Checks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geometry">geometry</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inspireidlocalid">inspireIdLocalID</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inspireidnamespace">inspireIdNamespace</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inspireidversionid">inspireIdVersionId</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thematicididentifier">thematicIdIdentifier</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thematicididentifierscheme">thematicIdIdentifierScheme</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#beginlifespanversion">beginLifespanVersion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#endlifespanversion">endLifespanVersion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#predecessorsidentifier">predecessorsIdentifier</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#predecessorsidentifierscheme">predecessorsIdentifierScheme</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#successorsidentifier">successorsIdentifier</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#successorsidentifierscheme">successorsIdentifierScheme</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wiseevolutiontype">wiseEvolutionType</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nametextinternational">nameTextInternational</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nametext">nameText</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#namelanguage">nameLanguage</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#designationperiodbegin">designationPeriodBegin</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#designationperiodend">designationPeriodEnd</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zonetype">zoneType</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legalbasisname">legalBasisName</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legalbasislink">legalBasisLink</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legalbasislevel">legalBasisLevel</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sizevalue">sizeValue</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sizeuom">sizeUom</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#link">link</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../../_sources/CA_UOM/tables_spatial/spatial_UnitOfManagement.md.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.20.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,2311 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>PreliminaryFloodRiskAssessment &#8212; WISE Floods Documentation  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/customTheme.css?v=23704726" />
+    <link rel="stylesheet" type="text/css" href="../../_static/customTable.css?v=2fdf4863" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../../_static/scripts/fontawesome.js?digest=90905a2f556bf617f1a9"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9" />
+
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'APSFR_PFRA/tables/PreliminaryFloodRiskAssessment';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <script src="../../_static/js/mermaid-zoom.js?v=572d2af9"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="PreliminaryFloodRiskAssessment_FloodEvent" href="PreliminaryFloodRiskAssessment_FloodEvent.html" />
+    <link rel="prev" title="RiskZone" href="../tables_spatial/spatial_RiskZone.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/wise.svg" class="logo__image only-light" alt=""/>
+    <img src="../../_static/wise-freshwater.svg" class="logo__image only-dark pst-js-only" alt=""/>
+  
+  
+    <p class="title logo__title">Floods Directive</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    APSFR PFRA
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../CA_UOM/index.html">
+    CA_UOM
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../FHRM/index.html">
+    FHRM
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../FRMP/index.html">
+    FRMP
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    APSFR PFRA
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../CA_UOM/index.html">
+    CA_UOM
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../FHRM/index.html">
+    FHRM
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../FRMP/index.html">
+    FRMP
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item pst-sidebar-collapse"><button id="pst-collapse-sidebar-button" aria-expanded="true" aria-controls="pst-primary-sidebar">
+  <svg class="pst-icon" role="img" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="M3 15.5C2.36232 15.5 1.74874 15.2564 1.28478 14.8189C0.820828 14.3815 0.541576 13.7832 0.504167 13.1467L0.5 13L0.5 3C0.499965 2.36232 0.743605 1.74874 1.18107 1.28478C1.61854 0.820828 2.21676 0.541576 2.85333 0.504167L3 0.5L13 0.5C13.6377 0.499965 14.2513 0.743605 14.7152 1.18107C15.1792 1.61854 15.4584 2.21676 15.4958 2.85333L15.5 3L15.5 13C15.5 13.6377 15.2564 14.2513 14.8189 14.7152C14.3815 15.1792 13.7832 15.4584 13.1467 15.4958L13 15.5L3 15.5ZM3 13.8333L10.5 13.8333L10.5 2.16667L3 2.16667C2.79589 2.16669 2.59889 2.24163 2.44636 2.37726C2.29383 2.5129 2.19638 2.69979 2.1725 2.9025L2.16667 3L2.16667 13C2.16669 13.2041 2.24163 13.4011 2.37726 13.5536C2.5129 13.7062 2.69979 13.8036 2.9025 13.8275L3 13.8333ZM6.65583 10.325L6.5775 10.2558L4.91083 8.58917C4.76735 8.44567 4.68116 8.25476 4.66843 8.05223C4.65569 7.84971 4.71729 7.6495 4.84167 7.48917L4.91083 7.41083L6.5775 5.74417C6.72747 5.59471 6.9287 5.50794 7.14032 5.50148C7.35194 5.49502 7.55809 5.56935 7.7169 5.70937C7.8757 5.8494 7.97525 6.04463 7.99533 6.25539C8.01541 6.46616 7.95451 6.67667 7.825 6.84417L7.75583 6.9225L6.67917 8L7.75583 9.0775C7.89931 9.22099 7.98551 9.41191 7.99824 9.61443C8.01097 9.81695 7.94938 10.0172 7.825 10.1775L7.75583 10.2558C7.61234 10.3993 7.42142 10.4855 7.2189 10.4982C7.01638 10.511 6.81617 10.4494 6.65583 10.325Z"/>
+  </svg>
+  <span class="pst-collapse-sidebar-label">Collapse Sidebar</span>
+  <span class="pst-expand-sidebar-label">Expand Sidebar</span>
+</button></div>
+        <div class="sidebar-primary-item">
+
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">APSFR Descriptive tables</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="AreaOfPotentialSignificantFloodRisk_Methodology.html">AreaOfPotentialSignificantFloodRisk_Methodology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="AreaOfPotentialSignificantFloodRisk_Data.html">AreaOfPotentialSignificantFloodRisk_Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="AreaOfPotentialSignificantFloodRisk_PotencialConsequence.html">AreaOfPotentialSignificantFloodRisk_PotencialConsequence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dcMetadata.html">dcMetadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Document.html">Document</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DocumentReference.html">DocumentReference</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">APSFR Spatial table</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../tables_spatial/spatial_RiskZone.html">RiskZone</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">PFRA Descriptive tables</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">PreliminaryFloodRiskAssessment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PreliminaryFloodRiskAssessment_FloodEvent.html">PreliminaryFloodRiskAssessment_FloodEvent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PreliminaryFloodRiskAssessment_TypeOfFlood.html">PreliminaryFloodRiskAssessment_TypeOfFlood</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PreliminaryFloodRiskAssessment_ImpactConsequence.html">PreliminaryFloodRiskAssessment_ImpactConsequence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PreliminaryFloodRiskAssessment_FloodEventLocation.html">PreliminaryFloodRiskAssessment_FloodEventLocation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dcMetadata.html">dcMetadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Document.html">Document</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DocumentReference.html">DocumentReference</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">PFRA Spatial table</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../tables_spatial/spatial_HazardArea.html">HazardArea</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">APSFR PFRA</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">PreliminaryFloodRiskAssessment</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="preliminaryfloodriskassessment">
+<h1>PreliminaryFloodRiskAssessment<a class="headerlink" href="#preliminaryfloodriskassessment" title="Link to this heading">#</a></h1>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading">#</a></h2>
+<p>Preliminary Flood Risk Assessment</p>
+<p>Uniqueness: euFloodsUnitOfManagementCode</p>
+</section>
+<section id="table-quality-checks">
+<h2>Table Quality Checks<a class="headerlink" href="#table-quality-checks" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>XC0431</p></td>
+<td><p>The table PreliminaryFloodRiskAssessment does not contain a record for the following {%NUMBEROFRECORDS%} euFloodsUnitOfManagementCode values: {%RECORDS%} in table dcMetadata with “reportingStructuredData” equal to ‘yes’.</p></td>
+</tr>
+<tr class="row-odd"><td><p>XC0434</p></td>
+<td><p>The table PreliminaryFloodRiskAssessment contains records for the following {%NUMBEROFRECORDS%} euFloodsUnitOfManagementCode values: {%RECORDS%} in table dcMetadata with “reportingStructuredData” equal to ‘no’.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="eufloodsunitofmanagementcode">
+<h3>euFloodsUnitOfManagementCode<a class="headerlink" href="#eufloodsunitofmanagementcode" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Max length: 42 characters. Required. Unique EU code for the Unit of Management or WFD River Basin District following the WISE identifier syntax. Add the two-letter ISO Country code to the Member State unique id - up to 42 characters in total.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>FeatureUniqueEUCodeType</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id1">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>TU0421</p></td>
+<td><p>The euFloodsUnitOfManagementCode must be unique.</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0443</p></td>
+<td><p>The length must be less than or equal to 42</p></td>
+</tr>
+<tr class="row-even"><td><p>V0444</p></td>
+<td><p>The value does not match the pattern to be used</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0449</p></td>
+<td><p>The value must not be missing or empty</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="url">
+<h3>url<a class="headerlink" href="#url" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Optional. URL for integration of your own internet-based information.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>URL</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id2">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id2" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V0451</p></td>
+<td><p>The value does not follow the expected syntax for a valid URL</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0532</p></td>
+<td><p>The length must be less than or equal to 2100</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="article-2-1-sewagesystemsexcluded">
+<h3>article_2_1_SewageSystemsExcluded<a class="headerlink" href="#article-2-1-sewagesystemsexcluded" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Required. Choose from the ‘YesNo’ codelist values. State whether floods from sewage systems have been excluded as a source of flooding.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>YesNo</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id3">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id3" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V0445</p></td>
+<td><p>The value does not exist in codelist YesNo</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0454</p></td>
+<td><p>The value must not be missing or empty</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="article-4-2-a-mapsavailable">
+<h3>article_4_2_a_MapsAvailable<a class="headerlink" href="#article-4-2-a-mapsavailable" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Required. Choose from the ‘YesNo’ codelist values. Map(s) according to Article 4.2(a) (to be coordinated with WFD reporting), including topography and land use.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>YesNo</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id4">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id4" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V0446</p></td>
+<td><p>The value does not exist in codelist YesNo</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0455</p></td>
+<td><p>The value must not be missing or empty</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="article-4-2-a-mapsdescription">
+<h3>article_4_2_a_MapsDescription<a class="headerlink" href="#article-4-2-a-mapsdescription" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Max length: 1000 characters. Conditional. Provide a reason/description if ‘Article4.2(a)Maps’ is set to ‘No’.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id5">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id5" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R0419</p></td>
+<td><p>article_4_2_a_MapsDescription must be reported if article_4_2_a_MapsAvailable is ‘no’</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0447</p></td>
+<td><p>The length must be less than or equal to 1000</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="article-4-2-a-mapsreference">
+<h3>article_4_2_a_MapsReference<a class="headerlink" href="#article-4-2-a-mapsreference" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Conditional. Provide a reference(s) if ‘Article4aMaps’ is set to ‘Yes’. Provide a reference(s) to the map(s) and to how the map(s) was (were) used in the preliminary flood risk assessment. More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., “value1; value2; value3”.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>DocumentReference</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>*</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id6">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id6" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R0420</p></td>
+<td><p>article_4_2_a_MapsReference must be reported if article_4_2_a_MapsAvailable is ‘yes’</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0505</p></td>
+<td><p>Duplicate document references exist. The list of values needs to be distinct.</p></td>
+</tr>
+<tr class="row-even"><td><p>XC0400</p></td>
+<td><p>The document reference does not exist</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="article-4-2-b-pastadverseconsequencescriteriaused">
+<h3>article_4_2_b_PastAdverseConsequencesCriteriaUsed<a class="headerlink" href="#article-4-2-b-pastadverseconsequencescriteriaused" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Required. Choose from the ‘HistoricalSignificantFloodsCriteria’ codelist values. Criteria used to define past floods with significant adverse impacts, with likelihood of repetition. More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., “value1; value2; value3”.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>HistoricalSignificantFloodsCriteria</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>*</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id7">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id7" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V0448</p></td>
+<td><p>The value does not exist in codelist HistoricalSignificantFloodsCriteria</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0463</p></td>
+<td><p>The value must not be missing or empty</p></td>
+</tr>
+<tr class="row-even"><td><p>V0506</p></td>
+<td><p>Duplicate values for article_4_2_b_PastAdverseConsequencesCriteriaUsed exist. The list of values needs to be distinct in each record.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="article-4-2-b-pastadverseconsequencesexpertjudgementdescript">
+<h3>article_4_2_b_PastAdverseConsequencesExpertJudgementDescript<a class="headerlink" href="#article-4-2-b-pastadverseconsequencesexpertjudgementdescript" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Max length: 1000 characters. Optional.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id8">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id8" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R0400</p></td>
+<td><p>article_4_2_b_PastAdverseConsequencesExpertJudgementDescript must be reported if article_4_2_b_PastAdverseConsequencesCriteriaUsed = ‘expertJudgement’</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0400</p></td>
+<td><p>The length must be less than or equal to 1000</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="article-4-2-b-pastadverseconsequencescriteriaother">
+<h3>article_4_2_b_PastAdverseConsequencesCriteriaOther<a class="headerlink" href="#article-4-2-b-pastadverseconsequencescriteriaother" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Max length: 1000 characters. Conditional. If ‘Other’ is selected from enumeration list, provide a description of what other criteria (there may be several ‘other’ criteria) have been used to define past floods with significant adverse impacts, with likelihood of repetition.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id9">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id9" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R0401</p></td>
+<td><p>article_4_2_b_PastAdverseConsequencesCriteriaOther must be reported if article_4_2_b_PastAdverseConsequencesCriteriaUsed = ‘other’</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0401</p></td>
+<td><p>The length must be less than or equal to 1000</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="article-4-2-b-pastadverseconsequencesreference">
+<h3>article_4_2_b_PastAdverseConsequencesReference<a class="headerlink" href="#article-4-2-b-pastadverseconsequencesreference" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Required. Provide document(s) or link(s) to the methodology and criteria used to identify and assess floods that occurred in the past and their past adverse consequences (including whether such consequences would be ‘significant’) and whether the likelihood of such floods remains relevant. More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., “value1; value2; value3”.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>DocumentReference</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>*</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id10">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id10" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V0456</p></td>
+<td><p>The value must not be missing or empty</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0507</p></td>
+<td><p>Duplicate document references exist. The list of values needs to be distinct.</p></td>
+</tr>
+<tr class="row-even"><td><p>XC0401</p></td>
+<td><p>The document reference does not exist</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="article-4-2-c-significantadverseconsequencescriteriaused">
+<h3>article_4_2_c_SignificantAdverseConsequencesCriteriaUsed<a class="headerlink" href="#article-4-2-c-significantadverseconsequencescriteriaused" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Required. Choose from the ‘HistoricalSignificantFloodsCriteria’ codelist values. Criteria used to define significant past floods (without known significant adverse impacts) with likelihood for significant adverse consequences in the future. More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., “value1; value2; value3”.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>HistoricalSignificantFloodsCriteria</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>*</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id11">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id11" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V0402</p></td>
+<td><p>The value does not exist in codelist HistoricalSignificantFloodsCriteria</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0464</p></td>
+<td><p>The value must not be missing or empty</p></td>
+</tr>
+<tr class="row-even"><td><p>V0508</p></td>
+<td><p>Duplicate values for article_4_2_c_SignificantAdverseConsequencesCriteriaUsed exist. The list of values needs to be distinct in each record.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="article-4-2-c-significantadverseconsequencesexpertjudgementd">
+<h3>article_4_2_c_SignificantAdverseConsequencesExpertJudgementD<a class="headerlink" href="#article-4-2-c-significantadverseconsequencesexpertjudgementd" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Max length: 1000 characters. Conditional. if ‘Expert Judgement’ has been selected from enumeration list, provide a brief description as to how expert judgement was used to define past floods (without known significant adverse impacts) with likelihood for significant adverse consequences in the future.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id12">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id12" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R0402</p></td>
+<td><p>article_4_2_c_SignificantAdverseConsequencesExpertJudgementD must be reported if article_4_2_c_SignificantAdverseConsequencesCriteriaUsed = ‘expertJudgement’</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0403</p></td>
+<td><p>The length must be less than or equal to 1000</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="article-4-2-c-significantadverseconsequencescriteriaother">
+<h3>article_4_2_c_SignificantAdverseConsequencesCriteriaOther<a class="headerlink" href="#article-4-2-c-significantadverseconsequencescriteriaother" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Max length: 1000 characters. Conditional. If ‘Other’ is selected from enumeration list, provide a description of what other criteria (there may be several ‘other’ criteria) have been used to define significant past floods (without known significant adverse impacts) with likelihood for significant adverse consequences in the future.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id13">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id13" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R0403</p></td>
+<td><p>article_4_2_c_SignificantAdverseConsequencesCriteriaOther must be reported if article_4_2_c_SignificantAdverseConsequencesCriteriaUsed = ‘other’</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0404</p></td>
+<td><p>The length must be less than or equal to 1000</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="article-4-2-c-significantadverseconsequencesreference">
+<h3>article_4_2_c_SignificantAdverseConsequencesReference<a class="headerlink" href="#article-4-2-c-significantadverseconsequencesreference" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Required. Provide document(s) or link(s) to the methodology and criteria used to define significant past floods (without known significant adverse impacts) with likelihood for significant adverse consequences in the future. More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., “value1; value2; value3”.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>DocumentReference</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>*</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id14">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id14" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V0509</p></td>
+<td><p>Duplicate document references exist. The list of values needs to be distinct.</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0547</p></td>
+<td><p>The value must not be missing or empty</p></td>
+</tr>
+<tr class="row-even"><td><p>XC0402</p></td>
+<td><p>The document reference does not exist</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="article-4-2-d-issues">
+<h3>article_4_2_d_Issues<a class="headerlink" href="#article-4-2-d-issues" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Required. Choose from the ‘IssuesArticle4_2_d’ codelist values. Issues considered to support the assessment of potential adverse consequences of future floods. More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., “value1; value2; value3”.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>IssuesArticle4_2_d</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>*</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id15">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id15" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V0405</p></td>
+<td><p>The value does not exist in codelist IssuesArticle4_2_d</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0462</p></td>
+<td><p>The value must not be missing or empty</p></td>
+</tr>
+<tr class="row-even"><td><p>V0510</p></td>
+<td><p>Duplicate values for article_4_2_d_Issues exist. The list of values needs to be distinct in each record.</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0552</p></td>
+<td><p>The option ‘noAssessmentRequired’ is not compatible with any other option.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="article-4-2-d-issuesreference">
+<h3>article_4_2_d_IssuesReference<a class="headerlink" href="#article-4-2-d-issuesreference" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Required. Provide document(s) or link(s) to the information relating to how each of the issues identified under Article 4.2(d) were considered to support the assessment of potential adverse consequences of future floods including information on the methodologies applied to consider those issues. If the specific needs of the MS do not require an assessment under Article 4.2(d), please provide a reason. More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., “value1; value2; value3”.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>DocumentReference</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>*</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id16">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id16" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V0457</p></td>
+<td><p>The value must not be missing or empty</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0511</p></td>
+<td><p>Duplicate document references exist. The list of values needs to be distinct.</p></td>
+</tr>
+<tr class="row-even"><td><p>XC0403</p></td>
+<td><p>The document reference does not exist</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="article-4-2-d-potentialadverseconsequencescriteriaused">
+<h3>article_4_2_d_PotentialAdverseConsequencesCriteriaUsed<a class="headerlink" href="#article-4-2-d-potentialadverseconsequencescriteriaused" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Required. Choose from the ‘PotentialAdverseConsequencesCriteria’ codelist values. Criteria used to identify potential adverse consequences of future floods. More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., “value1; value2; value3”.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>PotentialAdverseConsequencesCriteria</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>*</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id17">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id17" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V0406</p></td>
+<td><p>The value does not exist in codelist PotentialAdverseConsequencesCriteria</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0465</p></td>
+<td><p>The value must not be missing or empty</p></td>
+</tr>
+<tr class="row-even"><td><p>V0512</p></td>
+<td><p>Duplicate values for article_4_2_d_PotentialAdverseConsequencesCriteriaUsed exist. The list of values needs to be distinct in each record.</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0554</p></td>
+<td><p>The option ‘noAssessmentRequired’ is not compatible with any other option.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="article-4-2-d-potentialadverseconsequencesexpertjudgementdes">
+<h3>article_4_2_d_PotentialAdverseConsequencesExpertJudgementDes<a class="headerlink" href="#article-4-2-d-potentialadverseconsequencesexpertjudgementdes" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Max length: 1000 characters. Conditional. If ‘Expert Judgement’ is selected from enumeration list, provide a brief description as to how expert judgement was used to define potential adverse consequences of future floods.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id18">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id18" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R0404</p></td>
+<td><p>article_4_2_d_PotentialAdverseConsequencesExpertJudgementDescrip must be reported if article_4_2_d_PotentialAdverseConsequencesCriteriaUsed = ‘expertJudgement’</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0407</p></td>
+<td><p>The length must be less than or equal to 1000</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="article-4-2-d-potentialadverseconsequencescriteriaother">
+<h3>article_4_2_d_PotentialAdverseConsequencesCriteriaOther<a class="headerlink" href="#article-4-2-d-potentialadverseconsequencescriteriaother" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Max length: 1000 characters. Conditional. If ‘Other’ is selected from enumeration list, provide a description of what other criteria (there may be several ‘other’ criteria) have been used to define adverse consequences of future floods.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id19">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id19" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R0405</p></td>
+<td><p>article_4_2_d_PotentialAdverseConsequencesCriteriaOther must be reported if article_4_2_d_PotentialAdverseConsequencesCriteriaUsed = ‘other’</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0408</p></td>
+<td><p>The length must be less than or equal to 1000</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="article-4-2-d-potentialadverseconsequencesreference">
+<h3>article_4_2_d_PotentialAdverseConsequencesReference<a class="headerlink" href="#article-4-2-d-potentialadverseconsequencesreference" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Required. Provide document(s) or link(s) to the methodology and criteria used to define significant past floods (without known significant adverse impacts) with likelihood for significant adverse consequences in the future. More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., “value1; value2; value3”.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>DocumentReference</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>*</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id20">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id20" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V0466</p></td>
+<td><p>The value must not be missing or empty</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0513</p></td>
+<td><p>Duplicate document references exist. The list of values needs to be distinct.</p></td>
+</tr>
+<tr class="row-even"><td><p>XC0404</p></td>
+<td><p>The document reference does not exist</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="article-4-3-internationalinformationexchange">
+<h3>article_4_3_InternationalInformationExchange<a class="headerlink" href="#article-4-3-internationalinformationexchange" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Required. Choose from the ‘InternationalInformationExchange’ codelist values. If UoM is international, identify mechanism(s) used for international exchange of information. More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g.: “value1; value2; value3”.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>InternationalInformationExchange</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>*</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id21">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id21" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>RF0401</p></td>
+<td><p>article_4_3_InternationalInformationExchange must be reported if UnitOfManagement.international from dataflow CA_UOM is ‘yes’</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0410</p></td>
+<td><p>The value does not exist in codelist InternationalInformationExchange</p></td>
+</tr>
+<tr class="row-even"><td><p>V0514</p></td>
+<td><p>Duplicate values for article_4_3_InternationalInformationExchange exist. The list of values needs to be distinct in each record.</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0555</p></td>
+<td><p>The option ‘missing’ is not compatible with any other option.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="article-4-3-internationalinformationexchangenoinformationexc">
+<h3>article_4_3_InternationalInformationExchangeNoInformationExc<a class="headerlink" href="#article-4-3-internationalinformationexchangenoinformationexc" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Max length: 1000 characters. Conditional. If ‘missing’ is selected from enumeration list, provide an explanation as to why this was the case.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id22">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id22" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R0407</p></td>
+<td><p>article_4_3_InternationalInformationExchangeNoInformationExc must be reported if article_4_3_InternationalInformationExchange contains ‘missing’ as an option</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0411</p></td>
+<td><p>The length must be less than or equal to 1000</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="article-4-3-internationalinformationexchangeother">
+<h3>article_4_3_InternationalInformationExchangeOther<a class="headerlink" href="#article-4-3-internationalinformationexchangeother" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Max length: 1000 characters. Conditional. If ‘Other’ is selected from enumeration list, provide a description of what other mechanisms of international information exchange have been used.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id23">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id23" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R0408</p></td>
+<td><p>article_4_3_InternationalInformationExchangeOther must be reported if article_4_3_InternationalInformationExchange contains ‘other’ as an option</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0412</p></td>
+<td><p>The length must be less than or equal to 1000</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="article-4-3-internationalinformationexchangereference">
+<h3>article_4_3_InternationalInformationExchangeReference<a class="headerlink" href="#article-4-3-internationalinformationexchangereference" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Conditional. If the UoM is international, provide document(s) or link(s) to document(s) relating to the information on the institutional relationships established to ensure coordination where a flood event covers the territory of more than one Member State or includes the territory of non-Member States. Include reference to international agreements, if they exist. Minutes from meetings that are publicly available could be referenced and reference to a report and/or summary would also be relevant. More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., “value1; value2; value3”.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>DocumentReference</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>*</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id24">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id24" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>RF0402</p></td>
+<td><p>article_4_3_InternationalInformationExchangeReference must be reported if UnitOfManagement.international from dataflow CA_UOM is ‘yes’</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0515</p></td>
+<td><p>Duplicate document references exist. The list of values needs to be distinct.</p></td>
+</tr>
+<tr class="row-even"><td><p>XC0405</p></td>
+<td><p>The document reference does not exist</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="article-14-1-overallapproachreviewreference">
+<h3>article_14_1_OverallApproachReviewReference<a class="headerlink" href="#article-14-1-overallapproachreviewreference" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Required. Provide a reference or references describing how the review process to the overall approach and methodology applied to undertake the PFRA has been undertaken and, where relevant, what changes have been implemented in the second cycle of reporting. An overview is required here not specific details relating to particular flood events or locations. More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., “value1; value2; value3”.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>DocumentReference</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>*</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id25">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id25" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V0450</p></td>
+<td><p>The value must not be missing or empty</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0516</p></td>
+<td><p>Duplicate document references exist. The list of values needs to be distinct.</p></td>
+</tr>
+<tr class="row-even"><td><p>XC0406</p></td>
+<td><p>The document reference does not exist</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="article-14-4-considerationofclimatechangeconsidered">
+<h3>article_14_4_ConsiderationOfClimateChangeConsidered<a class="headerlink" href="#article-14-4-considerationofclimatechangeconsidered" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Required. Choose from the ‘YesNo’ codelist values. Has climate change been taken into consideration in the review of the PFRA?</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>YesNo</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id26">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id26" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V0413</p></td>
+<td><p>The value does not exist in codelist YesNo</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0452</p></td>
+<td><p>The value must not be missing or empty</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="article-14-4-considerationofclimatechangenotconsideredexplan">
+<h3>article_14_4_ConsiderationOfClimateChangeNotConsideredExplan<a class="headerlink" href="#article-14-4-considerationofclimatechangenotconsideredexplan" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Max length: 1000 characters. Conditional. If ‘No’ is selected from enumeration list, provide an explanation as to why this was the case.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id27">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id27" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R0410</p></td>
+<td><p>article_14_4_ConsiderationOfClimateChangeNotConsideredExplan must be if and only if article_14_4_ConsiderationOfClimateChangeConsidered is ‘no’</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0531</p></td>
+<td><p>The length must be less than or equal to 1000</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="article-14-4-considerationofclimatechangereference">
+<h3>article_14_4_ConsiderationOfClimateChangeReference<a class="headerlink" href="#article-14-4-considerationofclimatechangereference" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Conditional. If ‘Yes’ is selected, provide document(s) or link(s) to the information relating to how climate change has been taken into consideration in the review of the PFRA. More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., “value1; value2; value3”.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>DocumentReference</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>*</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id28">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id28" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R0411</p></td>
+<td><p>article_14_4_ConsiderationOfClimateChangeReference must be reported article_14_4_ConsiderationOfClimateChangeConsidered is ‘yes’</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0517</p></td>
+<td><p>Duplicate document references exist. The list of values needs to be distinct.</p></td>
+</tr>
+<tr class="row-even"><td><p>XC0407</p></td>
+<td><p>The document reference does not exist</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="informationculturalheritagereference">
+<h3>informationCulturalHeritageReference<a class="headerlink" href="#informationculturalheritagereference" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Required. Provide document(s) or link(s) detailing methodologies used for assessing how the levels of past adverse impacts or potential adverse consequences on cultural heritage have been defined. References may include descriptions of approaches and available data used in the assessment. Note that generic approaches only are required (i.e. not related to specific flood events). More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., “value1; value2; value3”.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>DocumentReference</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>*</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id29">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id29" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V0458</p></td>
+<td><p>The value must not be missing or empty</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0518</p></td>
+<td><p>Duplicate document references exist. The list of values needs to be distinct.</p></td>
+</tr>
+<tr class="row-even"><td><p>XC0408</p></td>
+<td><p>The document reference does not exist</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="informationeconomicactivityreference">
+<h3>informationEconomicActivityReference<a class="headerlink" href="#informationeconomicactivityreference" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Required. Provide document(s) or link(s) detailing methodologies used for assessing how the levels of past adverse impacts or potential adverse consequences on economic activity have been defined. References may include descriptions of approaches and available data used in the assessment. Note that generic approaches only are required (i.e. not related to specific flood events). More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., “value1; value2; value3”.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>DocumentReference</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>*</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id30">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id30" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V0459</p></td>
+<td><p>The value must not be missing or empty</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0519</p></td>
+<td><p>Duplicate document references exist. The list of values needs to be distinct.</p></td>
+</tr>
+<tr class="row-even"><td><p>XC0409</p></td>
+<td><p>The document reference does not exist</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="informationenvironmentreference">
+<h3>informationEnvironmentReference<a class="headerlink" href="#informationenvironmentreference" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Required. Provide document(s) or link(s) detailing methodologies used for assessing how the levels of past adverse impacts or potential adverse consequences on the environment have been defined. References may include descriptions of approaches and available data used in the assessment. Note that generic approaches only are required (i.e. not related to specific flood events). More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., “value1; value2; value3”.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>DocumentReference</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>*</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id31">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id31" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V0460</p></td>
+<td><p>The value must not be missing or empty</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0520</p></td>
+<td><p>Duplicate document references exist. The list of values needs to be distinct.</p></td>
+</tr>
+<tr class="row-even"><td><p>XC0410</p></td>
+<td><p>The document reference does not exist</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="informationhumanhealthsocialreference">
+<h3>informationHumanHealthSocialReference<a class="headerlink" href="#informationhumanhealthsocialreference" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Required. Provide document(s) or link(s) detailing methodologies used for assessing how the levels of past adverse impacts or potential adverse consequences on human health have been defined. References may include descriptions of approaches and available data used in the assessment. Note that generic approaches only are required (i.e. not related to specific flood events). More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., “value1; value2; value3”.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>DocumentReference</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>*</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id32">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id32" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V0461</p></td>
+<td><p>The value must not be missing or empty</p></td>
+</tr>
+<tr class="row-odd"><td><p>V0521</p></td>
+<td><p>Duplicate document references exist. The list of values needs to be distinct.</p></td>
+</tr>
+<tr class="row-even"><td><p>XC0411</p></td>
+<td><p>The document reference does not exist</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="otherrelevantinformationreference">
+<h3>otherRelevantInformationReference<a class="headerlink" href="#otherrelevantinformationreference" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Guidance on completion</p></td>
+<td><p>Optional. Provide document(s) or link(s) to any other relevant available or readily derivable information used in the PFRA. More than one option can be selected. If more than one, values need to be separated by a semicolon followed by a whitespace. e.g., “value1; value2; value3”.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field type</p></td>
+<td><p>DocumentReference</p></td>
+</tr>
+<tr class="row-even"><td><p>minOccurs</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>maxOccurs</p></td>
+<td><p>*</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="id33">
+<caption><span class="caption-text">Quality Checks</span><a class="headerlink" href="#id33" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V0522</p></td>
+<td><p>Duplicate document references exist. The list of values needs to be distinct.</p></td>
+</tr>
+<tr class="row-odd"><td><p>XC0412</p></td>
+<td><p>The document reference does not exist</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../tables_spatial/spatial_RiskZone.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">RiskZone</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="PreliminaryFloodRiskAssessment_FloodEvent.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">PreliminaryFloodRiskAssessment_FloodEvent</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#description">Description</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-quality-checks">Table Quality Checks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eufloodsunitofmanagementcode">euFloodsUnitOfManagementCode</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#url">url</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-2-1-sewagesystemsexcluded">article_2_1_SewageSystemsExcluded</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-4-2-a-mapsavailable">article_4_2_a_MapsAvailable</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-4-2-a-mapsdescription">article_4_2_a_MapsDescription</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-4-2-a-mapsreference">article_4_2_a_MapsReference</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-4-2-b-pastadverseconsequencescriteriaused">article_4_2_b_PastAdverseConsequencesCriteriaUsed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-4-2-b-pastadverseconsequencesexpertjudgementdescript">article_4_2_b_PastAdverseConsequencesExpertJudgementDescript</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-4-2-b-pastadverseconsequencescriteriaother">article_4_2_b_PastAdverseConsequencesCriteriaOther</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-4-2-b-pastadverseconsequencesreference">article_4_2_b_PastAdverseConsequencesReference</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-4-2-c-significantadverseconsequencescriteriaused">article_4_2_c_SignificantAdverseConsequencesCriteriaUsed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-4-2-c-significantadverseconsequencesexpertjudgementd">article_4_2_c_SignificantAdverseConsequencesExpertJudgementD</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-4-2-c-significantadverseconsequencescriteriaother">article_4_2_c_SignificantAdverseConsequencesCriteriaOther</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-4-2-c-significantadverseconsequencesreference">article_4_2_c_SignificantAdverseConsequencesReference</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-4-2-d-issues">article_4_2_d_Issues</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-4-2-d-issuesreference">article_4_2_d_IssuesReference</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-4-2-d-potentialadverseconsequencescriteriaused">article_4_2_d_PotentialAdverseConsequencesCriteriaUsed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-4-2-d-potentialadverseconsequencesexpertjudgementdes">article_4_2_d_PotentialAdverseConsequencesExpertJudgementDes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-4-2-d-potentialadverseconsequencescriteriaother">article_4_2_d_PotentialAdverseConsequencesCriteriaOther</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-4-2-d-potentialadverseconsequencesreference">article_4_2_d_PotentialAdverseConsequencesReference</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-4-3-internationalinformationexchange">article_4_3_InternationalInformationExchange</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-4-3-internationalinformationexchangenoinformationexc">article_4_3_InternationalInformationExchangeNoInformationExc</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-4-3-internationalinformationexchangeother">article_4_3_InternationalInformationExchangeOther</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-4-3-internationalinformationexchangereference">article_4_3_InternationalInformationExchangeReference</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-14-1-overallapproachreviewreference">article_14_1_OverallApproachReviewReference</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-14-4-considerationofclimatechangeconsidered">article_14_4_ConsiderationOfClimateChangeConsidered</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-14-4-considerationofclimatechangenotconsideredexplan">article_14_4_ConsiderationOfClimateChangeNotConsideredExplan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-14-4-considerationofclimatechangereference">article_14_4_ConsiderationOfClimateChangeReference</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#informationculturalheritagereference">informationCulturalHeritageReference</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#informationeconomicactivityreference">informationEconomicActivityReference</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#informationenvironmentreference">informationEnvironmentReference</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#informationhumanhealthsocialreference">informationHumanHealthSocialReference</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#otherrelevantinformationreference">otherRelevantInformationReference</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../../_sources/APSFR_PFRA/tables/PreliminaryFloodRiskAssessment.md.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.20.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
